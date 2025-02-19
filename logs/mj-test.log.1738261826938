@@ -1,0 +1,27 @@
+INFO  19:29:59,750 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  19:29:59,831 - #2 program
+INFO  19:29:59,832 - #41 test
+INFO  19:29:59,832 - #5 const
+INFO  19:29:59,835 - #41 int
+INFO  19:29:59,836 - #41 pi
+INFO  19:29:59,838 - #6 =
+INFO  19:29:59,839 - #42 3
+INFO  19:29:59,839 - #7 ;
+INFO  19:29:59,845 - #5 const
+INFO  19:29:59,848 - #41 int
+INFO  19:29:59,848 - #41 pi
+INFO  19:29:59,848 - #6 =
+INFO  19:29:59,849 - #42 33
+INFO  19:29:59,850 - #7 ;
+INFO  19:29:59,851 - #3 {
+INFO  19:29:59,851 - #13 void
+INFO  19:29:59,854 - #41 main
+INFO  19:29:59,854 - #11 (
+INFO  19:29:59,855 - #12 )
+INFO  19:29:59,856 - #3 {
+INFO  19:29:59,861 - #4 }
+INFO  19:29:59,864 - #4 }
+INFO  19:29:59,880 - =====================================================================
+ERROR 19:29:59,884 - Dvostruka definicija konstante : pi na liniji 4
+INFO  19:29:59,884 - =====================================================================
+ERROR 19:29:59,885 - Parsiranje NIJE uspesno zavrseno!

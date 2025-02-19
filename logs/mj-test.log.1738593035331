@@ -1,0 +1,171 @@
+INFO  15:30:22,964 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  15:30:23,057 - #2 program
+INFO  15:30:23,057 - #41 test
+INFO  15:30:23,058 - #5 const
+INFO  15:30:23,060 - #41 int
+INFO  15:30:23,061 - #41 pi
+INFO  15:30:23,063 - #6 =
+INFO  15:30:23,063 - #42 3
+INFO  15:30:23,063 - #7 ;
+INFO  15:30:23,067 - #41 char
+INFO  15:30:23,067 - #41 x
+INFO  15:30:23,068 - #8 ,
+INFO  15:30:23,068 - #41 y
+INFO  15:30:23,068 - #9 [
+INFO  15:30:23,068 - #10 ]
+INFO  15:30:23,068 - #7 ;
+INFO  15:30:23,071 - #41 int
+INFO  15:30:23,072 - #41 c
+INFO  15:30:23,073 - #7 ;
+INFO  15:30:23,073 - #3 {
+INFO  15:30:23,073 - #13 void
+INFO  15:30:23,076 - #41 main
+INFO  15:30:23,076 - #11 (
+INFO  15:30:23,078 - #12 )
+INFO  15:30:23,079 - #41 int
+INFO  15:30:23,082 - #41 a
+INFO  15:30:23,083 - #8 ,
+INFO  15:30:23,083 - #41 x
+INFO  15:30:23,083 - #9 [
+INFO  15:30:23,083 - #10 ]
+INFO  15:30:23,084 - #7 ;
+INFO  15:30:23,084 - #3 {
+INFO  15:30:23,084 - #41 a
+INFO  15:30:23,086 - #6 =
+INFO  15:30:23,087 - #41 pi
+INFO  15:30:23,089 - #7 ;
+INFO  15:30:23,091 - #41 x
+INFO  15:30:23,092 - #9 [
+INFO  15:30:23,093 - #42 1
+INFO  15:30:23,094 - #10 ]
+INFO  15:30:23,094 - #23 ++
+INFO  15:30:23,095 - #7 ;
+INFO  15:30:23,095 - #41 y
+INFO  15:30:23,095 - #9 [
+INFO  15:30:23,095 - #42 2
+INFO  15:30:23,096 - #10 ]
+INFO  15:30:23,096 - #6 =
+INFO  15:30:23,096 - #44 c
+INFO  15:30:23,096 - #7 ;
+INFO  15:30:23,096 - #41 a
+INFO  15:30:23,097 - #6 =
+INFO  15:30:23,097 - #41 x
+INFO  15:30:23,097 - #9 [
+INFO  15:30:23,097 - #42 3
+INFO  15:30:23,098 - #10 ]
+INFO  15:30:23,098 - #29 +
+INFO  15:30:23,098 - #41 x
+INFO  15:30:23,101 - #9 [
+INFO  15:30:23,101 - #42 4
+INFO  15:30:23,102 - #10 ]
+INFO  15:30:23,102 - #32 /
+INFO  15:30:23,102 - #41 x
+INFO  15:30:23,105 - #9 [
+INFO  15:30:23,106 - #42 5
+INFO  15:30:23,106 - #10 ]
+INFO  15:30:23,106 - #7 ;
+INFO  15:30:23,107 - #17 return
+INFO  15:30:23,107 - #7 ;
+INFO  15:30:23,107 - #4 }
+INFO  15:30:23,109 - #41 int
+INFO  15:30:23,111 - #41 f1
+INFO  15:30:23,112 - #11 (
+INFO  15:30:23,112 - #41 int
+INFO  15:30:23,112 - #41 x
+INFO  15:30:23,112 - #12 )
+INFO  15:30:23,114 - #3 {
+INFO  15:30:23,114 - #17 return
+INFO  15:30:23,114 - #41 x
+INFO  15:30:23,114 - #7 ;
+INFO  15:30:23,115 - #4 }
+INFO  15:30:23,115 - #41 int
+INFO  15:30:23,115 - #41 f2
+INFO  15:30:23,115 - #11 (
+INFO  15:30:23,116 - #41 int
+INFO  15:30:23,116 - #41 x
+INFO  15:30:23,116 - #8 ,
+INFO  15:30:23,116 - #41 bool
+INFO  15:30:23,116 - #41 b
+INFO  15:30:23,116 - #8 ,
+INFO  15:30:23,117 - #41 int
+INFO  15:30:23,117 - #41 c
+INFO  15:30:23,117 - #12 )
+INFO  15:30:23,117 - #41 int
+INFO  15:30:23,117 - #41 a
+INFO  15:30:23,117 - #7 ;
+INFO  15:30:23,118 - #3 {
+INFO  15:30:23,118 - #17 return
+INFO  15:30:23,118 - #41 f1
+INFO  15:30:23,118 - #11 (
+INFO  15:30:23,119 - #41 x
+INFO  15:30:23,120 - #12 )
+INFO  15:30:23,124 - #29 +
+INFO  15:30:23,124 - #41 a
+INFO  15:30:23,124 - #29 +
+INFO  15:30:23,124 - #42 1
+INFO  15:30:23,124 - #7 ;
+INFO  15:30:23,125 - #4 }
+INFO  15:30:23,125 - #41 int
+INFO  15:30:23,125 - #41 f3
+INFO  15:30:23,125 - #11 (
+INFO  15:30:23,125 - #12 )
+INFO  15:30:23,125 - #3 {
+INFO  15:30:23,125 - #41 f2
+INFO  15:30:23,125 - #11 (
+INFO  15:30:23,126 - #41 f2
+INFO  15:30:23,126 - #11 (
+INFO  15:30:23,126 - #42 1
+INFO  15:30:23,126 - #8 ,
+INFO  15:30:23,126 - #43 1
+INFO  15:30:23,126 - #8 ,
+INFO  15:30:23,127 - #42 2
+INFO  15:30:23,127 - #12 )
+INFO  15:30:23,128 - #8 ,
+INFO  15:30:23,128 - #42 1
+INFO  15:30:23,128 - #8 ,
+INFO  15:30:23,128 - #41 f2
+INFO  15:30:23,129 - #11 (
+INFO  15:30:23,129 - #42 1
+INFO  15:30:23,129 - #8 ,
+INFO  15:30:23,129 - #43 1
+INFO  15:30:23,129 - #8 ,
+INFO  15:30:23,129 - #42 3
+INFO  15:30:23,129 - #12 )
+INFO  15:30:23,130 - #12 )
+INFO  15:30:23,130 - #7 ;
+INFO  15:30:23,130 - #17 return
+INFO  15:30:23,130 - #42 1
+INFO  15:30:23,130 - #7 ;
+INFO  15:30:23,131 - #4 }
+INFO  15:30:23,131 - #4 }
+INFO  15:30:23,144 - =====================================================================
+INFO  15:30:23,162 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 8
+INFO  15:30:23,162 - Pristup simbolickoj konstanti : pi[Kind : 0] na liniji 8
+INFO  15:30:23,163 - Pristup elementu niza :x[Kind: 5] na liniji 10
+INFO  15:30:23,164 - Pristup elementu niza :y[Kind: 5] na liniji 11
+INFO  15:30:23,164 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 12
+INFO  15:30:23,164 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:30:23,164 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:30:23,164 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:30:23,165 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 17
+INFO  15:30:23,166 - Pristup lokalnoj promeljivoj: f1[Kind : 3] na liniji 18
+INFO  15:30:23,166 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 18
+INFO  15:30:23,167 - Poziv funkcije:f1[Kind: 1] na liniji 18
+INFO  15:30:23,174 - Fp list size:1 na liniji 18
+INFO  15:30:23,175 - Ap list size:1 na liniji 18
+INFO  15:30:23,175 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 18
+INFO  15:30:23,175 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:30:23,175 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:30:23,176 - Poziv funkcije:f2[Kind: 1] na liniji 21
+INFO  15:30:23,176 - Fp list size:3 na liniji 21
+INFO  15:30:23,176 - Ap list size:3 na liniji 21
+INFO  15:30:23,176 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:30:23,176 - Poziv funkcije:f2[Kind: 1] na liniji 21
+INFO  15:30:23,176 - Fp list size:3 na liniji 21
+INFO  15:30:23,177 - Ap list size:3 na liniji 21
+INFO  15:30:23,177 - Poziv funkcije: f2[Kind: 3] na liniji 21
+INFO  15:30:23,178 - Fp list size:3 na liniji 21
+INFO  15:30:23,179 - Ap list size:3 na liniji 21
+ERROR 15:30:23,179 - [Greska tipovi] Nekompatibilnost parametara pri pozivu metode: f2 na liniji 21
+INFO  15:30:23,180 - =====================================================================
+ERROR 15:30:23,181 - Parsiranje NIJE uspesno zavrseno!

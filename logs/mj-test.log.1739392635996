@@ -1,0 +1,96 @@
+INFO  21:37:01,071 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  21:37:01,155 - #2 program
+INFO  21:37:01,155 - #41 test301
+INFO  21:37:01,156 - #5 const
+INFO  21:37:01,157 - #41 int
+INFO  21:37:01,158 - #41 nula
+INFO  21:37:01,159 - #6 =
+INFO  21:37:01,159 - #42 0
+INFO  21:37:01,159 - #7 ;
+INFO  21:37:01,161 - #5 const
+INFO  21:37:01,162 - #41 int
+INFO  21:37:01,163 - #41 jedan
+INFO  21:37:01,163 - #6 =
+INFO  21:37:01,163 - #42 1
+INFO  21:37:01,163 - #7 ;
+INFO  21:37:01,163 - #5 const
+INFO  21:37:01,164 - #41 int
+INFO  21:37:01,164 - #41 pet
+INFO  21:37:01,165 - #6 =
+INFO  21:37:01,165 - #42 5
+INFO  21:37:01,165 - #7 ;
+INFO  21:37:01,166 - #3 {
+INFO  21:37:01,166 - #41 int
+INFO  21:37:01,169 - #41 mejn
+INFO  21:37:01,169 - #11 (
+INFO  21:37:01,170 - #41 set
+INFO  21:37:01,170 - #41 a
+INFO  21:37:01,170 - #12 )
+INFO  21:37:01,172 - #41 int
+INFO  21:37:01,174 - #41 i
+INFO  21:37:01,174 - #7 ;
+INFO  21:37:01,175 - #3 {
+INFO  21:37:01,176 - #41 i
+INFO  21:37:01,177 - #6 =
+INFO  21:37:01,177 - #42 3
+INFO  21:37:01,179 - #7 ;
+INFO  21:37:01,180 - #17 return
+INFO  21:37:01,181 - #41 i
+INFO  21:37:01,181 - #7 ;
+INFO  21:37:01,181 - #4 }
+INFO  21:37:01,182 - #13 void
+INFO  21:37:01,183 - #41 main
+INFO  21:37:01,183 - #11 (
+INFO  21:37:01,183 - #12 )
+INFO  21:37:01,184 - #41 int
+INFO  21:37:01,185 - #41 i
+INFO  21:37:01,185 - #8 ,
+INFO  21:37:01,185 - #41 j
+INFO  21:37:01,185 - #7 ;
+INFO  21:37:01,185 - #41 int
+INFO  21:37:01,186 - #41 b
+INFO  21:37:01,186 - #9 [
+INFO  21:37:01,186 - #10 ]
+INFO  21:37:01,186 - #7 ;
+INFO  21:37:01,186 - #3 {
+INFO  21:37:01,186 - #41 i
+INFO  21:37:01,186 - #6 =
+INFO  21:37:01,187 - #42 5
+INFO  21:37:01,187 - #7 ;
+INFO  21:37:01,187 - #41 b
+INFO  21:37:01,187 - #6 =
+INFO  21:37:01,187 - #40 new
+INFO  21:37:01,187 - #41 int
+INFO  21:37:01,188 - #9 [
+INFO  21:37:01,188 - #42 3
+INFO  21:37:01,188 - #10 ]
+INFO  21:37:01,188 - #7 ;
+INFO  21:37:01,189 - #41 i
+INFO  21:37:01,189 - #6 =
+INFO  21:37:01,189 - #41 mejn
+INFO  21:37:01,189 - #11 (
+INFO  21:37:01,189 - #41 b
+INFO  21:37:01,190 - #12 )
+INFO  21:37:01,192 - #7 ;
+INFO  21:37:01,193 - #22 print
+INFO  21:37:01,193 - #11 (
+INFO  21:37:01,193 - #41 i
+INFO  21:37:01,193 - #12 )
+INFO  21:37:01,193 - #7 ;
+INFO  21:37:01,193 - #4 }
+INFO  21:37:01,194 - #4 }
+INFO  21:37:01,207 - =====================================================================
+INFO  21:37:01,224 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  21:37:01,225 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  21:37:01,225 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 14
+INFO  21:37:01,225 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 15
+INFO  21:37:01,225 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 16
+INFO  21:37:01,226 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 16
+INFO  21:37:01,226 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 16
+INFO  21:37:01,227 - Poziv funkcije:mejn[Kind: 1] na liniji 16
+INFO  21:37:01,233 - Fp list size:1 na liniji 16
+INFO  21:37:01,233 - Ap list size:1 na liniji 16
+ERROR 21:37:01,233 - Neodgovarajuci tipovi u pozivu funkcije: ocekuje se setType na liniji 16
+INFO  21:37:01,234 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 17
+INFO  21:37:01,234 - =====================================================================
+ERROR 21:37:01,235 - Parsiranje NIJE uspesno zavrseno!

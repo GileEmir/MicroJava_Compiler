@@ -1,0 +1,71 @@
+INFO  17:38:34,453 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  17:38:34,511 - #2 program
+INFO  17:38:34,512 - #41 test301
+INFO  17:38:34,512 - #5 const
+INFO  17:38:34,513 - #41 int
+INFO  17:38:34,513 - #41 nula
+INFO  17:38:34,514 - #6 =
+INFO  17:38:34,514 - #42 0
+INFO  17:38:34,514 - #7 ;
+INFO  17:38:34,516 - #5 const
+INFO  17:38:34,516 - #41 int
+INFO  17:38:34,516 - #41 jedan
+INFO  17:38:34,516 - #6 =
+INFO  17:38:34,517 - #42 1
+INFO  17:38:34,517 - #7 ;
+INFO  17:38:34,517 - #5 const
+INFO  17:38:34,517 - #41 int
+INFO  17:38:34,517 - #41 pet
+INFO  17:38:34,517 - #6 =
+INFO  17:38:34,517 - #42 5
+INFO  17:38:34,517 - #7 ;
+INFO  17:38:34,517 - #3 {
+INFO  17:38:34,518 - #13 void
+INFO  17:38:34,527 - #41 main
+INFO  17:38:34,527 - #11 (
+INFO  17:38:34,527 - #12 )
+INFO  17:38:34,528 - #41 int
+INFO  17:38:34,530 - #41 i
+INFO  17:38:34,530 - #8 ,
+INFO  17:38:34,530 - #41 j
+INFO  17:38:34,530 - #7 ;
+INFO  17:38:34,531 - #3 {
+INFO  17:38:34,532 - #41 i
+INFO  17:38:34,532 - #6 =
+INFO  17:38:34,533 - #42 5
+INFO  17:38:34,533 - #7 ;
+INFO  17:38:34,535 - #41 i
+INFO  17:38:34,535 - #6 =
+INFO  17:38:34,536 - #41 mejn
+INFO  17:38:34,536 - #11 (
+INFO  17:38:34,536 - #42 4
+INFO  17:38:34,537 - #12 )
+INFO  17:38:34,539 - #7 ;
+INFO  17:38:34,540 - #22 print
+INFO  17:38:34,540 - #11 (
+INFO  17:38:34,540 - #41 i
+INFO  17:38:34,540 - #12 )
+INFO  17:38:34,540 - #7 ;
+INFO  17:38:34,540 - #4 }
+INFO  17:38:34,540 - #41 int
+INFO  17:38:34,541 - #41 mejn
+INFO  17:38:34,542 - #11 (
+INFO  17:38:34,542 - #41 int
+INFO  17:38:34,542 - #41 a
+INFO  17:38:34,542 - #12 )
+INFO  17:38:34,543 - #3 {
+INFO  17:38:34,543 - #17 return
+INFO  17:38:34,544 - #41 a
+INFO  17:38:34,544 - #7 ;
+INFO  17:38:34,544 - #4 }
+INFO  17:38:34,544 - #4 }
+INFO  17:38:34,551 - =====================================================================
+INFO  17:38:34,561 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 17
+INFO  17:38:34,561 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 18
+ERROR 17:38:34,562 - Pristup nedefinisanoj promeljivoj:mejn na liniji 18
+ERROR 17:38:34,562 - Poziv neadekvatne metode: noObj na liniji 18
+ERROR 17:38:34,562 - Neadekvatna dodela vrednosti u promenljivu: i na liniji 18
+INFO  17:38:34,562 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 19
+INFO  17:38:34,563 - Koriscenje formalnog parametra: a[Kind : 1] na liniji 23
+INFO  17:38:34,563 - =====================================================================
+ERROR 17:38:34,563 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,44 @@
+INFO  20:03:53,250 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:03:53,296 - #2 program
+INFO  20:03:53,297 - #41 test
+INFO  20:03:53,297 - #5 const
+INFO  20:03:53,298 - #41 int
+INFO  20:03:53,298 - #41 pi
+INFO  20:03:53,299 - #6 =
+INFO  20:03:53,299 - #42 3
+INFO  20:03:53,299 - #7 ;
+INFO  20:03:53,300 - #41 char
+INFO  20:03:53,301 - #41 x
+INFO  20:03:53,301 - #7 ;
+INFO  20:03:53,302 - #41 bool
+INFO  20:03:53,303 - #41 tru
+INFO  20:03:53,304 - #7 ;
+INFO  20:03:53,304 - #3 {
+INFO  20:03:53,304 - #13 void
+INFO  20:03:53,305 - #41 main
+INFO  20:03:53,305 - #11 (
+INFO  20:03:53,305 - #12 )
+INFO  20:03:53,306 - #41 bool
+INFO  20:03:53,307 - #41 b
+INFO  20:03:53,307 - #7 ;
+INFO  20:03:53,308 - #3 {
+INFO  20:03:53,308 - #17 return
+INFO  20:03:53,309 - #7 ;
+INFO  20:03:53,309 - #4 }
+INFO  20:03:53,309 - #13 void
+INFO  20:03:53,310 - #41 mejn
+INFO  20:03:53,311 - #11 (
+INFO  20:03:53,311 - #41 int
+INFO  20:03:53,311 - #41 a
+INFO  20:03:53,311 - #8 ,
+INFO  20:03:53,311 - #41 error_param
+INFO  20:03:53,311 - #12 )
+ERROR 20:03:53,312 - 
+Sintaksna greska na liniji 11
+INFO  20:03:53,312 - #3 {
+INFO  20:03:53,312 - #4 }
+INFO  20:03:53,312 - #4 }
+ERROR 20:03:53,317 - Oporavak od greske u deklaraciji formalnog parametra funkcije. Linija: 11
+INFO  20:03:53,323 - =====================================================================
+INFO  20:03:53,326 - =====================================================================
+ERROR 20:03:53,326 - Parsiranje NIJE uspesno zavrseno!

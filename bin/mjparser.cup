@@ -1,0 +1,321 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+    boolean errorDetected;
+    
+    Logger log = Logger.getLogger(getClass());
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+        done_parsing();
+        report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+        errorDetected = true;
+        StringBuilder msg = new StringBuilder(message); 
+        if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+:}
+
+init with {:
+    errorDetected = false;
+:}
+
+scan with {:
+    Symbol s = this.getScanner().next_token();
+    if (s != null && s.value != null) 
+        log.info(s.toString() + " " + s.value.toString());
+    return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, CONST, ASSIGN, SEMI, COMMA, LBRACKET, RBRACKET, LPAREN, RPAREN, VOID, IF, ELSE, BREAK, RETURN, CONTINUE, DO, WHILE, READ, PRINT, INC, DEC, OR, AND, MAP, UNION;
+terminal PLUS, MINUS , MUL, DIV, REM, EQUAL, NOTEQUAL, GREATER, GREATEREQUAL, LESS, LESSEQUAL, NEW;
+terminal String IDENT;
+terminal Integer NUMBER, BOOL;
+terminal Character CHARACTER;
+
+nonterminal Program, ConstVarDeclList, MethodDeclList, ConstDeclList, ConstDeclMore, ConstDecl, Constant, ProgramName, VarDeclList, VarDecl, VarDeclMore;
+nonterminal VarDeclListRec, MethodDecl, FormParList, FormParMore, FormPar, StatementList, Statement, MethodSignature, Label;
+nonterminal DesignatorStatement, ElseStatement, Assignop, ActParList, ActParMore, ActPar;
+nonterminal Addop, Relop, Mulop, Setop, DoNonTerm, ActParListBegin, Else, WhileNonTerm;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorElement, MulopFactorList, Term, AddopTermList, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTermList, CondTerm, CondFactList, CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodReturnAndName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+
+precedence left ELSE;
+
+/* Example: program myProgram { ... } */
+Program ::= (Program) PROG ProgramName ConstVarDeclList LBRACE MethodDeclList RBRACE; /* Example: program myProgram { ... } */
+
+ProgramName ::= (ProgramName) IDENT /* Example: myProgram */;
+
+
+ConstVarDeclList ::= 	(ConstVarDeclList_const) ConstVarDeclList ConstDeclList /* Example: const int x = 1; const int y; */
+                        |
+                        (ConstVarDeclList_var) ConstVarDeclList VarDeclList /* Example: const int x = 1;const int y; */
+                        |
+                        (ConstVarDeclList_empty) /*EPSILON*/;
+
+
+ConstDeclList ::= 		(ConstDeclList_normal) CONST Type ConstDecl ConstDeclMore SEMI /* Example: const int x = 1, y = 2; */
+						|
+		                (ConstDeclList_error) error:e 
+		                {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive.Linija :" + eleft, null); :};
+
+ConstDecl ::= 			(ConstDecl) IDENT ASSIGN Constant /* Example: x = 1 */;
+
+
+ConstDeclMore ::= 		(ConstDeclMore_comma) COMMA ConstDecl ConstDeclMore /* Example: , y = 2 */
+                        |
+                        (ConstDeclMore_empty) /*EPSILON*/;
+
+
+Constant ::= 			(Constant_number) NUMBER /* Example: 1 */
+                        |
+                        (Constant_char) CHARACTER /* Example: 'a' */
+                        |
+                        (Constant_bool) BOOL /* Example: true */;
+
+
+VarDeclList ::= 		(VarDeclList_normal) Type VarDecl VarDeclMore SEMI /* Example: int x, y; */;
+
+
+VarDecl ::= 			(VarDecl_var) IDENT /* Example: x */
+                        |
+                        (VarDecl_array) IDENT LBRACKET RBRACKET /* Example: y[] */;
+
+
+VarDeclMore ::= 		(VarDeclMore_comma) COMMA VarDecl VarDeclMore /* Example: , y */
+                        |
+                        (VarDeclMore_empty) /*EPSILON*/;
+
+
+Type ::= (Type) IDENT /* Example: int, float, MyClass */;
+
+
+MethodDeclList ::= 		(MethodDeclList_recursive) MethodDeclList MethodDecl /* Example: void methodName() { ... } */
+                        |
+                        (MethodDeclList_e) /*EPSILON*/;
+
+/* Example: void methodName(int a) int x; { ... } 
+   Example with epsilon: void methodName(int a) { ... } */
+MethodDecl ::= 			(MethodDecl) MethodSignature VarDeclListRec LBRACE StatementList RBRACE /* Example: void methodName(int a) int x; { ... } */;
+
+
+MethodSignature ::= 	(MethodSignature) MethodReturnAndName LPAREN FormParList RPAREN;
+
+
+MethodReturnAndName ::= (MethodReturnAndName_type) Type IDENT /* Example: int methodName */
+                        |
+                        (MethodReturnAndName_void) VOID IDENT /* Example: void methodName */;
+
+
+VarDeclListRec ::= 		(VarDeclListRec_recursive) VarDeclListRec VarDeclList /* Example: int x; int y; */
+                        |
+                        (VarDeclListRec_e) /*EPSILON*/;
+
+
+FormParList ::= 		(FormParList_recursive) FormPar FormParMore /* Example: int a, float b */
+                        |
+                        (FormParList_empty) /*EPSILON*/;
+
+
+FormParMore ::=			(FormParMore_recursive) COMMA FormPar FormParMore /* Example: , b */
+                        |
+                        (FormParMore_empty)/*EPSILON*/;
+
+
+FormPar ::= (FormPar_var) Type IDENT
+           |
+           (FormPar_array) Type IDENT LBRACKET RBRACKET
+           |
+           (FormPar_error) error:e
+           {: parser.report_error("Oporavak od greske u deklaraciji formalnog parametra funkcije. Linija: " + eleft, null); :};
+
+StatementList ::=		(StatementList_recursive) StatementList Statement /* Example: statement1; statement2; */
+                        |
+                        (StatementList_empty) /*EPSILON*/;
+                        /*statement_label label COLON statement*/
+
+/*label (label) IDENT*/
+
+Statement ::= 			(Statement_designator) DesignatorStatement SEMI /* Example: x = 5; */
+                        |
+                        (Statement_if) IF LPAREN Condition RPAREN Statement ElseStatement /* Example: if (x > 0) { ... } else { ... } */
+                        |
+                        (Statement_if_error) IF LPAREN error:e 
+			            {: parser.report_error("Oporavak od greske u logickom izrazu unutar if konstrukcije.Linija : " + eleft, null); :} RPAREN Statement ElseStatement
+			            |
+                        (Statement_break) BREAK SEMI /* Example: break; */
+                        |
+                        (Statement_continue) CONTINUE SEMI /* Example: continue; */
+                        |
+                        (Statement_return_void) RETURN SEMI /* Example: return; */
+                        |
+                        (Statement_return_expr) RETURN Expr SEMI /* Example: return expr; */
+                        |
+                        (Statement_read) READ LPAREN Designator RPAREN SEMI /* Example: read(designator); */
+                        |
+                        (Statement_print) PRINT LPAREN Expr RPAREN SEMI /* Example: print(expr); */
+                        |
+                        (Statement_print_number) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI /* Example: print(expr, number); */
+                        |
+                        (Statement_do_empty) DoNonTerm Statement WhileNonTerm LPAREN RPAREN SEMI /* Example: do statement while(); */
+                        |
+                        (Statement_do_condition) DoNonTerm Statement WhileNonTerm LPAREN Condition RPAREN SEMI /* Example: do statement while(condition); */
+                        |
+                        (Statement_do_condition_designator) DoNonTerm Statement WhileNonTerm LPAREN Condition COMMA DesignatorStatement RPAREN SEMI /* Example: do statement while(condition, designatorStatement); */
+                        |
+                        (Statement_block) LBRACE StatementList RBRACE /* Example: { statementList } */;
+                        /*statement goto GOTO IDENT SEMI*/
+
+WhileNonTerm ::=		(WhileNonTerm) WHILE;
+
+DoNonTerm ::=			(DoNonTerm) DO;
+
+ElseStatement ::= 		(ElseStatement_else) Else Statement /* Example: else statement */
+                        |
+                        (ElseStatement_empty) /*EPSILON*/;
+                        
+Else ::=				(Else) ELSE;
+                        
+Condition ::= 			(Condition) CondTermList; 
+
+CondTermList ::= 		(CondTermList_or) CondTermList OR CondTerm /* Example: condition1 || condition2 */
+		                |
+		                (CondTermList_ct) CondTerm /* Example: condition */;
+
+CondTerm ::= 			(CondTerm) CondFactList;
+
+CondFactList ::= 		(CondFactList_and) CondFactList AND CondFact /* Example: condition1 && condition2 */
+                 		|
+                 		(CondFactList_cf) CondFact /* Example: condition */;
+
+CondFact ::= 			(CondFact_expr) Expr /* Example: expr */
+             			|
+             			(CondFact_expr_r_expr) Expr Relop Expr /* Example: expr1 == expr2 */;	
+                        
+                        
+DesignatorStatement ::= (DesignatorStatement_assign) Designator Assignop Expr	/* Example: x = 5 */
+						|
+						(DesignatorStatement_error) error:e	 /* Example: error */
+						{: parser.report_error("Oporavak od greske u iskazu dodele. Linija: " + eleft, null); :}
+						|
+						(DesignatorStatement_meth) Designator LPAREN ActParList RPAREN /* Example: method(param1, param2) */
+						|
+						(DesignatorStatement_assign_designator) Designator Assignop Designator Setop Designator /* Example: x = y union z */
+						|
+						(DesignatorStatement_incr) Designator INC /* Example: x++ */
+						|
+						(DesignatorStatement_decr) Designator DEC /* Example: x-- */;
+						
+ActParList ::= 			(ActParList_recursive)ActParListBegin ActPar ActParMore /* Example: param1, param2 */
+		               	|
+		               	(ActParList_e) ActParListBegin /*EPSILON*/;
+		     
+ActParListBegin ::=		(ActParListBegin)/*EPSILON*/ ;		     
+		               	
+ActParMore ::= 			(ActParMore_recursive) COMMA ActPar ActParMore /* Example: , param */
+						|
+						(ActParMore_empty) /*EPSILON*/;
+						
+ActPar ::=				(ActPar) Expr;
+
+
+Expr ::= 				(Expr_addop) AddopTermList
+						|
+						(Expr_designator) Designator MAP Designator;
+
+AddopTermList ::=		(AddopTermList_add) AddopTermList Addop Term /* Example: expr + term */
+						|
+						(AddopTermList_term) Term /* Example: term */;
+						
+Term ::=				(Term) MulopFactorList;
+
+
+MulopFactorList	::=		(MulopFactorList_mul) MulopFactorList Mulop Factor /* Example: term * factor */
+						|
+						(MulopFactorList_factor) Factor /* Example: factor */;
+
+Factor ::=				(Factor_minus) MINUS FactorElement
+						|
+						(Factor_plus) FactorElement;
+
+						
+						
+FactorElement ::= 		(FactorElement_var) Designator /* Example: x */
+		              	|
+						(FactorElement_method) Designator LPAREN ActParList RPAREN /* Example: method(param1, param2) */
+		              	|
+		              	(FactorElement_number) NUMBER /* Example: 5 */
+		              	|
+		         	    (FactorElement_character) CHARACTER /* Example: 'a' */
+		              	|
+		              	(FactorElement_bool) BOOL /* Example: true */
+		              	|
+		              	(FactorElement_new_array) NEW Type LBRACKET Expr RBRACKET /* Example: new int[5] */
+		              	|
+		              	(FactorElement_new_record) NEW Type LPAREN ActParList RPAREN /* Example: new MyClass(param1, param2) */
+		              	|
+		              	(FactorElement_expr) LPAREN Expr RPAREN /* Example: (expr) */;
+		              	
+		              	
+Designator ::=			(Designator_var) IDENT /* Example: x */
+						|
+						(Designator_elem) DesignatorArrayName LBRACKET Expr RBRACKET /* Example: array[5] */; 
+					
+						
+DesignatorArrayName ::=	(DesignatorArrayName) IDENT;
+
+
+Label ::=	IDENT;
+
+Assignop ::= (Assignop) ASSIGN; /* Example: = */
+
+Addop ::= (Addop_plus) PLUS /* Example: + */
+          |
+          (Addop_minus) MINUS; /* Example: - */
+
+Mulop ::= (Mulop_mul) MUL /* Example: * */
+          |
+          (Mulop_div) DIV /* Example: / */
+          |
+          (Mulop_rem) REM; /* Example: % */
+
+Relop ::= (Relop_eq) EQUAL /* Example: == */
+          |
+          (Relop_ne) NOTEQUAL /* Example: != */
+          |
+          (Relop_gt) GREATER /* Example: > */
+          |
+          (Relop_ge) GREATEREQUAL /* Example: >= */
+          |
+          (Relop_lt) LESS /* Example: < */
+          |
+          (Relop_le) LESSEQUAL; /* Example: <= */
+
+Setop ::= (Setop) UNION;
+
+
+						

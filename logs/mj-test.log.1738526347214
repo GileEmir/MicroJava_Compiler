@@ -1,0 +1,61 @@
+INFO  20:54:40,238 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:54:40,296 - #2 program
+INFO  20:54:40,296 - #41 test
+INFO  20:54:40,297 - #5 const
+INFO  20:54:40,299 - #41 int
+INFO  20:54:40,299 - #41 pi
+INFO  20:54:40,300 - #6 =
+INFO  20:54:40,300 - #42 3
+INFO  20:54:40,301 - #7 ;
+INFO  20:54:40,302 - #5 const
+INFO  20:54:40,303 - #41 ifas
+INFO  20:54:40,303 - #7 ;
+ERROR 20:54:40,303 - 
+Sintaksna greska na liniji 4
+INFO  20:54:40,303 - #41 bool
+INFO  20:54:40,304 - #41 tru
+INFO  20:54:40,304 - #7 ;
+INFO  20:54:40,305 - #3 {
+ERROR 20:54:40,310 - Oporavak od greske u deklaraciji globalne promenljive.Linija :8
+INFO  20:54:40,312 - #13 void
+INFO  20:54:40,313 - #41 main
+INFO  20:54:40,313 - #11 (
+INFO  20:54:40,314 - #12 )
+INFO  20:54:40,314 - #3 {
+INFO  20:54:40,316 - #14 if
+INFO  20:54:40,317 - #11 (
+INFO  20:54:40,317 - #41 x
+INFO  20:54:40,318 - #36 >
+INFO  20:54:40,319 - #42 0
+INFO  20:54:40,320 - #26 &&
+INFO  20:54:40,321 - #12 )
+ERROR 20:54:40,321 - 
+Sintaksna greska na liniji 8
+INFO  20:54:40,321 - #3 {
+INFO  20:54:40,321 - #41 x
+INFO  20:54:40,321 - #6 =
+ERROR 20:54:40,322 - Oporavak od greske u logickom izrazu unutar if konstrukcije.Linija : 8
+INFO  20:54:40,322 - #42 1
+INFO  20:54:40,323 - #7 ;
+INFO  20:54:40,324 - #4 }
+INFO  20:54:40,324 - #15 else
+INFO  20:54:40,324 - #3 {
+INFO  20:54:40,325 - #41 x
+INFO  20:54:40,325 - #6 =
+INFO  20:54:40,325 - #41 a
+INFO  20:54:40,325 - #29 +
+INFO  20:54:40,325 - #31 *
+ERROR 20:54:40,325 - 
+Sintaksna greska na liniji 12
+INFO  20:54:40,325 - #7 ;
+INFO  20:54:40,326 - #4 }
+INFO  20:54:40,326 - #17 return
+INFO  20:54:40,326 - #7 ;
+ERROR 20:54:40,326 - Oporavak od greske u iskazu dodele. Linija: 15
+INFO  20:54:40,328 - #4 }
+INFO  20:54:40,328 - #4 }
+INFO  20:54:40,338 - =====================================================================
+ERROR 20:54:40,342 - Pristup nedefinisanoj promeljivoj:x na liniji 10
+ERROR 20:54:40,342 - Neadekvatna dodela vrednosti u promenljivu: noObj na liniji 10
+INFO  20:54:40,343 - =====================================================================
+ERROR 20:54:40,344 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,78 @@
+INFO  21:20:27,234 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  21:20:27,285 - #2 program
+INFO  21:20:27,285 - #41 test
+INFO  21:20:27,285 - #5 const
+INFO  21:20:27,286 - #41 int
+INFO  21:20:27,286 - #41 pi
+INFO  21:20:27,287 - #6 =
+INFO  21:20:27,287 - #42 3
+INFO  21:20:27,287 - #7 ;
+INFO  21:20:27,289 - #41 char
+INFO  21:20:27,289 - #41 x
+INFO  21:20:27,289 - #8 ,
+INFO  21:20:27,290 - #41 y
+INFO  21:20:27,290 - #9 [
+INFO  21:20:27,290 - #10 ]
+INFO  21:20:27,290 - #7 ;
+INFO  21:20:27,290 - #3 {
+INFO  21:20:27,291 - #13 void
+INFO  21:20:27,292 - #41 main
+INFO  21:20:27,292 - #11 (
+INFO  21:20:27,292 - #12 )
+INFO  21:20:27,293 - #41 int
+INFO  21:20:27,294 - #41 a
+INFO  21:20:27,295 - #8 ,
+INFO  21:20:27,295 - #41 x
+INFO  21:20:27,295 - #9 [
+INFO  21:20:27,295 - #10 ]
+INFO  21:20:27,295 - #7 ;
+INFO  21:20:27,295 - #3 {
+INFO  21:20:27,295 - #41 a
+INFO  21:20:27,296 - #6 =
+INFO  21:20:27,296 - #41 pi
+INFO  21:20:27,297 - #7 ;
+INFO  21:20:27,298 - #41 x
+INFO  21:20:27,298 - #9 [
+INFO  21:20:27,299 - #42 1
+INFO  21:20:27,299 - #10 ]
+INFO  21:20:27,299 - #23 ++
+INFO  21:20:27,299 - #7 ;
+INFO  21:20:27,299 - #41 y
+INFO  21:20:27,299 - #9 [
+INFO  21:20:27,299 - #42 2
+INFO  21:20:27,300 - #10 ]
+INFO  21:20:27,300 - #7 ;
+ERROR 21:20:27,300 - 
+Sintaksna greska na liniji 11
+INFO  21:20:27,300 - #41 a
+INFO  21:20:27,300 - #6 =
+INFO  21:20:27,300 - #41 x
+ERROR 21:20:27,305 - Oporavak od greske u iskazu dodele. Linija: 26
+INFO  21:20:27,306 - #9 [
+INFO  21:20:27,306 - #42 3
+INFO  21:20:27,306 - #10 ]
+INFO  21:20:27,306 - #29 +
+INFO  21:20:27,306 - #41 x
+INFO  21:20:27,308 - #9 [
+INFO  21:20:27,308 - #42 4
+INFO  21:20:27,308 - #10 ]
+INFO  21:20:27,308 - #32 /
+INFO  21:20:27,308 - #41 x
+INFO  21:20:27,309 - #9 [
+INFO  21:20:27,309 - #42 5
+INFO  21:20:27,309 - #10 ]
+INFO  21:20:27,310 - #7 ;
+INFO  21:20:27,310 - #17 return
+INFO  21:20:27,310 - #7 ;
+INFO  21:20:27,310 - #4 }
+INFO  21:20:27,311 - #4 }
+INFO  21:20:27,318 - =====================================================================
+INFO  21:20:27,326 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 8
+INFO  21:20:27,326 - Pristup simbolickoj konstanti : pi[Kind : 0] na liniji 8
+INFO  21:20:27,326 - Pristup elementu niza :x[Kind: 5] na liniji 10
+INFO  21:20:27,327 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 12
+INFO  21:20:27,327 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  21:20:27,327 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  21:20:27,327 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  21:20:27,327 - =====================================================================
+ERROR 21:20:27,328 - Parsiranje NIJE uspesno zavrseno!

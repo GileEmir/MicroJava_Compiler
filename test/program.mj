@@ -1,0 +1,25 @@
+program test301
+
+const int nula = 0;
+const int jedan = 1;
+const int pet = 5;
+
+{
+    int mejn(int a) int i; {
+        i = 3;
+        return i;
+    }
+
+    void main() int i, j[]; set b,b1,b2; char c,t[];{
+	    j = new int[4];
+	    b = new set[6];
+	    i = 2;
+	    add(b,i);
+	    i = 3;
+	    add(b,i);
+	    i = 3;
+	    add(b,i);
+		//add(b,i);
+		print(b);
+    }
+}

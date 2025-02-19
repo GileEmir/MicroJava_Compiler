@@ -1,0 +1,113 @@
+INFO  15:01:56,667 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  15:01:56,777 - #2 program
+INFO  15:01:56,777 - #41 test
+INFO  15:01:56,778 - #5 const
+INFO  15:01:56,780 - #41 int
+INFO  15:01:56,780 - #41 pi
+INFO  15:01:56,782 - #6 =
+INFO  15:01:56,782 - #42 3
+INFO  15:01:56,782 - #7 ;
+INFO  15:01:56,784 - #41 char
+INFO  15:01:56,785 - #41 x
+INFO  15:01:56,785 - #8 ,
+INFO  15:01:56,785 - #41 y
+INFO  15:01:56,785 - #9 [
+INFO  15:01:56,785 - #10 ]
+INFO  15:01:56,786 - #7 ;
+INFO  15:01:56,787 - #41 int
+INFO  15:01:56,787 - #41 c
+INFO  15:01:56,788 - #7 ;
+INFO  15:01:56,788 - #3 {
+INFO  15:01:56,788 - #13 void
+INFO  15:01:56,789 - #41 main
+INFO  15:01:56,789 - #11 (
+INFO  15:01:56,790 - #12 )
+INFO  15:01:56,791 - #41 int
+INFO  15:01:56,794 - #41 a
+INFO  15:01:56,794 - #8 ,
+INFO  15:01:56,794 - #41 x
+INFO  15:01:56,795 - #9 [
+INFO  15:01:56,795 - #10 ]
+INFO  15:01:56,795 - #7 ;
+INFO  15:01:56,795 - #3 {
+INFO  15:01:56,796 - #41 a
+INFO  15:01:56,798 - #6 =
+INFO  15:01:56,798 - #41 pi
+INFO  15:01:56,799 - #7 ;
+INFO  15:01:56,801 - #41 x
+INFO  15:01:56,802 - #9 [
+INFO  15:01:56,803 - #42 1
+INFO  15:01:56,803 - #10 ]
+INFO  15:01:56,803 - #23 ++
+INFO  15:01:56,803 - #7 ;
+INFO  15:01:56,804 - #41 y
+INFO  15:01:56,804 - #9 [
+INFO  15:01:56,804 - #42 2
+INFO  15:01:56,804 - #10 ]
+INFO  15:01:56,804 - #6 =
+INFO  15:01:56,804 - #44 c
+INFO  15:01:56,805 - #7 ;
+INFO  15:01:56,805 - #41 a
+INFO  15:01:56,805 - #6 =
+INFO  15:01:56,805 - #41 x
+INFO  15:01:56,805 - #9 [
+INFO  15:01:56,805 - #42 3
+INFO  15:01:56,805 - #10 ]
+INFO  15:01:56,805 - #29 +
+INFO  15:01:56,806 - #41 x
+INFO  15:01:56,808 - #9 [
+INFO  15:01:56,808 - #42 4
+INFO  15:01:56,808 - #10 ]
+INFO  15:01:56,808 - #32 /
+INFO  15:01:56,809 - #41 x
+INFO  15:01:56,811 - #9 [
+INFO  15:01:56,811 - #42 5
+INFO  15:01:56,812 - #10 ]
+INFO  15:01:56,812 - #7 ;
+INFO  15:01:56,813 - #17 return
+INFO  15:01:56,813 - #7 ;
+INFO  15:01:56,813 - #4 }
+INFO  15:01:56,814 - #41 int
+INFO  15:01:56,816 - #41 mejn
+INFO  15:01:56,816 - #11 (
+INFO  15:01:56,816 - #41 int
+INFO  15:01:56,816 - #41 c
+INFO  15:01:56,816 - #12 )
+INFO  15:01:56,818 - #41 int
+INFO  15:01:56,818 - #41 a
+INFO  15:01:56,818 - #7 ;
+INFO  15:01:56,818 - #3 {
+INFO  15:01:56,818 - #41 a
+INFO  15:01:56,819 - #6 =
+INFO  15:01:56,819 - #41 mejn
+INFO  15:01:56,819 - #11 (
+INFO  15:01:56,819 - #42 2
+INFO  15:01:56,820 - #12 )
+INFO  15:01:56,823 - #7 ;
+INFO  15:01:56,823 - #41 a
+INFO  15:01:56,823 - #6 =
+INFO  15:01:56,823 - #41 c
+INFO  15:01:56,824 - #7 ;
+INFO  15:01:56,824 - #17 return
+INFO  15:01:56,824 - #41 a
+INFO  15:01:56,824 - #7 ;
+INFO  15:01:56,824 - #4 }
+INFO  15:01:56,824 - #4 }
+INFO  15:01:56,832 - =====================================================================
+INFO  15:01:56,847 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 8
+INFO  15:01:56,847 - Pristup simbolickoj konstanti : pi[Kind : 0] na liniji 8
+INFO  15:01:56,848 - Pristup elementu niza :x[Kind: 5] na liniji 10
+INFO  15:01:56,848 - Pristup elementu niza :y[Kind: 5] na liniji 11
+INFO  15:01:56,848 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 12
+INFO  15:01:56,848 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:01:56,848 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:01:56,848 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:01:56,849 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 18
+INFO  15:01:56,849 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 18
+INFO  15:01:56,850 - Poziv funkcije:mejn[Kind: 1] na liniji 18
+ERROR 15:01:56,852 - [Err1] Nekompatibilnost parametara pri pozivu metode: mejn na liniji 18
+INFO  15:01:56,852 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 19
+INFO  15:01:56,852 - Koriscenje formalnog parametra: c[Kind : 1] na liniji 19
+INFO  15:01:56,852 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 20
+INFO  15:01:56,852 - =====================================================================
+ERROR 15:01:56,853 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,189 @@
+INFO  00:35:49,837 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  00:35:49,882 - #2 program
+INFO  00:35:49,883 - #41 test301
+INFO  00:35:49,883 - #5 const
+INFO  00:35:49,885 - #41 int
+INFO  00:35:49,885 - #41 nula
+INFO  00:35:49,886 - #6 =
+INFO  00:35:49,886 - #42 0
+INFO  00:35:49,886 - #7 ;
+INFO  00:35:49,888 - #5 const
+INFO  00:35:49,888 - #41 int
+INFO  00:35:49,888 - #41 jedan
+INFO  00:35:49,888 - #6 =
+INFO  00:35:49,889 - #42 1
+INFO  00:35:49,889 - #7 ;
+INFO  00:35:49,889 - #5 const
+INFO  00:35:49,889 - #41 int
+INFO  00:35:49,889 - #41 pet
+INFO  00:35:49,889 - #6 =
+INFO  00:35:49,889 - #42 5
+INFO  00:35:49,889 - #7 ;
+INFO  00:35:49,889 - #3 {
+INFO  00:35:49,890 - #41 int
+INFO  00:35:49,898 - #41 mejn
+INFO  00:35:49,898 - #11 (
+INFO  00:35:49,898 - #41 int
+INFO  00:35:49,899 - #41 a
+INFO  00:35:49,899 - #12 )
+INFO  00:35:49,899 - #41 int
+INFO  00:35:49,901 - #41 i
+INFO  00:35:49,902 - #7 ;
+INFO  00:35:49,902 - #3 {
+INFO  00:35:49,903 - #41 i
+INFO  00:35:49,903 - #6 =
+INFO  00:35:49,904 - #42 3
+INFO  00:35:49,904 - #7 ;
+INFO  00:35:49,906 - #17 return
+INFO  00:35:49,906 - #7 ;
+INFO  00:35:49,906 - #4 }
+INFO  00:35:49,907 - #13 void
+INFO  00:35:49,908 - #41 main
+INFO  00:35:49,908 - #11 (
+INFO  00:35:49,908 - #12 )
+INFO  00:35:49,908 - #41 int
+INFO  00:35:49,909 - #41 i
+INFO  00:35:49,909 - #8 ,
+INFO  00:35:49,909 - #41 j
+INFO  00:35:49,909 - #9 [
+INFO  00:35:49,909 - #10 ]
+INFO  00:35:49,909 - #7 ;
+INFO  00:35:49,909 - #41 set
+INFO  00:35:49,909 - #41 b
+INFO  00:35:49,909 - #8 ,
+INFO  00:35:49,910 - #41 b1
+INFO  00:35:49,910 - #8 ,
+INFO  00:35:49,910 - #41 b2
+INFO  00:35:49,910 - #7 ;
+INFO  00:35:49,910 - #41 char
+INFO  00:35:49,910 - #41 c
+INFO  00:35:49,910 - #8 ,
+INFO  00:35:49,910 - #41 t
+INFO  00:35:49,910 - #9 [
+INFO  00:35:49,910 - #10 ]
+INFO  00:35:49,911 - #7 ;
+INFO  00:35:49,911 - #3 {
+INFO  00:35:49,911 - #41 i
+INFO  00:35:49,911 - #6 =
+INFO  00:35:49,911 - #42 5
+INFO  00:35:49,911 - #7 ;
+INFO  00:35:49,911 - #41 b
+INFO  00:35:49,911 - #6 =
+INFO  00:35:49,911 - #40 new
+INFO  00:35:49,912 - #41 set
+INFO  00:35:49,912 - #9 [
+INFO  00:35:49,912 - #42 3
+INFO  00:35:49,912 - #10 ]
+INFO  00:35:49,912 - #7 ;
+INFO  00:35:49,912 - #41 b1
+INFO  00:35:49,912 - #6 =
+INFO  00:35:49,912 - #40 new
+INFO  00:35:49,912 - #41 set
+INFO  00:35:49,913 - #9 [
+INFO  00:35:49,913 - #42 3
+INFO  00:35:49,913 - #10 ]
+INFO  00:35:49,913 - #7 ;
+INFO  00:35:49,913 - #41 b2
+INFO  00:35:49,913 - #6 =
+INFO  00:35:49,913 - #40 new
+INFO  00:35:49,914 - #41 set
+INFO  00:35:49,914 - #9 [
+INFO  00:35:49,914 - #42 4
+INFO  00:35:49,914 - #10 ]
+INFO  00:35:49,914 - #7 ;
+INFO  00:35:49,914 - #41 j
+INFO  00:35:49,914 - #6 =
+INFO  00:35:49,914 - #40 new
+INFO  00:35:49,915 - #41 int
+INFO  00:35:49,915 - #9 [
+INFO  00:35:49,915 - #42 3
+INFO  00:35:49,915 - #10 ]
+INFO  00:35:49,915 - #7 ;
+INFO  00:35:49,916 - #41 t
+INFO  00:35:49,916 - #6 =
+INFO  00:35:49,917 - #40 new
+INFO  00:35:49,917 - #41 char
+INFO  00:35:49,917 - #9 [
+INFO  00:35:49,917 - #42 3
+INFO  00:35:49,918 - #10 ]
+INFO  00:35:49,918 - #7 ;
+INFO  00:35:49,918 - #41 i
+INFO  00:35:49,918 - #6 =
+INFO  00:35:49,918 - #41 mejn
+INFO  00:35:49,918 - #11 (
+INFO  00:35:49,919 - #41 i
+INFO  00:35:49,920 - #12 )
+INFO  00:35:49,921 - #7 ;
+INFO  00:35:49,922 - #41 addAll
+INFO  00:35:49,922 - #11 (
+INFO  00:35:49,922 - #41 b
+INFO  00:35:49,922 - #8 ,
+INFO  00:35:49,922 - #41 j
+INFO  00:35:49,922 - #12 )
+INFO  00:35:49,922 - #7 ;
+INFO  00:35:49,922 - #22 print
+INFO  00:35:49,922 - #11 (
+INFO  00:35:49,922 - #41 ord
+INFO  00:35:49,922 - #11 (
+INFO  00:35:49,923 - #44 2
+INFO  00:35:49,923 - #12 )
+INFO  00:35:49,923 - #12 )
+INFO  00:35:49,923 - #7 ;
+INFO  00:35:49,923 - #22 print
+INFO  00:35:49,923 - #11 (
+INFO  00:35:49,923 - #41 chr
+INFO  00:35:49,923 - #11 (
+INFO  00:35:49,923 - #42 98
+INFO  00:35:49,923 - #12 )
+INFO  00:35:49,924 - #12 )
+INFO  00:35:49,924 - #7 ;
+INFO  00:35:49,924 - #41 i
+INFO  00:35:49,924 - #6 =
+INFO  00:35:49,924 - #41 mejn
+INFO  00:35:49,924 - #27 map
+INFO  00:35:49,924 - #41 j
+INFO  00:35:49,924 - #7 ;
+INFO  00:35:49,924 - #41 b
+INFO  00:35:49,924 - #6 =
+INFO  00:35:49,924 - #41 b1
+INFO  00:35:49,924 - #28 union
+INFO  00:35:49,925 - #41 b2
+INFO  00:35:49,925 - #7 ;
+INFO  00:35:49,925 - #22 print
+INFO  00:35:49,926 - #11 (
+INFO  00:35:49,926 - #41 b
+INFO  00:35:49,926 - #12 )
+INFO  00:35:49,926 - #7 ;
+INFO  00:35:49,926 - #4 }
+INFO  00:35:49,926 - #4 }
+INFO  00:35:49,931 - =====================================================================
+INFO  00:35:49,939 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+ERROR 00:35:49,939 - Dogodio se nevalidan return u metodi mejn
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 14
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 15
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: b1[Kind : 1] na liniji 16
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: b2[Kind : 1] na liniji 17
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 18
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: t[Kind : 1] na liniji 19
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 20
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 20
+INFO  00:35:49,940 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 20
+INFO  00:35:49,941 - Poziv funkcije:mejn[Kind: 1] na liniji 20
+INFO  00:35:49,942 - Pristup lokalnoj promeljivoj: addAll[Kind : 3] na liniji 21
+INFO  00:35:49,942 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 21
+INFO  00:35:49,942 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 21
+INFO  00:35:49,942 - Poziv funkcije: addAll[Kind: 3] na liniji 21
+INFO  00:35:49,942 - Pristup lokalnoj promeljivoj: ord[Kind : 3] na liniji 22
+INFO  00:35:49,942 - Poziv funkcije:ord[Kind: 1] na liniji 22
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: chr[Kind : 3] na liniji 23
+INFO  00:35:49,943 - Poziv funkcije:chr[Kind: 1] na liniji 23
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 24
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 24
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 24
+INFO  00:35:49,943 -  na liniji 24
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 26
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: b1[Kind : 1] na liniji 26
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: b2[Kind : 1] na liniji 26
+INFO  00:35:49,943 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 27
+INFO  00:35:49,943 - =====================================================================
+ERROR 00:35:49,944 - Parsiranje NIJE uspesno zavrseno!

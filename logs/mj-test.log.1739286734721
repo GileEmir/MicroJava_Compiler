@@ -1,0 +1,104 @@
+INFO  16:11:39,226 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  16:11:39,288 - #2 program
+INFO  16:11:39,289 - #41 test301
+INFO  16:11:39,289 - #5 const
+INFO  16:11:39,290 - #41 int
+INFO  16:11:39,290 - #41 nula
+INFO  16:11:39,298 - #6 =
+INFO  16:11:39,299 - #42 0
+INFO  16:11:39,299 - #7 ;
+INFO  16:11:39,300 - #5 const
+INFO  16:11:39,301 - #41 int
+INFO  16:11:39,301 - #41 jedan
+INFO  16:11:39,301 - #6 =
+INFO  16:11:39,301 - #42 1
+INFO  16:11:39,301 - #7 ;
+INFO  16:11:39,302 - #5 const
+INFO  16:11:39,302 - #41 int
+INFO  16:11:39,302 - #41 pet
+INFO  16:11:39,302 - #6 =
+INFO  16:11:39,302 - #42 5
+INFO  16:11:39,302 - #7 ;
+INFO  16:11:39,302 - #3 {
+INFO  16:11:39,302 - #13 void
+INFO  16:11:39,304 - #41 main
+INFO  16:11:39,304 - #11 (
+INFO  16:11:39,304 - #12 )
+INFO  16:11:39,305 - #41 int
+INFO  16:11:39,307 - #41 i
+INFO  16:11:39,308 - #8 ,
+INFO  16:11:39,308 - #41 j
+INFO  16:11:39,308 - #7 ;
+INFO  16:11:39,309 - #3 {
+INFO  16:11:39,309 - #41 i
+INFO  16:11:39,310 - #6 =
+INFO  16:11:39,310 - #42 5
+INFO  16:11:39,311 - #7 ;
+INFO  16:11:39,313 - #19 do
+INFO  16:11:39,313 - #3 {
+INFO  16:11:39,314 - #41 i
+INFO  16:11:39,315 - #24 --
+INFO  16:11:39,315 - #7 ;
+INFO  16:11:39,315 - #14 if
+INFO  16:11:39,315 - #11 (
+INFO  16:11:39,316 - #41 i
+INFO  16:11:39,316 - #34 ==
+INFO  16:11:39,316 - #42 1
+INFO  16:11:39,317 - #12 )
+INFO  16:11:39,319 - #16 break
+INFO  16:11:39,319 - #7 ;
+INFO  16:11:39,319 - #22 print
+INFO  16:11:39,320 - #11 (
+INFO  16:11:39,321 - #41 i
+INFO  16:11:39,321 - #12 )
+INFO  16:11:39,321 - #7 ;
+INFO  16:11:39,321 - #41 j
+INFO  16:11:39,321 - #6 =
+INFO  16:11:39,321 - #42 3
+INFO  16:11:39,321 - #7 ;
+INFO  16:11:39,321 - #19 do
+INFO  16:11:39,322 - #3 {
+INFO  16:11:39,322 - #41 j
+INFO  16:11:39,322 - #24 --
+INFO  16:11:39,322 - #7 ;
+INFO  16:11:39,322 - #22 print
+INFO  16:11:39,322 - #11 (
+INFO  16:11:39,323 - #41 j
+INFO  16:11:39,323 - #12 )
+INFO  16:11:39,323 - #7 ;
+INFO  16:11:39,323 - #4 }
+INFO  16:11:39,323 - #20 while
+INFO  16:11:39,323 - #11 (
+INFO  16:11:39,323 - #41 j
+INFO  16:11:39,323 - #36 >
+INFO  16:11:39,323 - #42 0
+INFO  16:11:39,324 - #12 )
+INFO  16:11:39,325 - #7 ;
+INFO  16:11:39,325 - #22 print
+INFO  16:11:39,325 - #11 (
+INFO  16:11:39,325 - #41 eol
+INFO  16:11:39,325 - #12 )
+INFO  16:11:39,325 - #7 ;
+INFO  16:11:39,325 - #4 }
+INFO  16:11:39,326 - #20 while
+INFO  16:11:39,326 - #11 (
+INFO  16:11:39,326 - #41 i
+INFO  16:11:39,326 - #36 >
+INFO  16:11:39,326 - #42 0
+INFO  16:11:39,326 - #12 )
+INFO  16:11:39,326 - #7 ;
+INFO  16:11:39,326 - #4 }
+INFO  16:11:39,327 - #4 }
+INFO  16:11:39,336 - =====================================================================
+INFO  16:11:39,348 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 14
+INFO  16:11:39,349 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 21
+INFO  16:11:39,349 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  16:11:39,349 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 25
+INFO  16:11:39,349 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 26
+INFO  16:11:39,350 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 28
+INFO  16:11:39,350 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 29
+INFO  16:11:39,350 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 30
+INFO  16:11:39,350 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 31
+INFO  16:11:39,350 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 32
+INFO  16:11:39,350 - =====================================================================
+INFO  16:11:39,355 - Generisanje  uspesno zavrseno!

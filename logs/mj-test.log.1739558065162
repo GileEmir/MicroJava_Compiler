@@ -1,0 +1,177 @@
+INFO  19:30:16,573 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  19:30:16,702 - #2 program
+INFO  19:30:16,702 - #41 test301
+INFO  19:30:16,703 - #5 const
+INFO  19:30:16,705 - #41 int
+INFO  19:30:16,706 - #41 nula
+INFO  19:30:16,707 - #6 =
+INFO  19:30:16,708 - #42 0
+INFO  19:30:16,708 - #7 ;
+INFO  19:30:16,711 - #5 const
+INFO  19:30:16,712 - #41 int
+INFO  19:30:16,712 - #41 jedan
+INFO  19:30:16,713 - #6 =
+INFO  19:30:16,713 - #42 1
+INFO  19:30:16,713 - #7 ;
+INFO  19:30:16,713 - #5 const
+INFO  19:30:16,714 - #41 int
+INFO  19:30:16,714 - #41 pet
+INFO  19:30:16,714 - #6 =
+INFO  19:30:16,715 - #42 5
+INFO  19:30:16,715 - #7 ;
+INFO  19:30:16,715 - #3 {
+INFO  19:30:16,715 - #41 int
+INFO  19:30:16,725 - #41 mejn
+INFO  19:30:16,725 - #11 (
+INFO  19:30:16,725 - #41 int
+INFO  19:30:16,726 - #41 a
+INFO  19:30:16,726 - #12 )
+INFO  19:30:16,727 - #41 int
+INFO  19:30:16,730 - #41 i
+INFO  19:30:16,730 - #7 ;
+INFO  19:30:16,731 - #3 {
+INFO  19:30:16,732 - #41 i
+INFO  19:30:16,733 - #6 =
+INFO  19:30:16,733 - #42 3
+INFO  19:30:16,735 - #7 ;
+INFO  19:30:16,737 - #17 return
+INFO  19:30:16,738 - #41 i
+INFO  19:30:16,738 - #7 ;
+INFO  19:30:16,738 - #4 }
+INFO  19:30:16,739 - #13 void
+INFO  19:30:16,741 - #41 main
+INFO  19:30:16,741 - #11 (
+INFO  19:30:16,741 - #12 )
+INFO  19:30:16,742 - #41 int
+INFO  19:30:16,743 - #41 i
+INFO  19:30:16,743 - #8 ,
+INFO  19:30:16,743 - #41 j
+INFO  19:30:16,743 - #9 [
+INFO  19:30:16,743 - #10 ]
+INFO  19:30:16,743 - #7 ;
+INFO  19:30:16,744 - #41 set
+INFO  19:30:16,744 - #41 b
+INFO  19:30:16,744 - #8 ,
+INFO  19:30:16,744 - #41 b1
+INFO  19:30:16,744 - #8 ,
+INFO  19:30:16,744 - #41 b2
+INFO  19:30:16,745 - #7 ;
+INFO  19:30:16,745 - #41 char
+INFO  19:30:16,745 - #41 c
+INFO  19:30:16,745 - #8 ,
+INFO  19:30:16,745 - #41 t
+INFO  19:30:16,745 - #9 [
+INFO  19:30:16,746 - #10 ]
+INFO  19:30:16,746 - #7 ;
+INFO  19:30:16,746 - #3 {
+INFO  19:30:16,746 - #41 j
+INFO  19:30:16,746 - #6 =
+INFO  19:30:16,746 - #40 new
+INFO  19:30:16,747 - #41 int
+INFO  19:30:16,747 - #9 [
+INFO  19:30:16,747 - #42 4
+INFO  19:30:16,747 - #10 ]
+INFO  19:30:16,747 - #7 ;
+INFO  19:30:16,747 - #41 b
+INFO  19:30:16,748 - #6 =
+INFO  19:30:16,748 - #40 new
+INFO  19:30:16,748 - #41 set
+INFO  19:30:16,748 - #9 [
+INFO  19:30:16,748 - #42 4
+INFO  19:30:16,748 - #10 ]
+INFO  19:30:16,748 - #7 ;
+INFO  19:30:16,749 - #41 i
+INFO  19:30:16,749 - #6 =
+INFO  19:30:16,749 - #42 2
+INFO  19:30:16,749 - #7 ;
+INFO  19:30:16,749 - #41 add
+INFO  19:30:16,750 - #11 (
+INFO  19:30:16,750 - #41 b
+INFO  19:30:16,751 - #8 ,
+INFO  19:30:16,752 - #41 i
+INFO  19:30:16,753 - #12 )
+INFO  19:30:16,754 - #7 ;
+INFO  19:30:16,754 - #41 i
+INFO  19:30:16,755 - #6 =
+INFO  19:30:16,755 - #42 3
+INFO  19:30:16,755 - #7 ;
+INFO  19:30:16,755 - #41 add
+INFO  19:30:16,755 - #11 (
+INFO  19:30:16,755 - #41 b
+INFO  19:30:16,756 - #8 ,
+INFO  19:30:16,756 - #41 i
+INFO  19:30:16,757 - #12 )
+INFO  19:30:16,757 - #7 ;
+INFO  19:30:16,758 - #41 i
+INFO  19:30:16,758 - #6 =
+INFO  19:30:16,758 - #42 7
+INFO  19:30:16,758 - #7 ;
+INFO  19:30:16,759 - #41 add
+INFO  19:30:16,759 - #11 (
+INFO  19:30:16,759 - #41 b
+INFO  19:30:16,760 - #8 ,
+INFO  19:30:16,760 - #41 i
+INFO  19:30:16,760 - #12 )
+INFO  19:30:16,760 - #7 ;
+INFO  19:30:16,761 - #41 i
+INFO  19:30:16,761 - #6 =
+INFO  19:30:16,761 - #42 99
+INFO  19:30:16,761 - #7 ;
+INFO  19:30:16,762 - #41 add
+INFO  19:30:16,762 - #11 (
+INFO  19:30:16,762 - #41 b
+INFO  19:30:16,762 - #8 ,
+INFO  19:30:16,762 - #41 i
+INFO  19:30:16,762 - #12 )
+INFO  19:30:16,763 - #7 ;
+INFO  19:30:16,763 - #41 i
+INFO  19:30:16,763 - #6 =
+INFO  19:30:16,764 - #42 92
+INFO  19:30:16,764 - #7 ;
+INFO  19:30:16,764 - #41 add
+INFO  19:30:16,764 - #11 (
+INFO  19:30:16,764 - #41 b
+INFO  19:30:16,764 - #8 ,
+INFO  19:30:16,765 - #41 i
+INFO  19:30:16,765 - #12 )
+INFO  19:30:16,765 - #7 ;
+INFO  19:30:16,765 - #22 print
+INFO  19:30:16,765 - #11 (
+INFO  19:30:16,766 - #41 b
+INFO  19:30:16,766 - #12 )
+INFO  19:30:16,766 - #7 ;
+INFO  19:30:16,766 - #4 }
+INFO  19:30:16,767 - #4 }
+INFO  19:30:16,777 - =====================================================================
+INFO  19:30:16,790 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  19:30:16,790 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  19:30:16,791 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 14
+INFO  19:30:16,791 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 15
+INFO  19:30:16,792 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 16
+INFO  19:30:16,792 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 17
+INFO  19:30:16,792 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 17
+INFO  19:30:16,792 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 17
+INFO  19:30:16,793 - Poziv funkcije: add[Kind: 3] na liniji 17
+INFO  19:30:16,795 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 18
+INFO  19:30:16,795 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 19
+INFO  19:30:16,795 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 19
+INFO  19:30:16,795 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 19
+INFO  19:30:16,795 - Poziv funkcije: add[Kind: 3] na liniji 19
+INFO  19:30:16,796 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 21
+INFO  19:30:16,796 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 22
+INFO  19:30:16,796 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 22
+INFO  19:30:16,796 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  19:30:16,796 - Poziv funkcije: add[Kind: 3] na liniji 22
+INFO  19:30:16,796 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 23
+INFO  19:30:16,797 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 24
+INFO  19:30:16,797 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 24
+INFO  19:30:16,797 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 24
+INFO  19:30:16,797 - Poziv funkcije: add[Kind: 3] na liniji 24
+INFO  19:30:16,797 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 25
+INFO  19:30:16,798 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 26
+INFO  19:30:16,798 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 26
+INFO  19:30:16,798 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 26
+INFO  19:30:16,798 - Poziv funkcije: add[Kind: 3] na liniji 26
+INFO  19:30:16,799 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 27
+INFO  19:30:16,799 - =====================================================================
+INFO  19:30:16,808 - Generisanje  uspesno zavrseno!

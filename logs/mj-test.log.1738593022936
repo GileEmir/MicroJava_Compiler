@@ -1,0 +1,169 @@
+INFO  15:28:55,414 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  15:28:55,541 - #2 program
+INFO  15:28:55,542 - #41 test
+INFO  15:28:55,542 - #5 const
+INFO  15:28:55,545 - #41 int
+INFO  15:28:55,545 - #41 pi
+INFO  15:28:55,547 - #6 =
+INFO  15:28:55,547 - #42 3
+INFO  15:28:55,547 - #7 ;
+INFO  15:28:55,551 - #41 char
+INFO  15:28:55,552 - #41 x
+INFO  15:28:55,552 - #8 ,
+INFO  15:28:55,552 - #41 y
+INFO  15:28:55,552 - #9 [
+INFO  15:28:55,552 - #10 ]
+INFO  15:28:55,553 - #7 ;
+INFO  15:28:55,554 - #41 int
+INFO  15:28:55,555 - #41 c
+INFO  15:28:55,556 - #7 ;
+INFO  15:28:55,556 - #3 {
+INFO  15:28:55,556 - #13 void
+INFO  15:28:55,559 - #41 main
+INFO  15:28:55,559 - #11 (
+INFO  15:28:55,561 - #12 )
+INFO  15:28:55,563 - #41 int
+INFO  15:28:55,566 - #41 a
+INFO  15:28:55,566 - #8 ,
+INFO  15:28:55,566 - #41 x
+INFO  15:28:55,566 - #9 [
+INFO  15:28:55,566 - #10 ]
+INFO  15:28:55,566 - #7 ;
+INFO  15:28:55,567 - #3 {
+INFO  15:28:55,567 - #41 a
+INFO  15:28:55,568 - #6 =
+INFO  15:28:55,569 - #41 pi
+INFO  15:28:55,570 - #7 ;
+INFO  15:28:55,573 - #41 x
+INFO  15:28:55,574 - #9 [
+INFO  15:28:55,577 - #42 1
+INFO  15:28:55,577 - #10 ]
+INFO  15:28:55,578 - #23 ++
+INFO  15:28:55,578 - #7 ;
+INFO  15:28:55,578 - #41 y
+INFO  15:28:55,579 - #9 [
+INFO  15:28:55,579 - #42 2
+INFO  15:28:55,579 - #10 ]
+INFO  15:28:55,579 - #6 =
+INFO  15:28:55,580 - #44 c
+INFO  15:28:55,580 - #7 ;
+INFO  15:28:55,580 - #41 a
+INFO  15:28:55,580 - #6 =
+INFO  15:28:55,581 - #41 x
+INFO  15:28:55,581 - #9 [
+INFO  15:28:55,581 - #42 3
+INFO  15:28:55,581 - #10 ]
+INFO  15:28:55,581 - #29 +
+INFO  15:28:55,581 - #41 x
+INFO  15:28:55,584 - #9 [
+INFO  15:28:55,584 - #42 4
+INFO  15:28:55,585 - #10 ]
+INFO  15:28:55,585 - #32 /
+INFO  15:28:55,585 - #41 x
+INFO  15:28:55,588 - #9 [
+INFO  15:28:55,588 - #42 5
+INFO  15:28:55,588 - #10 ]
+INFO  15:28:55,589 - #7 ;
+INFO  15:28:55,590 - #17 return
+INFO  15:28:55,590 - #7 ;
+INFO  15:28:55,590 - #4 }
+INFO  15:28:55,592 - #41 int
+INFO  15:28:55,595 - #41 f1
+INFO  15:28:55,595 - #11 (
+INFO  15:28:55,596 - #41 int
+INFO  15:28:55,596 - #41 x
+INFO  15:28:55,597 - #12 )
+INFO  15:28:55,598 - #3 {
+INFO  15:28:55,599 - #17 return
+INFO  15:28:55,599 - #41 x
+INFO  15:28:55,599 - #7 ;
+INFO  15:28:55,599 - #4 }
+INFO  15:28:55,599 - #41 int
+INFO  15:28:55,600 - #41 f2
+INFO  15:28:55,600 - #11 (
+INFO  15:28:55,600 - #41 int
+INFO  15:28:55,600 - #41 x
+INFO  15:28:55,600 - #8 ,
+INFO  15:28:55,600 - #41 bool
+INFO  15:28:55,600 - #41 b
+INFO  15:28:55,600 - #8 ,
+INFO  15:28:55,600 - #41 int
+INFO  15:28:55,600 - #41 c
+INFO  15:28:55,601 - #12 )
+INFO  15:28:55,601 - #41 int
+INFO  15:28:55,601 - #41 a
+INFO  15:28:55,601 - #7 ;
+INFO  15:28:55,601 - #3 {
+INFO  15:28:55,601 - #17 return
+INFO  15:28:55,602 - #41 f1
+INFO  15:28:55,602 - #11 (
+INFO  15:28:55,602 - #41 x
+INFO  15:28:55,603 - #12 )
+INFO  15:28:55,608 - #29 +
+INFO  15:28:55,608 - #41 a
+INFO  15:28:55,608 - #29 +
+INFO  15:28:55,608 - #42 1
+INFO  15:28:55,609 - #7 ;
+INFO  15:28:55,609 - #4 }
+INFO  15:28:55,609 - #41 int
+INFO  15:28:55,609 - #41 f3
+INFO  15:28:55,609 - #11 (
+INFO  15:28:55,609 - #12 )
+INFO  15:28:55,609 - #3 {
+INFO  15:28:55,610 - #41 f2
+INFO  15:28:55,610 - #11 (
+INFO  15:28:55,610 - #41 f2
+INFO  15:28:55,610 - #11 (
+INFO  15:28:55,610 - #42 1
+INFO  15:28:55,610 - #8 ,
+INFO  15:28:55,610 - #43 1
+INFO  15:28:55,611 - #12 )
+INFO  15:28:55,612 - #8 ,
+INFO  15:28:55,612 - #42 1
+INFO  15:28:55,613 - #8 ,
+INFO  15:28:55,613 - #41 f2
+INFO  15:28:55,613 - #11 (
+INFO  15:28:55,613 - #42 1
+INFO  15:28:55,614 - #8 ,
+INFO  15:28:55,614 - #43 1
+INFO  15:28:55,614 - #12 )
+INFO  15:28:55,615 - #12 )
+INFO  15:28:55,615 - #7 ;
+INFO  15:28:55,615 - #17 return
+INFO  15:28:55,616 - #42 1
+INFO  15:28:55,616 - #7 ;
+INFO  15:28:55,616 - #4 }
+INFO  15:28:55,616 - #4 }
+INFO  15:28:55,628 - =====================================================================
+INFO  15:28:55,647 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 8
+INFO  15:28:55,648 - Pristup simbolickoj konstanti : pi[Kind : 0] na liniji 8
+INFO  15:28:55,650 - Pristup elementu niza :x[Kind: 5] na liniji 10
+INFO  15:28:55,650 - Pristup elementu niza :y[Kind: 5] na liniji 11
+INFO  15:28:55,650 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 12
+INFO  15:28:55,651 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:28:55,651 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:28:55,651 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:28:55,652 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 17
+INFO  15:28:55,652 - Pristup lokalnoj promeljivoj: f1[Kind : 3] na liniji 18
+INFO  15:28:55,652 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 18
+INFO  15:28:55,653 - Poziv funkcije:f1[Kind: 1] na liniji 18
+INFO  15:28:55,664 - Fp list size:1 na liniji 18
+INFO  15:28:55,665 - Ap list size:1 na liniji 18
+INFO  15:28:55,665 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 18
+INFO  15:28:55,666 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:28:55,666 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:28:55,666 - Poziv funkcije:f2[Kind: 1] na liniji 21
+INFO  15:28:55,667 - Fp list size:3 na liniji 21
+INFO  15:28:55,667 - Ap list size:2 na liniji 21
+ERROR 15:28:55,668 - [Err1] Nekompatibilnost parametara pri pozivu metode: f2 na liniji 21
+INFO  15:28:55,669 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:28:55,669 - Poziv funkcije:f2[Kind: 1] na liniji 21
+INFO  15:28:55,669 - Fp list size:3 na liniji 21
+INFO  15:28:55,669 - Ap list size:2 na liniji 21
+ERROR 15:28:55,669 - [Err1] Nekompatibilnost parametara pri pozivu metode: f2 na liniji 21
+INFO  15:28:55,671 - Poziv funkcije: f2[Kind: 3] na liniji 21
+INFO  15:28:55,673 - Fp list size:3 na liniji 21
+INFO  15:28:55,674 - Ap list size:3 na liniji 21
+ERROR 15:28:55,674 - [Greska tipovi] Nekompatibilnost parametara pri pozivu metode: f2 na liniji 21
+INFO  15:28:55,674 - =====================================================================
+ERROR 15:28:55,676 - Parsiranje NIJE uspesno zavrseno!

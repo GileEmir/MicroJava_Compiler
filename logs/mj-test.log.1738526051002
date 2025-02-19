@@ -1,0 +1,60 @@
+INFO  20:43:14,877 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:43:14,932 - #2 program
+INFO  20:43:14,933 - #41 test
+INFO  20:43:14,933 - #5 const
+INFO  20:43:14,934 - #41 int
+INFO  20:43:14,934 - #41 pi
+INFO  20:43:14,935 - #6 =
+INFO  20:43:14,936 - #42 3
+INFO  20:43:14,936 - #7 ;
+INFO  20:43:14,938 - #41 ifas
+INFO  20:43:14,938 - #7 ;
+ERROR 20:43:14,938 - 
+Sintaksna greska na liniji 4
+INFO  20:43:14,938 - #41 bool
+INFO  20:43:14,939 - #41 tru
+INFO  20:43:14,939 - #7 ;
+INFO  20:43:14,940 - #3 {
+ERROR 20:43:14,945 - Oporavak od greske u deklaraciji globalne promenljive.Linija :8
+INFO  20:43:14,947 - #13 void
+INFO  20:43:14,948 - #41 main
+INFO  20:43:14,948 - #11 (
+INFO  20:43:14,956 - #12 )
+INFO  20:43:14,957 - #3 {
+INFO  20:43:14,959 - #14 if
+INFO  20:43:14,960 - #11 (
+INFO  20:43:14,960 - #41 x
+INFO  20:43:14,960 - #36 >
+INFO  20:43:14,961 - #42 0
+INFO  20:43:14,962 - #26 &&
+INFO  20:43:14,963 - #12 )
+ERROR 20:43:14,963 - 
+Sintaksna greska na liniji 8
+INFO  20:43:14,963 - #3 {
+INFO  20:43:14,963 - #41 x
+INFO  20:43:14,963 - #6 =
+ERROR 20:43:14,964 - Oporavak od greske u logickom izrazu unutar if konstrukcije.Linija : 8
+INFO  20:43:14,964 - #42 1
+INFO  20:43:14,965 - #7 ;
+INFO  20:43:14,965 - #4 }
+INFO  20:43:14,966 - #15 else
+INFO  20:43:14,966 - #3 {
+INFO  20:43:14,966 - #41 x
+INFO  20:43:14,966 - #6 =
+INFO  20:43:14,966 - #41 a
+INFO  20:43:14,966 - #29 +
+INFO  20:43:14,966 - #31 *
+ERROR 20:43:14,966 - 
+Sintaksna greska na liniji 12
+INFO  20:43:14,967 - #7 ;
+INFO  20:43:14,967 - #4 }
+INFO  20:43:14,967 - #17 return
+INFO  20:43:14,967 - #7 ;
+ERROR 20:43:14,967 - Oporavak od greske u iskazu dodele. Linija: 15
+INFO  20:43:14,968 - #4 }
+INFO  20:43:14,969 - #4 }
+INFO  20:43:14,978 - =====================================================================
+ERROR 20:43:14,982 - Pristup nedefinisanoj promeljivoj:x na liniji 10
+ERROR 20:43:14,982 - Neadekvatna dodela vrednosti u promenljivu: noObj na liniji 10
+INFO  20:43:14,982 - =====================================================================
+ERROR 20:43:14,983 - Parsiranje NIJE uspesno zavrseno!

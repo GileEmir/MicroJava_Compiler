@@ -1,0 +1,136 @@
+INFO  15:09:58,978 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  15:09:59,025 - #2 program
+INFO  15:09:59,025 - #41 test301
+INFO  15:09:59,025 - #5 const
+INFO  15:09:59,026 - #41 int
+INFO  15:09:59,027 - #41 nula
+INFO  15:09:59,027 - #6 =
+INFO  15:09:59,028 - #42 0
+INFO  15:09:59,028 - #7 ;
+INFO  15:09:59,030 - #5 const
+INFO  15:09:59,030 - #41 int
+INFO  15:09:59,030 - #41 jedan
+INFO  15:09:59,030 - #6 =
+INFO  15:09:59,030 - #42 1
+INFO  15:09:59,030 - #7 ;
+INFO  15:09:59,030 - #5 const
+INFO  15:09:59,030 - #41 int
+INFO  15:09:59,031 - #41 pet
+INFO  15:09:59,031 - #6 =
+INFO  15:09:59,031 - #42 5
+INFO  15:09:59,031 - #7 ;
+INFO  15:09:59,031 - #3 {
+INFO  15:09:59,031 - #41 int
+INFO  15:09:59,041 - #41 mejn
+INFO  15:09:59,041 - #11 (
+INFO  15:09:59,041 - #41 set
+INFO  15:09:59,042 - #41 a
+INFO  15:09:59,042 - #12 )
+INFO  15:09:59,043 - #41 int
+INFO  15:09:59,044 - #41 i
+INFO  15:09:59,045 - #7 ;
+INFO  15:09:59,046 - #3 {
+INFO  15:09:59,047 - #41 i
+INFO  15:09:59,047 - #6 =
+INFO  15:09:59,048 - #42 3
+INFO  15:09:59,049 - #7 ;
+INFO  15:09:59,050 - #17 return
+INFO  15:09:59,051 - #41 i
+INFO  15:09:59,051 - #7 ;
+INFO  15:09:59,051 - #4 }
+INFO  15:09:59,051 - #13 void
+INFO  15:09:59,053 - #41 main
+INFO  15:09:59,053 - #11 (
+INFO  15:09:59,053 - #12 )
+INFO  15:09:59,054 - #41 int
+INFO  15:09:59,055 - #41 i
+INFO  15:09:59,055 - #8 ,
+INFO  15:09:59,055 - #41 j
+INFO  15:09:59,055 - #9 [
+INFO  15:09:59,055 - #10 ]
+INFO  15:09:59,055 - #7 ;
+INFO  15:09:59,056 - #41 set
+INFO  15:09:59,056 - #41 b
+INFO  15:09:59,056 - #7 ;
+INFO  15:09:59,056 - #3 {
+INFO  15:09:59,056 - #41 i
+INFO  15:09:59,056 - #6 =
+INFO  15:09:59,056 - #42 5
+INFO  15:09:59,056 - #7 ;
+INFO  15:09:59,057 - #41 b
+INFO  15:09:59,057 - #6 =
+INFO  15:09:59,057 - #40 new
+INFO  15:09:59,057 - #41 set
+INFO  15:09:59,057 - #9 [
+INFO  15:09:59,058 - #42 3
+INFO  15:09:59,058 - #10 ]
+INFO  15:09:59,058 - #7 ;
+INFO  15:09:59,058 - #41 j
+INFO  15:09:59,058 - #6 =
+INFO  15:09:59,059 - #40 new
+INFO  15:09:59,059 - #41 int
+INFO  15:09:59,059 - #9 [
+INFO  15:09:59,059 - #42 3
+INFO  15:09:59,059 - #10 ]
+INFO  15:09:59,059 - #7 ;
+INFO  15:09:59,059 - #41 i
+INFO  15:09:59,059 - #6 =
+INFO  15:09:59,059 - #41 mejn
+INFO  15:09:59,060 - #11 (
+INFO  15:09:59,060 - #41 b
+INFO  15:09:59,061 - #12 )
+INFO  15:09:59,063 - #7 ;
+INFO  15:09:59,064 - #41 add
+INFO  15:09:59,064 - #11 (
+INFO  15:09:59,064 - #41 j
+INFO  15:09:59,064 - #8 ,
+INFO  15:09:59,064 - #41 i
+INFO  15:09:59,064 - #12 )
+INFO  15:09:59,065 - #7 ;
+INFO  15:09:59,065 - #22 print
+INFO  15:09:59,065 - #11 (
+INFO  15:09:59,066 - #41 ord
+INFO  15:09:59,066 - #11 (
+INFO  15:09:59,066 - #44 2
+INFO  15:09:59,067 - #12 )
+INFO  15:09:59,067 - #12 )
+INFO  15:09:59,067 - #7 ;
+INFO  15:09:59,067 - #22 print
+INFO  15:09:59,067 - #11 (
+INFO  15:09:59,068 - #41 chr
+INFO  15:09:59,068 - #11 (
+INFO  15:09:59,068 - #42 98
+INFO  15:09:59,068 - #12 )
+INFO  15:09:59,068 - #12 )
+INFO  15:09:59,068 - #7 ;
+INFO  15:09:59,069 - #4 }
+INFO  15:09:59,069 - #4 }
+INFO  15:09:59,077 - =====================================================================
+INFO  15:09:59,087 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  15:09:59,088 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  15:09:59,088 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 14
+INFO  15:09:59,088 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 15
+INFO  15:09:59,088 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 16
+INFO  15:09:59,088 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 17
+INFO  15:09:59,089 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 17
+INFO  15:09:59,089 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 17
+INFO  15:09:59,089 - Poziv funkcije:mejn[Kind: 1] na liniji 17
+INFO  15:09:59,095 - Fp list size:1 na liniji 17
+INFO  15:09:59,095 - Ap list size:1 na liniji 17
+INFO  15:09:59,095 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 18
+INFO  15:09:59,095 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 18
+INFO  15:09:59,096 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 18
+INFO  15:09:59,096 - Poziv funkcije: add[Kind: 3] na liniji 18
+INFO  15:09:59,103 - Fp list size:2[rs.etf.pp1.symboltable.concepts.Struct@66480dd7, rs.etf.pp1.symboltable.concepts.Struct@52a86356] na liniji 18
+INFO  15:09:59,103 - Ap list size:2[rs.etf.pp1.symboltable.concepts.Struct@5abca1e0, rs.etf.pp1.symboltable.concepts.Struct@52a86356] na liniji 18
+ERROR 15:09:59,103 - Neodgovarajuci tipovi u pozivu funkcije: ocekuje se setType na liniji 18
+INFO  15:09:59,103 - Pristup lokalnoj promeljivoj: ord[Kind : 3] na liniji 19
+INFO  15:09:59,104 - Poziv funkcije:ord[Kind: 1] na liniji 19
+INFO  15:09:59,104 - Fp list size:1 na liniji 19
+INFO  15:09:59,104 - Ap list size:1 na liniji 19
+INFO  15:09:59,104 - Pristup lokalnoj promeljivoj: chr[Kind : 3] na liniji 20
+INFO  15:09:59,104 - Poziv funkcije:chr[Kind: 1] na liniji 20
+INFO  15:09:59,104 - Fp list size:1 na liniji 20
+INFO  15:09:59,104 - Ap list size:1 na liniji 20
+INFO  15:09:59,104 - =====================================================================
+ERROR 15:09:59,105 - Parsiranje NIJE uspesno zavrseno!

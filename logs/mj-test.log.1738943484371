@@ -1,0 +1,87 @@
+INFO  13:59:19,070 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  13:59:19,125 - #2 program
+INFO  13:59:19,126 - #41 test301
+INFO  13:59:19,126 - #5 const
+INFO  13:59:19,127 - #41 int
+INFO  13:59:19,127 - #41 nula
+INFO  13:59:19,128 - #6 =
+INFO  13:59:19,128 - #42 0
+INFO  13:59:19,128 - #7 ;
+INFO  13:59:19,130 - #5 const
+INFO  13:59:19,131 - #41 int
+INFO  13:59:19,131 - #41 jedan
+INFO  13:59:19,131 - #6 =
+INFO  13:59:19,131 - #42 1
+INFO  13:59:19,131 - #7 ;
+INFO  13:59:19,131 - #5 const
+INFO  13:59:19,132 - #41 int
+INFO  13:59:19,132 - #41 pet
+INFO  13:59:19,132 - #6 =
+INFO  13:59:19,132 - #42 5
+INFO  13:59:19,132 - #7 ;
+INFO  13:59:19,132 - #41 int
+INFO  13:59:19,132 - #41 niz
+INFO  13:59:19,133 - #9 [
+INFO  13:59:19,133 - #10 ]
+INFO  13:59:19,133 - #7 ;
+INFO  13:59:19,134 - #41 char
+INFO  13:59:19,134 - #41 nizch
+INFO  13:59:19,134 - #9 [
+INFO  13:59:19,134 - #10 ]
+INFO  13:59:19,134 - #7 ;
+INFO  13:59:19,134 - #41 int
+INFO  13:59:19,134 - #41 a
+INFO  13:59:19,135 - #7 ;
+INFO  13:59:19,135 - #41 set
+INFO  13:59:19,135 - #41 s1
+INFO  13:59:19,135 - #8 ,
+INFO  13:59:19,135 - #41 s2
+INFO  13:59:19,135 - #8 ,
+INFO  13:59:19,135 - #41 s3
+INFO  13:59:19,135 - #7 ;
+INFO  13:59:19,135 - #3 {
+INFO  13:59:19,136 - #41 int
+INFO  13:59:19,136 - #41 f
+INFO  13:59:19,137 - #11 (
+INFO  13:59:19,137 - #41 int
+INFO  13:59:19,137 - #41 x
+INFO  13:59:19,137 - #12 )
+INFO  13:59:19,138 - #3 {
+INFO  13:59:19,139 - #17 return
+INFO  13:59:19,140 - #41 x
+INFO  13:59:19,140 - #7 ;
+INFO  13:59:19,142 - #4 }
+INFO  13:59:19,142 - #13 void
+INFO  13:59:19,143 - #41 main
+INFO  13:59:19,143 - #11 (
+INFO  13:59:19,143 - #12 )
+INFO  13:59:19,144 - #41 int
+INFO  13:59:19,144 - #41 i
+INFO  13:59:19,144 - #7 ;
+INFO  13:59:19,144 - #3 {
+INFO  13:59:19,144 - #41 i
+INFO  13:59:19,144 - #6 =
+INFO  13:59:19,144 - #41 f
+INFO  13:59:19,146 - #11 (
+INFO  13:59:19,146 - #42 3
+INFO  13:59:19,147 - #12 )
+INFO  13:59:19,150 - #7 ;
+INFO  13:59:19,150 - #22 print
+INFO  13:59:19,150 - #11 (
+INFO  13:59:19,150 - #41 i
+INFO  13:59:19,151 - #12 )
+INFO  13:59:19,151 - #7 ;
+INFO  13:59:19,151 - #4 }
+INFO  13:59:19,151 - #4 }
+INFO  13:59:19,156 - =====================================================================
+INFO  13:59:19,166 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 18
+INFO  13:59:19,166 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 21
+INFO  13:59:19,166 - Pristup lokalnoj promeljivoj: f[Kind : 3] na liniji 21
+INFO  13:59:19,167 - Poziv funkcije:f[Kind: 1] na liniji 21
+INFO  13:59:19,172 - Fp list size:1[rs.etf.pp1.symboltable.concepts.Struct@3c0f93f1] na liniji 21
+INFO  13:59:19,172 - Ap list size:1[rs.etf.pp1.symboltable.concepts.Struct@3c0f93f1] na liniji 21
+INFO  13:59:19,175 - Fp list size:1 na liniji 21
+INFO  13:59:19,175 - Ap list size:1 na liniji 21
+INFO  13:59:19,175 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  13:59:19,175 - =====================================================================
+INFO  13:59:19,179 - Generisanje  uspesno zavrseno!
