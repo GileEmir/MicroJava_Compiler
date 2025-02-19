@@ -1,0 +1,116 @@
+INFO  15:31:40,137 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  15:31:40,255 - #2 program
+INFO  15:31:40,256 - #41 test
+INFO  15:31:40,256 - #5 const
+INFO  15:31:40,259 - #41 int
+INFO  15:31:40,259 - #41 pi
+INFO  15:31:40,260 - #6 =
+INFO  15:31:40,261 - #42 3
+INFO  15:31:40,261 - #7 ;
+INFO  15:31:40,264 - #41 char
+INFO  15:31:40,265 - #41 x
+INFO  15:31:40,265 - #8 ,
+INFO  15:31:40,266 - #41 y
+INFO  15:31:40,266 - #9 [
+INFO  15:31:40,266 - #10 ]
+INFO  15:31:40,266 - #7 ;
+INFO  15:31:40,268 - #41 int
+INFO  15:31:40,269 - #41 c
+INFO  15:31:40,269 - #7 ;
+INFO  15:31:40,269 - #3 {
+INFO  15:31:40,269 - #13 void
+INFO  15:31:40,271 - #41 main
+INFO  15:31:40,271 - #11 (
+INFO  15:31:40,318 - #12 )
+INFO  15:31:40,319 - #41 int
+INFO  15:31:40,323 - #41 a
+INFO  15:31:40,323 - #8 ,
+INFO  15:31:40,324 - #41 x
+INFO  15:31:40,324 - #9 [
+INFO  15:31:40,324 - #10 ]
+INFO  15:31:40,324 - #7 ;
+INFO  15:31:40,325 - #3 {
+INFO  15:31:40,326 - #41 a
+INFO  15:31:40,327 - #6 =
+INFO  15:31:40,327 - #41 pi
+INFO  15:31:40,328 - #7 ;
+INFO  15:31:40,330 - #41 x
+INFO  15:31:40,331 - #9 [
+INFO  15:31:40,333 - #42 1
+INFO  15:31:40,333 - #10 ]
+INFO  15:31:40,333 - #23 ++
+INFO  15:31:40,334 - #7 ;
+INFO  15:31:40,334 - #41 y
+INFO  15:31:40,334 - #9 [
+INFO  15:31:40,334 - #42 2
+INFO  15:31:40,335 - #10 ]
+INFO  15:31:40,335 - #6 =
+INFO  15:31:40,335 - #44 c
+INFO  15:31:40,335 - #7 ;
+INFO  15:31:40,336 - #41 a
+INFO  15:31:40,336 - #6 =
+INFO  15:31:40,336 - #41 x
+INFO  15:31:40,337 - #9 [
+INFO  15:31:40,337 - #42 3
+INFO  15:31:40,337 - #10 ]
+INFO  15:31:40,337 - #29 +
+INFO  15:31:40,337 - #41 x
+INFO  15:31:40,339 - #9 [
+INFO  15:31:40,340 - #42 4
+INFO  15:31:40,340 - #10 ]
+INFO  15:31:40,340 - #32 /
+INFO  15:31:40,341 - #41 x
+INFO  15:31:40,343 - #9 [
+INFO  15:31:40,344 - #42 5
+INFO  15:31:40,344 - #10 ]
+INFO  15:31:40,345 - #7 ;
+INFO  15:31:40,345 - #17 return
+INFO  15:31:40,345 - #7 ;
+INFO  15:31:40,346 - #4 }
+INFO  15:31:40,348 - #41 int
+INFO  15:31:40,351 - #41 mejn
+INFO  15:31:40,351 - #11 (
+INFO  15:31:40,351 - #41 int
+INFO  15:31:40,351 - #41 c
+INFO  15:31:40,352 - #12 )
+INFO  15:31:40,353 - #41 int
+INFO  15:31:40,354 - #41 a
+INFO  15:31:40,354 - #7 ;
+INFO  15:31:40,354 - #3 {
+INFO  15:31:40,355 - #41 a
+INFO  15:31:40,355 - #6 =
+INFO  15:31:40,355 - #41 mejn
+INFO  15:31:40,355 - #11 (
+INFO  15:31:40,355 - #41 a
+INFO  15:31:40,357 - #12 )
+INFO  15:31:40,361 - #7 ;
+INFO  15:31:40,362 - #41 a
+INFO  15:31:40,362 - #6 =
+INFO  15:31:40,362 - #41 c
+INFO  15:31:40,362 - #7 ;
+INFO  15:31:40,362 - #17 return
+INFO  15:31:40,362 - #41 a
+INFO  15:31:40,363 - #7 ;
+INFO  15:31:40,363 - #4 }
+INFO  15:31:40,363 - #4 }
+INFO  15:31:40,375 - =====================================================================
+INFO  15:31:40,397 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 8
+INFO  15:31:40,398 - Pristup simbolickoj konstanti : pi[Kind : 0] na liniji 8
+INFO  15:31:40,399 - Pristup elementu niza :x[Kind: 5] na liniji 10
+INFO  15:31:40,399 - Pristup elementu niza :y[Kind: 5] na liniji 11
+INFO  15:31:40,399 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 12
+INFO  15:31:40,399 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:31:40,400 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:31:40,400 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:31:40,400 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 18
+INFO  15:31:40,400 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 18
+INFO  15:31:40,400 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 18
+INFO  15:31:40,402 - Poziv funkcije:mejn[Kind: 1] na liniji 18
+INFO  15:31:40,409 - Fp list size:0 na liniji 18
+INFO  15:31:40,410 - Ap list size:1 na liniji 18
+ERROR 15:31:40,410 - [Err1] Nekompatibilnost parametara pri pozivu metode: mejn na liniji 18
+INFO  15:31:40,410 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 19
+INFO  15:31:40,411 - Koriscenje formalnog parametra: c[Kind : 1] na liniji 19
+INFO  15:31:40,411 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 20
+INFO  15:31:40,411 - =====================================================================
+ERROR 15:31:40,412 - Parsiranje NIJE uspesno zavrseno!

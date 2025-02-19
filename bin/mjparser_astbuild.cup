@@ -1,0 +1,351 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+    boolean errorDetected;
+    
+    Logger log = Logger.getLogger(getClass());
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+        done_parsing();
+        report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+        errorDetected = true;
+        StringBuilder msg = new StringBuilder(message); 
+        if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+:}
+
+init with {:
+    errorDetected = false;
+:}
+
+scan with {:
+    Symbol s = this.getScanner().next_token();
+    if (s != null && s.value != null) 
+        log.info(s.toString() + " " + s.value.toString());
+    return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, CONST, ASSIGN, SEMI, COMMA, LBRACKET, RBRACKET, LPAREN, RPAREN, VOID, IF, ELSE, BREAK, RETURN, CONTINUE, DO, WHILE, READ, PRINT, INC, DEC, OR, AND, MAP, UNION;
+terminal PLUS, MINUS , MUL, DIV, REM, EQUAL, NOTEQUAL, GREATER, GREATEREQUAL, LESS, LESSEQUAL, NEW;
+terminal String IDENT;
+terminal Integer NUMBER, BOOL;
+terminal Character CHARACTER;
+
+nonterminal Program Program;
+nonterminal ConstVarDeclList ConstVarDeclList;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal ConstDeclList ConstDeclList;
+nonterminal ConstDeclMore ConstDeclMore;
+nonterminal ConstDecl ConstDecl;
+nonterminal Constant Constant;
+nonterminal ProgramName ProgramName;
+nonterminal VarDeclList VarDeclList;
+nonterminal VarDecl VarDecl;
+nonterminal VarDeclMore VarDeclMore;
+nonterminal VarDeclListRec VarDeclListRec;
+nonterminal MethodDecl MethodDecl;
+nonterminal FormParList FormParList;
+nonterminal FormParMore FormParMore;
+nonterminal FormPar FormPar;
+nonterminal StatementList StatementList;
+nonterminal Statement Statement;
+nonterminal MethodSignature MethodSignature;
+nonterminal Label Label;
+nonterminal DesignatorStatement DesignatorStatement;
+nonterminal ElseStatement ElseStatement;
+nonterminal Assignop Assignop;
+nonterminal ActParList ActParList;
+nonterminal ActParMore ActParMore;
+nonterminal ActPar ActPar;
+nonterminal Addop Addop;
+nonterminal Relop Relop;
+nonterminal Mulop Mulop;
+nonterminal Setop Setop;
+nonterminal DoNonTerm DoNonTerm;
+nonterminal ActParListBegin ActParListBegin;
+nonterminal Else Else;
+nonterminal WhileNonTerm WhileNonTerm;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorElement, MulopFactorList, Term, AddopTermList, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, CondTermList, CondTerm, CondFactList, CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodReturnAndName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+
+precedence left ELSE;
+
+/* Example: program myProgram { ... } */
+Program ::= (Program) PROG ProgramName:P1 ConstVarDeclList:C2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(P1, C2, M3); RESULT.setLine(P1left); :}; /* Example: program myProgram { ... } */
+
+ProgramName ::= (ProgramName) IDENT:I1 {: RESULT=new ProgramName(I1); RESULT.setLine(I1left); :} /* Example: myProgram */;
+
+
+ConstVarDeclList ::= 	(ConstVarDeclList_const) ConstVarDeclList:C1 ConstDeclList:C2 {: RESULT=new ConstVarDeclList_const(C1, C2); RESULT.setLine(C1left); :} /* Example: const int x = 1; const int y; */
+                        |
+                        (ConstVarDeclList_var) ConstVarDeclList:C1 VarDeclList:V2 {: RESULT=new ConstVarDeclList_var(C1, V2); RESULT.setLine(C1left); :} /* Example: const int x = 1;const int y; */
+                        |
+                        (ConstVarDeclList_empty) {: RESULT=new ConstVarDeclList_empty(); :} /*EPSILON*/;
+
+
+ConstDeclList ::= 		(ConstDeclList_normal) CONST Type:T1 ConstDecl:C2 ConstDeclMore:C3 SEMI {: RESULT=new ConstDeclList_normal(T1, C2, C3); RESULT.setLine(T1left); :} /* Example: const int x = 1, y = 2; */
+						|
+		                (ConstDeclList_error) error:e 
+		                {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive.Linija :" + eleft, null); :} {: RESULT=new ConstDeclList_error(); :};
+
+ConstDecl ::= 			(ConstDecl) IDENT:I1 ASSIGN Constant:C2 {: RESULT=new ConstDecl(I1, C2); RESULT.setLine(I1left); :} /* Example: x = 1 */;
+
+
+ConstDeclMore ::= 		(ConstDeclMore_comma) COMMA ConstDecl:C1 ConstDeclMore:C2 {: RESULT=new ConstDeclMore_comma(C1, C2); RESULT.setLine(C1left); :} /* Example: , y = 2 */
+                        |
+                        (ConstDeclMore_empty) {: RESULT=new ConstDeclMore_empty(); :} /*EPSILON*/;
+
+
+Constant ::= 			(Constant_number) NUMBER:N1 {: RESULT=new Constant_number(N1); RESULT.setLine(N1left); :} /* Example: 1 */
+                        |
+                        (Constant_char) CHARACTER:C1 {: RESULT=new Constant_char(C1); RESULT.setLine(C1left); :} /* Example: 'a' */
+                        |
+                        (Constant_bool) BOOL:B1 {: RESULT=new Constant_bool(B1); RESULT.setLine(B1left); :} /* Example: true */;
+
+
+VarDeclList ::= 		(VarDeclList_normal) Type:T1 VarDecl:V2 VarDeclMore:V3 SEMI {: RESULT=new VarDeclList_normal(T1, V2, V3); RESULT.setLine(T1left); :} /* Example: int x, y; */;
+
+
+VarDecl ::= 			(VarDecl_var) IDENT:I1 {: RESULT=new VarDecl_var(I1); RESULT.setLine(I1left); :} /* Example: x */
+                        |
+                        (VarDecl_array) IDENT:I1 LBRACKET RBRACKET {: RESULT=new VarDecl_array(I1); RESULT.setLine(I1left); :} /* Example: y[] */;
+
+
+VarDeclMore ::= 		(VarDeclMore_comma) COMMA VarDecl:V1 VarDeclMore:V2 {: RESULT=new VarDeclMore_comma(V1, V2); RESULT.setLine(V1left); :} /* Example: , y */
+                        |
+                        (VarDeclMore_empty) {: RESULT=new VarDeclMore_empty(); :} /*EPSILON*/;
+
+
+Type ::= (Type) IDENT:I1 {: RESULT=new Type(I1); RESULT.setLine(I1left); :} /* Example: int, float, MyClass */;
+
+
+MethodDeclList ::= 		(MethodDeclList_recursive) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclList_recursive(M1, M2); RESULT.setLine(M1left); :} /* Example: void methodName() { ... } */
+                        |
+                        (MethodDeclList_e) {: RESULT=new MethodDeclList_e(); :} /*EPSILON*/;
+
+/* Example: void methodName(int a) int x; { ... } 
+   Example with epsilon: void methodName(int a) { ... } */
+MethodDecl ::= 			(MethodDecl) MethodSignature:M1 VarDeclListRec:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(M1, V2, S3); RESULT.setLine(M1left); :} /* Example: void methodName(int a) int x; { ... } */;
+
+
+MethodSignature ::= 	(MethodSignature) MethodReturnAndName:M1 LPAREN FormParList:F2 RPAREN {: RESULT=new MethodSignature(M1, F2); RESULT.setLine(M1left); :};
+
+
+MethodReturnAndName ::= (MethodReturnAndName_type) Type:T1 IDENT:I2 {: RESULT=new MethodReturnAndName_type(T1, I2); RESULT.setLine(T1left); :} /* Example: int methodName */
+                        |
+                        (MethodReturnAndName_void) VOID IDENT:I1 {: RESULT=new MethodReturnAndName_void(I1); RESULT.setLine(I1left); :} /* Example: void methodName */;
+
+
+VarDeclListRec ::= 		(VarDeclListRec_recursive) VarDeclListRec:V1 VarDeclList:V2 {: RESULT=new VarDeclListRec_recursive(V1, V2); RESULT.setLine(V1left); :} /* Example: int x; int y; */
+                        |
+                        (VarDeclListRec_e) {: RESULT=new VarDeclListRec_e(); :} /*EPSILON*/;
+
+
+FormParList ::= 		(FormParList_recursive) FormPar:F1 FormParMore:F2 {: RESULT=new FormParList_recursive(F1, F2); RESULT.setLine(F1left); :} /* Example: int a, float b */
+                        |
+                        (FormParList_empty) {: RESULT=new FormParList_empty(); :} /*EPSILON*/;
+
+
+FormParMore ::=			(FormParMore_recursive) COMMA FormPar:F1 FormParMore:F2 {: RESULT=new FormParMore_recursive(F1, F2); RESULT.setLine(F1left); :} /* Example: , b */
+                        |
+                        (FormParMore_empty) {: RESULT=new FormParMore_empty(); :}/*EPSILON*/;
+
+
+FormPar ::= (FormPar_var) Type:T1 IDENT:I2 {: RESULT=new FormPar_var(T1, I2); RESULT.setLine(T1left); :}
+           |
+           (FormPar_array) Type:T1 IDENT:I2 LBRACKET RBRACKET {: RESULT=new FormPar_array(T1, I2); RESULT.setLine(T1left); :}
+           |
+           (FormPar_error) error:e
+           {: parser.report_error("Oporavak od greske u deklaraciji formalnog parametra funkcije. Linija: " + eleft, null); :} {: RESULT=new FormPar_error(); :};
+
+StatementList ::=		(StatementList_recursive) StatementList:S1 Statement:S2 {: RESULT=new StatementList_recursive(S1, S2); RESULT.setLine(S1left); :} /* Example: statement1; statement2; */
+                        |
+                        (StatementList_empty) {: RESULT=new StatementList_empty(); :} /*EPSILON*/;
+                        /*statement_label label COLON statement*/
+
+/*label (label) IDENT*/
+
+Statement ::= 			(Statement_designator) DesignatorStatement:D1 SEMI {: RESULT=new Statement_designator(D1); RESULT.setLine(D1left); :} /* Example: x = 5; */
+                        |
+                        (Statement_if) IF LPAREN Condition:C1 RPAREN Statement:S2 ElseStatement:E3 {: RESULT=new Statement_if(C1, S2, E3); RESULT.setLine(C1left); :} /* Example: if (x > 0) { ... } else { ... } */
+                        |
+                        (Statement_if_error) IF LPAREN error:e 
+			            {: parser.report_error("Oporavak od greske u logickom izrazu unutar if konstrukcije.Linija : " + eleft, null); :} RPAREN Statement:S1 ElseStatement:E2 {: RESULT=new Statement_if_error(S1, E2); RESULT.setLine(S1left); :}
+			            |
+                        (Statement_break) BREAK SEMI {: RESULT=new Statement_break(); :} /* Example: break; */
+                        |
+                        (Statement_continue) CONTINUE SEMI {: RESULT=new Statement_continue(); :} /* Example: continue; */
+                        |
+                        (Statement_return_void) RETURN SEMI {: RESULT=new Statement_return_void(); :} /* Example: return; */
+                        |
+                        (Statement_return_expr) RETURN Expr:E1 SEMI {: RESULT=new Statement_return_expr(E1); RESULT.setLine(E1left); :} /* Example: return expr; */
+                        |
+                        (Statement_read) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new Statement_read(D1); RESULT.setLine(D1left); :} /* Example: read(designator); */
+                        |
+                        (Statement_print) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new Statement_print(E1); RESULT.setLine(E1left); :} /* Example: print(expr); */
+                        |
+                        (Statement_print_number) PRINT LPAREN Expr:E1 COMMA NUMBER:N2 RPAREN SEMI {: RESULT=new Statement_print_number(E1, N2); RESULT.setLine(E1left); :} /* Example: print(expr, number); */
+                        |
+                        (Statement_do_empty) DoNonTerm:D1 Statement:S2 WhileNonTerm:W3 LPAREN RPAREN SEMI {: RESULT=new Statement_do_empty(D1, S2, W3); RESULT.setLine(D1left); :} /* Example: do statement while(); */
+                        |
+                        (Statement_do_condition) DoNonTerm:D1 Statement:S2 WhileNonTerm:W3 LPAREN Condition:C4 RPAREN SEMI {: RESULT=new Statement_do_condition(D1, S2, W3, C4); RESULT.setLine(D1left); :} /* Example: do statement while(condition); */
+                        |
+                        (Statement_do_condition_designator) DoNonTerm:D1 Statement:S2 WhileNonTerm:W3 LPAREN Condition:C4 COMMA DesignatorStatement:D5 RPAREN SEMI {: RESULT=new Statement_do_condition_designator(D1, S2, W3, C4, D5); RESULT.setLine(D1left); :} /* Example: do statement while(condition, designatorStatement); */
+                        |
+                        (Statement_block) LBRACE StatementList:S1 RBRACE {: RESULT=new Statement_block(S1); RESULT.setLine(S1left); :} /* Example: { statementList } */;
+                        /*statement goto GOTO IDENT SEMI*/
+
+WhileNonTerm ::=		(WhileNonTerm) WHILE {: RESULT=new WhileNonTerm(); :};
+
+DoNonTerm ::=			(DoNonTerm) DO {: RESULT=new DoNonTerm(); :};
+
+ElseStatement ::= 		(ElseStatement_else) Else:E1 Statement:S2 {: RESULT=new ElseStatement_else(E1, S2); RESULT.setLine(E1left); :} /* Example: else statement */
+                        |
+                        (ElseStatement_empty) {: RESULT=new ElseStatement_empty(); :} /*EPSILON*/;
+                        
+Else ::=				(Else) ELSE {: RESULT=new Else(); :};
+                        
+Condition ::= 			(Condition) CondTermList:C1 {: RESULT=new Condition(C1); RESULT.setLine(C1left); :}; 
+
+CondTermList ::= 		(CondTermList_or) CondTermList:C1 OR CondTerm:C2 {: RESULT=new CondTermList_or(C1, C2); RESULT.setLine(C1left); :} /* Example: condition1 || condition2 */
+		                |
+		                (CondTermList_ct) CondTerm:C1 {: RESULT=new CondTermList_ct(C1); RESULT.setLine(C1left); :} /* Example: condition */;
+
+CondTerm ::= 			(CondTerm) CondFactList:C1 {: RESULT=new CondTerm(C1); RESULT.setLine(C1left); :};
+
+CondFactList ::= 		(CondFactList_and) CondFactList:C1 AND CondFact:C2 {: RESULT=new CondFactList_and(C1, C2); RESULT.setLine(C1left); :} /* Example: condition1 && condition2 */
+                 		|
+                 		(CondFactList_cf) CondFact:C1 {: RESULT=new CondFactList_cf(C1); RESULT.setLine(C1left); :} /* Example: condition */;
+
+CondFact ::= 			(CondFact_expr) Expr:E1 {: RESULT=new CondFact_expr(E1); RESULT.setLine(E1left); :} /* Example: expr */
+             			|
+             			(CondFact_expr_r_expr) Expr:E1 Relop:R2 Expr:E3 {: RESULT=new CondFact_expr_r_expr(E1, R2, E3); RESULT.setLine(E1left); :} /* Example: expr1 == expr2 */;	
+                        
+                        
+DesignatorStatement ::= (DesignatorStatement_assign) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStatement_assign(D1, A2, E3); RESULT.setLine(D1left); :}	/* Example: x = 5 */
+						|
+						(DesignatorStatement_error) error:e	 /* Example: error */
+						{: parser.report_error("Oporavak od greske u iskazu dodele. Linija: " + eleft, null); :} {: RESULT=new DesignatorStatement_error(); :}
+						|
+						(DesignatorStatement_meth) Designator:D1 LPAREN ActParList:A2 RPAREN {: RESULT=new DesignatorStatement_meth(D1, A2); RESULT.setLine(D1left); :} /* Example: method(param1, param2) */
+						|
+						(DesignatorStatement_assign_designator) Designator:D1 Assignop:A2 Designator:D3 Setop:S4 Designator:D5 {: RESULT=new DesignatorStatement_assign_designator(D1, A2, D3, S4, D5); RESULT.setLine(D1left); :} /* Example: x = y union z */
+						|
+						(DesignatorStatement_incr) Designator:D1 INC {: RESULT=new DesignatorStatement_incr(D1); RESULT.setLine(D1left); :} /* Example: x++ */
+						|
+						(DesignatorStatement_decr) Designator:D1 DEC {: RESULT=new DesignatorStatement_decr(D1); RESULT.setLine(D1left); :} /* Example: x-- */;
+						
+ActParList ::= 			(ActParList_recursive)ActParListBegin:A1 ActPar:A2 ActParMore:A3 {: RESULT=new ActParList_recursive(A1, A2, A3); RESULT.setLine(A1left); :} /* Example: param1, param2 */
+		               	|
+		               	(ActParList_e) ActParListBegin:A1 {: RESULT=new ActParList_e(A1); RESULT.setLine(A1left); :} /*EPSILON*/;
+		     
+ActParListBegin ::=		(ActParListBegin) {: RESULT=new ActParListBegin(); :}/*EPSILON*/ ;		     
+		               	
+ActParMore ::= 			(ActParMore_recursive) COMMA ActPar:A1 ActParMore:A2 {: RESULT=new ActParMore_recursive(A1, A2); RESULT.setLine(A1left); :} /* Example: , param */
+						|
+						(ActParMore_empty) {: RESULT=new ActParMore_empty(); :} /*EPSILON*/;
+						
+ActPar ::=				(ActPar) Expr:E1 {: RESULT=new ActPar(E1); RESULT.setLine(E1left); :};
+
+
+Expr ::= 				(Expr_addop) AddopTermList:A1 {: RESULT=new Expr_addop(A1); RESULT.setLine(A1left); :}
+						|
+						(Expr_designator) Designator:D1 MAP Designator:D2 {: RESULT=new Expr_designator(D1, D2); RESULT.setLine(D1left); :};
+
+AddopTermList ::=		(AddopTermList_add) AddopTermList:A1 Addop:A2 Term:T3 {: RESULT=new AddopTermList_add(A1, A2, T3); RESULT.setLine(A1left); :} /* Example: expr + term */
+						|
+						(AddopTermList_term) Term:T1 {: RESULT=new AddopTermList_term(T1); RESULT.setLine(T1left); :} /* Example: term */;
+						
+Term ::=				(Term) MulopFactorList:M1 {: RESULT=new Term(M1); RESULT.setLine(M1left); :};
+
+
+MulopFactorList	::=		(MulopFactorList_mul) MulopFactorList:M1 Mulop:M2 Factor:F3 {: RESULT=new MulopFactorList_mul(M1, M2, F3); RESULT.setLine(M1left); :} /* Example: term * factor */
+						|
+						(MulopFactorList_factor) Factor:F1 {: RESULT=new MulopFactorList_factor(F1); RESULT.setLine(F1left); :} /* Example: factor */;
+
+Factor ::=				(Factor_minus) MINUS FactorElement:F1 {: RESULT=new Factor_minus(F1); RESULT.setLine(F1left); :}
+						|
+						(Factor_plus) FactorElement:F1 {: RESULT=new Factor_plus(F1); RESULT.setLine(F1left); :};
+
+						
+						
+FactorElement ::= 		(FactorElement_var) Designator:D1 {: RESULT=new FactorElement_var(D1); RESULT.setLine(D1left); :} /* Example: x */
+		              	|
+						(FactorElement_method) Designator:D1 LPAREN ActParList:A2 RPAREN {: RESULT=new FactorElement_method(D1, A2); RESULT.setLine(D1left); :} /* Example: method(param1, param2) */
+		              	|
+		              	(FactorElement_number) NUMBER:N1 {: RESULT=new FactorElement_number(N1); RESULT.setLine(N1left); :} /* Example: 5 */
+		              	|
+		         	    (FactorElement_character) CHARACTER:C1 {: RESULT=new FactorElement_character(C1); RESULT.setLine(C1left); :} /* Example: 'a' */
+		              	|
+		              	(FactorElement_bool) BOOL:B1 {: RESULT=new FactorElement_bool(B1); RESULT.setLine(B1left); :} /* Example: true */
+		              	|
+		              	(FactorElement_new_array) NEW Type:T1 LBRACKET Expr:E2 RBRACKET {: RESULT=new FactorElement_new_array(T1, E2); RESULT.setLine(T1left); :} /* Example: new int[5] */
+		              	|
+		              	(FactorElement_new_record) NEW Type:T1 LPAREN ActParList:A2 RPAREN {: RESULT=new FactorElement_new_record(T1, A2); RESULT.setLine(T1left); :} /* Example: new MyClass(param1, param2) */
+		              	|
+		              	(FactorElement_expr) LPAREN Expr:E1 RPAREN {: RESULT=new FactorElement_expr(E1); RESULT.setLine(E1left); :} /* Example: (expr) */;
+		              	
+		              	
+Designator ::=			(Designator_var) IDENT:I1 {: RESULT=new Designator_var(I1); RESULT.setLine(I1left); :} /* Example: x */
+						|
+						(Designator_elem) DesignatorArrayName:D1 LBRACKET Expr:E2 RBRACKET {: RESULT=new Designator_elem(D1, E2); RESULT.setLine(D1left); :} /* Example: array[5] */; 
+					
+						
+DesignatorArrayName ::=	(DesignatorArrayName) IDENT:I1 {: RESULT=new DesignatorArrayName(I1); RESULT.setLine(I1left); :};
+
+
+Label ::=	IDENT:I1 {: RESULT=new LabelDerived1(I1); RESULT.setLine(I1left); :};
+
+Assignop ::= (Assignop) ASSIGN {: RESULT=new Assignop(); :}; /* Example: = */
+
+Addop ::= (Addop_plus) PLUS {: RESULT=new Addop_plus(); :} /* Example: + */
+          |
+          (Addop_minus) MINUS {: RESULT=new Addop_minus(); :}; /* Example: - */
+
+Mulop ::= (Mulop_mul) MUL {: RESULT=new Mulop_mul(); :} /* Example: * */
+          |
+          (Mulop_div) DIV {: RESULT=new Mulop_div(); :} /* Example: / */
+          |
+          (Mulop_rem) REM {: RESULT=new Mulop_rem(); :}; /* Example: % */
+
+Relop ::= (Relop_eq) EQUAL {: RESULT=new Relop_eq(); :} /* Example: == */
+          |
+          (Relop_ne) NOTEQUAL {: RESULT=new Relop_ne(); :} /* Example: != */
+          |
+          (Relop_gt) GREATER {: RESULT=new Relop_gt(); :} /* Example: > */
+          |
+          (Relop_ge) GREATEREQUAL {: RESULT=new Relop_ge(); :} /* Example: >= */
+          |
+          (Relop_lt) LESS {: RESULT=new Relop_lt(); :} /* Example: < */
+          |
+          (Relop_le) LESSEQUAL {: RESULT=new Relop_le(); :}; /* Example: <= */
+
+Setop ::= (Setop) UNION {: RESULT=new Setop(); :};
+
+
+						

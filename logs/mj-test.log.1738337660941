@@ -1,0 +1,38 @@
+INFO  16:33:57,511 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  16:33:57,571 - #2 program
+INFO  16:33:57,572 - #41 test
+INFO  16:33:57,572 - #5 const
+INFO  16:33:57,574 - #41 int
+INFO  16:33:57,574 - #41 pi
+INFO  16:33:57,575 - #6 =
+INFO  16:33:57,575 - #42 3
+INFO  16:33:57,575 - #7 ;
+INFO  16:33:57,577 - #41 set
+INFO  16:33:57,579 - #41 x
+INFO  16:33:57,579 - #9 [
+INFO  16:33:57,579 - #10 ]
+INFO  16:33:57,579 - #7 ;
+INFO  16:33:57,580 - #3 {
+INFO  16:33:57,582 - #13 void
+INFO  16:33:57,583 - #41 main
+INFO  16:33:57,583 - #11 (
+INFO  16:33:57,583 - #12 )
+INFO  16:33:57,585 - #41 set
+INFO  16:33:57,586 - #41 x
+INFO  16:33:57,587 - #9 [
+INFO  16:33:57,587 - #10 ]
+INFO  16:33:57,595 - #7 ;
+INFO  16:33:57,595 - #3 {
+INFO  16:33:57,595 - #22 print
+INFO  16:33:57,596 - #11 (
+INFO  16:33:57,596 - #41 c
+INFO  16:33:57,597 - #12 )
+INFO  16:33:57,598 - #7 ;
+INFO  16:33:57,598 - #4 }
+INFO  16:33:57,598 - #4 }
+INFO  16:33:57,605 - =====================================================================
+ERROR 16:33:57,609 - Pristup nedefinisanoj promeljivoj:Designator_var(
+ c
+) [Designator_var] na liniji 8
+INFO  16:33:57,609 - =====================================================================
+ERROR 16:33:57,609 - Parsiranje NIJE uspesno zavrseno!

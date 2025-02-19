@@ -1,0 +1,534 @@
+INFO  21:34:30,038 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  21:34:30,109 - #2 program
+INFO  21:34:30,109 - #41 test301
+INFO  21:34:30,110 - #5 const
+INFO  21:34:30,111 - #41 int
+INFO  21:34:30,112 - #41 nula
+INFO  21:34:30,112 - #6 =
+INFO  21:34:30,113 - #42 0
+INFO  21:34:30,113 - #7 ;
+INFO  21:34:30,115 - #5 const
+INFO  21:34:30,115 - #41 int
+INFO  21:34:30,115 - #41 jedan
+INFO  21:34:30,116 - #6 =
+INFO  21:34:30,116 - #42 1
+INFO  21:34:30,116 - #7 ;
+INFO  21:34:30,116 - #5 const
+INFO  21:34:30,116 - #41 int
+INFO  21:34:30,116 - #41 pet
+INFO  21:34:30,116 - #6 =
+INFO  21:34:30,116 - #42 5
+INFO  21:34:30,117 - #7 ;
+INFO  21:34:30,117 - #41 int
+INFO  21:34:30,117 - #41 niz
+INFO  21:34:30,117 - #9 [
+INFO  21:34:30,117 - #10 ]
+INFO  21:34:30,117 - #7 ;
+INFO  21:34:30,118 - #41 char
+INFO  21:34:30,119 - #41 nizch
+INFO  21:34:30,119 - #9 [
+INFO  21:34:30,119 - #10 ]
+INFO  21:34:30,119 - #7 ;
+INFO  21:34:30,119 - #41 int
+INFO  21:34:30,119 - #41 a
+INFO  21:34:30,119 - #7 ;
+INFO  21:34:30,120 - #41 set
+INFO  21:34:30,120 - #41 s1
+INFO  21:34:30,120 - #8 ,
+INFO  21:34:30,120 - #41 s2
+INFO  21:34:30,121 - #8 ,
+INFO  21:34:30,121 - #41 s3
+INFO  21:34:30,121 - #7 ;
+INFO  21:34:30,121 - #3 {
+INFO  21:34:30,122 - #13 void
+INFO  21:34:30,122 - #41 main
+INFO  21:34:30,123 - #11 (
+INFO  21:34:30,123 - #12 )
+INFO  21:34:30,124 - #41 int
+INFO  21:34:30,127 - #41 bodovi
+INFO  21:34:30,127 - #7 ;
+INFO  21:34:30,127 - #41 int
+INFO  21:34:30,127 - #41 temp
+INFO  21:34:30,127 - #7 ;
+INFO  21:34:30,128 - #3 {
+INFO  21:34:30,128 - #41 bodovi
+INFO  21:34:30,129 - #6 =
+INFO  21:34:30,129 - #42 0
+INFO  21:34:30,131 - #7 ;
+INFO  21:34:30,132 - #41 bodovi
+INFO  21:34:30,133 - #23 ++
+INFO  21:34:30,133 - #7 ;
+INFO  21:34:30,133 - #41 bodovi
+INFO  21:34:30,133 - #6 =
+INFO  21:34:30,133 - #41 bodovi
+INFO  21:34:30,134 - #29 +
+INFO  21:34:30,134 - #41 jedan
+INFO  21:34:30,135 - #7 ;
+INFO  21:34:30,136 - #41 bodovi
+INFO  21:34:30,136 - #6 =
+INFO  21:34:30,136 - #41 bodovi
+INFO  21:34:30,136 - #31 *
+INFO  21:34:30,136 - #41 pet
+INFO  21:34:30,137 - #7 ;
+INFO  21:34:30,138 - #41 bodovi
+INFO  21:34:30,138 - #24 --
+INFO  21:34:30,138 - #7 ;
+INFO  21:34:30,138 - #22 print
+INFO  21:34:30,138 - #11 (
+INFO  21:34:30,138 - #41 bodovi
+INFO  21:34:30,138 - #12 )
+INFO  21:34:30,138 - #7 ;
+INFO  21:34:30,139 - #22 print
+INFO  21:34:30,139 - #11 (
+INFO  21:34:30,139 - #41 eol
+INFO  21:34:30,139 - #12 )
+INFO  21:34:30,139 - #7 ;
+INFO  21:34:30,139 - #41 niz
+INFO  21:34:30,139 - #6 =
+INFO  21:34:30,140 - #40 new
+INFO  21:34:30,140 - #41 int
+INFO  21:34:30,140 - #9 [
+INFO  21:34:30,140 - #42 3
+INFO  21:34:30,140 - #10 ]
+INFO  21:34:30,140 - #7 ;
+INFO  21:34:30,140 - #41 niz
+INFO  21:34:30,141 - #9 [
+INFO  21:34:30,141 - #41 nula
+INFO  21:34:30,142 - #10 ]
+INFO  21:34:30,142 - #6 =
+INFO  21:34:30,142 - #42 2
+INFO  21:34:30,143 - #7 ;
+INFO  21:34:30,143 - #41 niz
+INFO  21:34:30,143 - #9 [
+INFO  21:34:30,143 - #41 jedan
+INFO  21:34:30,143 - #10 ]
+INFO  21:34:30,143 - #6 =
+INFO  21:34:30,143 - #42 3
+INFO  21:34:30,143 - #7 ;
+INFO  21:34:30,144 - #41 niz
+INFO  21:34:30,144 - #9 [
+INFO  21:34:30,144 - #41 niz
+INFO  21:34:30,144 - #9 [
+INFO  21:34:30,144 - #41 nula
+INFO  21:34:30,144 - #10 ]
+INFO  21:34:30,144 - #10 ]
+INFO  21:34:30,144 - #6 =
+INFO  21:34:30,144 - #41 niz
+INFO  21:34:30,145 - #9 [
+INFO  21:34:30,145 - #41 niz
+INFO  21:34:30,145 - #9 [
+INFO  21:34:30,145 - #42 1
+INFO  21:34:30,145 - #10 ]
+INFO  21:34:30,145 - #10 ]
+INFO  21:34:30,145 - #31 *
+INFO  21:34:30,145 - #42 4
+INFO  21:34:30,145 - #7 ;
+INFO  21:34:30,146 - #41 bodovi
+INFO  21:34:30,146 - #6 =
+INFO  21:34:30,146 - #41 niz
+INFO  21:34:30,146 - #9 [
+INFO  21:34:30,146 - #42 2
+INFO  21:34:30,146 - #10 ]
+INFO  21:34:30,146 - #32 /
+INFO  21:34:30,147 - #41 niz
+INFO  21:34:30,148 - #9 [
+INFO  21:34:30,148 - #42 0
+INFO  21:34:30,148 - #10 ]
+INFO  21:34:30,148 - #7 ;
+INFO  21:34:30,148 - #22 print
+INFO  21:34:30,148 - #11 (
+INFO  21:34:30,148 - #41 bodovi
+INFO  21:34:30,149 - #12 )
+INFO  21:34:30,149 - #7 ;
+INFO  21:34:30,149 - #22 print
+INFO  21:34:30,149 - #11 (
+INFO  21:34:30,149 - #41 eol
+INFO  21:34:30,149 - #12 )
+INFO  21:34:30,149 - #7 ;
+INFO  21:34:30,149 - #22 print
+INFO  21:34:30,149 - #11 (
+INFO  21:34:30,149 - #41 niz
+INFO  21:34:30,150 - #9 [
+INFO  21:34:30,150 - #42 2
+INFO  21:34:30,150 - #10 ]
+INFO  21:34:30,150 - #12 )
+INFO  21:34:30,150 - #7 ;
+INFO  21:34:30,150 - #22 print
+INFO  21:34:30,150 - #11 (
+INFO  21:34:30,150 - #41 eol
+INFO  21:34:30,151 - #12 )
+INFO  21:34:30,151 - #7 ;
+INFO  21:34:30,151 - #41 nizch
+INFO  21:34:30,151 - #6 =
+INFO  21:34:30,151 - #40 new
+INFO  21:34:30,151 - #41 char
+INFO  21:34:30,151 - #9 [
+INFO  21:34:30,152 - #42 3
+INFO  21:34:30,152 - #10 ]
+INFO  21:34:30,152 - #7 ;
+INFO  21:34:30,152 - #41 nizch
+INFO  21:34:30,152 - #9 [
+INFO  21:34:30,152 - #42 0
+INFO  21:34:30,153 - #10 ]
+INFO  21:34:30,153 - #6 =
+INFO  21:34:30,153 - #44 a
+INFO  21:34:30,154 - #7 ;
+INFO  21:34:30,154 - #41 nizch
+INFO  21:34:30,154 - #9 [
+INFO  21:34:30,154 - #41 jedan
+INFO  21:34:30,154 - #10 ]
+INFO  21:34:30,154 - #6 =
+INFO  21:34:30,154 - #44 b
+INFO  21:34:30,154 - #7 ;
+INFO  21:34:30,155 - #41 nizch
+INFO  21:34:30,155 - #9 [
+INFO  21:34:30,155 - #41 pet
+INFO  21:34:30,155 - #30 -
+INFO  21:34:30,155 - #42 3
+INFO  21:34:30,156 - #10 ]
+INFO  21:34:30,156 - #6 =
+INFO  21:34:30,156 - #44 c
+INFO  21:34:30,156 - #7 ;
+INFO  21:34:30,157 - #22 print
+INFO  21:34:30,157 - #11 (
+INFO  21:34:30,157 - #41 nizch
+INFO  21:34:30,157 - #9 [
+INFO  21:34:30,157 - #42 1
+INFO  21:34:30,157 - #10 ]
+INFO  21:34:30,157 - #12 )
+INFO  21:34:30,157 - #7 ;
+INFO  21:34:30,157 - #22 print
+INFO  21:34:30,158 - #11 (
+INFO  21:34:30,158 - #41 eol
+INFO  21:34:30,158 - #12 )
+INFO  21:34:30,158 - #7 ;
+INFO  21:34:30,158 - #22 print
+INFO  21:34:30,158 - #11 (
+INFO  21:34:30,159 - #41 nizch
+INFO  21:34:30,159 - #9 [
+INFO  21:34:30,159 - #41 jedan
+INFO  21:34:30,159 - #31 *
+INFO  21:34:30,159 - #42 2
+INFO  21:34:30,159 - #10 ]
+INFO  21:34:30,159 - #12 )
+INFO  21:34:30,161 - #7 ;
+INFO  21:34:30,161 - #22 print
+INFO  21:34:30,161 - #11 (
+INFO  21:34:30,161 - #41 eol
+INFO  21:34:30,161 - #12 )
+INFO  21:34:30,161 - #7 ;
+INFO  21:34:30,161 - #22 print
+INFO  21:34:30,161 - #11 (
+INFO  21:34:30,161 - #41 ord
+INFO  21:34:30,162 - #11 (
+INFO  21:34:30,162 - #41 nizch
+INFO  21:34:30,163 - #9 [
+INFO  21:34:30,163 - #42 0
+INFO  21:34:30,163 - #10 ]
+INFO  21:34:30,164 - #12 )
+INFO  21:34:30,165 - #12 )
+INFO  21:34:30,166 - #7 ;
+INFO  21:34:30,166 - #41 a
+INFO  21:34:30,166 - #6 =
+INFO  21:34:30,166 - #42 1
+INFO  21:34:30,166 - #7 ;
+INFO  21:34:30,166 - #21 read
+INFO  21:34:30,166 - #11 (
+INFO  21:34:30,166 - #41 bodovi
+INFO  21:34:30,167 - #12 )
+INFO  21:34:30,167 - #7 ;
+INFO  21:34:30,167 - #41 bodovi
+INFO  21:34:30,167 - #6 =
+INFO  21:34:30,167 - #30 -
+INFO  21:34:30,168 - #41 bodovi
+INFO  21:34:30,168 - #29 +
+INFO  21:34:30,168 - #11 (
+INFO  21:34:30,168 - #41 pet
+INFO  21:34:30,168 - #31 *
+INFO  21:34:30,168 - #41 a
+INFO  21:34:30,168 - #32 /
+INFO  21:34:30,168 - #42 2
+INFO  21:34:30,168 - #30 -
+INFO  21:34:30,168 - #41 nula
+INFO  21:34:30,168 - #12 )
+INFO  21:34:30,170 - #31 *
+INFO  21:34:30,170 - #41 bodovi
+INFO  21:34:30,170 - #30 -
+INFO  21:34:30,171 - #11 (
+INFO  21:34:30,171 - #42 3
+INFO  21:34:30,171 - #33 %
+INFO  21:34:30,171 - #42 2
+INFO  21:34:30,172 - #29 +
+INFO  21:34:30,173 - #42 3
+INFO  21:34:30,173 - #31 *
+INFO  21:34:30,173 - #42 2
+INFO  21:34:30,173 - #30 -
+INFO  21:34:30,173 - #42 7
+INFO  21:34:30,173 - #12 )
+INFO  21:34:30,173 - #7 ;
+INFO  21:34:30,173 - #22 print
+INFO  21:34:30,173 - #11 (
+INFO  21:34:30,173 - #41 bodovi
+INFO  21:34:30,173 - #12 )
+INFO  21:34:30,173 - #7 ;
+INFO  21:34:30,173 - #41 niz
+INFO  21:34:30,174 - #9 [
+INFO  21:34:30,174 - #42 0
+INFO  21:34:30,174 - #10 ]
+INFO  21:34:30,174 - #6 =
+INFO  21:34:30,174 - #42 1
+INFO  21:34:30,174 - #7 ;
+INFO  21:34:30,174 - #41 niz
+INFO  21:34:30,175 - #9 [
+INFO  21:34:30,175 - #42 1
+INFO  21:34:30,175 - #10 ]
+INFO  21:34:30,175 - #6 =
+INFO  21:34:30,175 - #42 2
+INFO  21:34:30,175 - #7 ;
+INFO  21:34:30,175 - #41 niz
+INFO  21:34:30,175 - #9 [
+INFO  21:34:30,175 - #42 2
+INFO  21:34:30,176 - #10 ]
+INFO  21:34:30,176 - #6 =
+INFO  21:34:30,176 - #42 3
+INFO  21:34:30,176 - #7 ;
+INFO  21:34:30,176 - #41 s1
+INFO  21:34:30,176 - #6 =
+INFO  21:34:30,176 - #40 new
+INFO  21:34:30,176 - #41 set
+INFO  21:34:30,176 - #9 [
+INFO  21:34:30,176 - #42 5
+INFO  21:34:30,177 - #10 ]
+INFO  21:34:30,177 - #7 ;
+INFO  21:34:30,177 - #41 s2
+INFO  21:34:30,177 - #6 =
+INFO  21:34:30,177 - #40 new
+INFO  21:34:30,177 - #41 set
+INFO  21:34:30,177 - #9 [
+INFO  21:34:30,177 - #42 5
+INFO  21:34:30,177 - #10 ]
+INFO  21:34:30,177 - #7 ;
+INFO  21:34:30,177 - #41 s3
+INFO  21:34:30,178 - #6 =
+INFO  21:34:30,178 - #40 new
+INFO  21:34:30,178 - #41 set
+INFO  21:34:30,178 - #9 [
+INFO  21:34:30,178 - #42 10
+INFO  21:34:30,178 - #10 ]
+INFO  21:34:30,178 - #7 ;
+INFO  21:34:30,179 - #41 s3
+INFO  21:34:30,179 - #6 =
+INFO  21:34:30,179 - #41 s1
+INFO  21:34:30,179 - #28 union
+INFO  21:34:30,179 - #41 s2
+INFO  21:34:30,180 - #7 ;
+INFO  21:34:30,180 - #22 print
+INFO  21:34:30,180 - #11 (
+INFO  21:34:30,180 - #41 s3
+INFO  21:34:30,181 - #12 )
+INFO  21:34:30,181 - #7 ;
+INFO  21:34:30,181 - #22 print
+INFO  21:34:30,181 - #11 (
+INFO  21:34:30,181 - #41 eol
+INFO  21:34:30,181 - #12 )
+INFO  21:34:30,181 - #7 ;
+INFO  21:34:30,181 - #41 niz
+INFO  21:34:30,181 - #9 [
+INFO  21:34:30,181 - #42 0
+INFO  21:34:30,181 - #10 ]
+INFO  21:34:30,182 - #6 =
+INFO  21:34:30,182 - #42 5
+INFO  21:34:30,182 - #7 ;
+INFO  21:34:30,182 - #41 niz
+INFO  21:34:30,182 - #9 [
+INFO  21:34:30,183 - #42 1
+INFO  21:34:30,183 - #10 ]
+INFO  21:34:30,183 - #6 =
+INFO  21:34:30,183 - #42 5
+INFO  21:34:30,183 - #7 ;
+INFO  21:34:30,183 - #41 niz
+INFO  21:34:30,183 - #9 [
+INFO  21:34:30,183 - #42 2
+INFO  21:34:30,183 - #10 ]
+INFO  21:34:30,183 - #6 =
+INFO  21:34:30,183 - #42 10
+INFO  21:34:30,183 - #7 ;
+INFO  21:34:30,183 - #41 s1
+INFO  21:34:30,183 - #6 =
+INFO  21:34:30,184 - #40 new
+INFO  21:34:30,184 - #41 set
+INFO  21:34:30,184 - #9 [
+INFO  21:34:30,184 - #42 5
+INFO  21:34:30,184 - #10 ]
+INFO  21:34:30,184 - #7 ;
+INFO  21:34:30,184 - #41 s2
+INFO  21:34:30,184 - #6 =
+INFO  21:34:30,184 - #40 new
+INFO  21:34:30,184 - #41 set
+INFO  21:34:30,185 - #9 [
+INFO  21:34:30,185 - #42 5
+INFO  21:34:30,185 - #10 ]
+INFO  21:34:30,185 - #7 ;
+INFO  21:34:30,185 - #41 s3
+INFO  21:34:30,185 - #6 =
+INFO  21:34:30,185 - #40 new
+INFO  21:34:30,185 - #41 set
+INFO  21:34:30,185 - #9 [
+INFO  21:34:30,185 - #42 10
+INFO  21:34:30,185 - #10 ]
+INFO  21:34:30,185 - #7 ;
+INFO  21:34:30,185 - #21 read
+INFO  21:34:30,185 - #11 (
+INFO  21:34:30,186 - #41 temp
+INFO  21:34:30,186 - #12 )
+INFO  21:34:30,186 - #7 ;
+INFO  21:34:30,186 - #41 add
+INFO  21:34:30,186 - #11 (
+INFO  21:34:30,186 - #41 s2
+INFO  21:34:30,186 - #8 ,
+INFO  21:34:30,186 - #41 temp
+INFO  21:34:30,186 - #12 )
+INFO  21:34:30,187 - #7 ;
+INFO  21:34:30,187 - #21 read
+INFO  21:34:30,187 - #11 (
+INFO  21:34:30,187 - #41 temp
+INFO  21:34:30,187 - #12 )
+INFO  21:34:30,187 - #7 ;
+INFO  21:34:30,187 - #41 add
+INFO  21:34:30,187 - #11 (
+INFO  21:34:30,187 - #41 s2
+INFO  21:34:30,187 - #8 ,
+INFO  21:34:30,187 - #41 temp
+INFO  21:34:30,187 - #12 )
+INFO  21:34:30,187 - #7 ;
+INFO  21:34:30,187 - #21 read
+INFO  21:34:30,187 - #11 (
+INFO  21:34:30,187 - #41 temp
+INFO  21:34:30,187 - #12 )
+INFO  21:34:30,187 - #7 ;
+INFO  21:34:30,187 - #41 add
+INFO  21:34:30,187 - #11 (
+INFO  21:34:30,188 - #41 s2
+INFO  21:34:30,188 - #8 ,
+INFO  21:34:30,188 - #41 temp
+INFO  21:34:30,188 - #12 )
+INFO  21:34:30,188 - #7 ;
+INFO  21:34:30,188 - #41 s3
+INFO  21:34:30,188 - #6 =
+INFO  21:34:30,188 - #41 s1
+INFO  21:34:30,188 - #28 union
+INFO  21:34:30,188 - #41 s2
+INFO  21:34:30,188 - #7 ;
+INFO  21:34:30,188 - #22 print
+INFO  21:34:30,188 - #11 (
+INFO  21:34:30,188 - #41 s3
+INFO  21:34:30,188 - #12 )
+INFO  21:34:30,189 - #7 ;
+INFO  21:34:30,189 - #4 }
+INFO  21:34:30,189 - #4 }
+INFO  21:34:30,201 - =====================================================================
+INFO  21:34:30,217 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 21
+INFO  21:34:30,217 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 22
+INFO  21:34:30,217 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 23
+INFO  21:34:30,217 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 23
+INFO  21:34:30,218 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 23
+INFO  21:34:30,218 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 24
+INFO  21:34:30,218 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 24
+INFO  21:34:30,218 - Pristup simbolickoj konstanti : pet[Kind : 0] na liniji 24
+INFO  21:34:30,218 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 25
+INFO  21:34:30,218 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 26
+INFO  21:34:30,218 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 27
+INFO  21:34:30,219 - Pristup globalnoj promeljivoj: niz[Kind : 1] na liniji 29
+INFO  21:34:30,219 - Pristup simbolickoj konstanti : nula[Kind : 0] na liniji 30
+INFO  21:34:30,220 - Pristup elementu niza :niz[Kind: 5] na liniji 30
+INFO  21:34:30,220 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 31
+INFO  21:34:30,220 - Pristup elementu niza :niz[Kind: 5] na liniji 31
+INFO  21:34:30,220 - Pristup simbolickoj konstanti : nula[Kind : 0] na liniji 32
+INFO  21:34:30,220 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  21:34:30,220 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  21:34:30,220 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  21:34:30,220 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  21:34:30,221 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 33
+INFO  21:34:30,221 - Pristup elementu niza :niz[Kind: 5] na liniji 33
+INFO  21:34:30,221 - Pristup elementu niza :niz[Kind: 5] na liniji 33
+INFO  21:34:30,221 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 34
+INFO  21:34:30,221 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 35
+INFO  21:34:30,221 - Pristup elementu niza :niz[Kind: 5] na liniji 36
+INFO  21:34:30,221 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 37
+INFO  21:34:30,221 - Pristup globalnoj promeljivoj: nizch[Kind : 1] na liniji 39
+INFO  21:34:30,221 - Pristup elementu niza :nizch[Kind: 5] na liniji 40
+INFO  21:34:30,221 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 41
+INFO  21:34:30,221 - Pristup elementu niza :nizch[Kind: 5] na liniji 41
+INFO  21:34:30,221 - Pristup simbolickoj konstanti : pet[Kind : 0] na liniji 42
+INFO  21:34:30,222 - Pristup elementu niza :nizch[Kind: 5] na liniji 42
+INFO  21:34:30,222 - Pristup elementu niza :nizch[Kind: 5] na liniji 43
+INFO  21:34:30,222 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 44
+INFO  21:34:30,222 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 45
+INFO  21:34:30,222 - Pristup elementu niza :nizch[Kind: 5] na liniji 45
+INFO  21:34:30,222 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 46
+INFO  21:34:30,222 - Pristup lokalnoj promeljivoj: ord[Kind : 3] na liniji 47
+INFO  21:34:30,222 - Pristup elementu niza :nizch[Kind: 5] na liniji 47
+INFO  21:34:30,223 - Poziv funkcije:ord[Kind: 1] na liniji 47
+INFO  21:34:30,232 - Fp list size:0[] na liniji 47
+INFO  21:34:30,232 - Ap list size:1[rs.etf.pp1.symboltable.concepts.Struct@527740a2] na liniji 47
+INFO  21:34:30,236 - Fp list size:0 na liniji 47
+INFO  21:34:30,237 - Ap list size:1 na liniji 47
+ERROR 21:34:30,237 - [Greska velicina] Nekompatibilnost parametara pri pozivu metode: ord na liniji 47
+INFO  21:34:30,237 - Pristup globalnoj promeljivoj: a[Kind : 1] na liniji 49
+INFO  21:34:30,237 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 50
+INFO  21:34:30,237 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 51
+INFO  21:34:30,237 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 51
+INFO  21:34:30,237 - Pristup simbolickoj konstanti : pet[Kind : 0] na liniji 51
+INFO  21:34:30,237 - Pristup globalnoj promeljivoj: a[Kind : 1] na liniji 51
+INFO  21:34:30,238 - Pristup simbolickoj konstanti : nula[Kind : 0] na liniji 51
+INFO  21:34:30,238 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 51
+INFO  21:34:30,238 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 52
+INFO  21:34:30,238 - Pristup elementu niza :niz[Kind: 5] na liniji 54
+INFO  21:34:30,238 - Pristup elementu niza :niz[Kind: 5] na liniji 54
+INFO  21:34:30,238 - Pristup elementu niza :niz[Kind: 5] na liniji 54
+INFO  21:34:30,238 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 55
+INFO  21:34:30,238 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 55
+INFO  21:34:30,238 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 55
+INFO  21:34:30,238 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 56
+INFO  21:34:30,238 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 56
+INFO  21:34:30,239 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 56
+INFO  21:34:30,239 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 57
+ERROR 21:34:30,239 - Print operacija ne int/char/bool izraza na liniji 57
+INFO  21:34:30,239 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 58
+INFO  21:34:30,239 - Pristup elementu niza :niz[Kind: 5] na liniji 60
+INFO  21:34:30,239 - Pristup elementu niza :niz[Kind: 5] na liniji 60
+INFO  21:34:30,239 - Pristup elementu niza :niz[Kind: 5] na liniji 60
+INFO  21:34:30,239 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 61
+INFO  21:34:30,239 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 61
+INFO  21:34:30,239 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 61
+INFO  21:34:30,239 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 62
+INFO  21:34:30,239 - Pristup globalnoj promeljivoj: add[Kind : 3] na liniji 62
+INFO  21:34:30,239 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 62
+INFO  21:34:30,239 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 62
+INFO  21:34:30,240 - Poziv funkcije: add[Kind: 3] na liniji 62
+INFO  21:34:30,240 - Fp list size:0[] na liniji 62
+INFO  21:34:30,240 - Ap list size:2[rs.etf.pp1.symboltable.concepts.Struct@6536e911, rs.etf.pp1.symboltable.concepts.Struct@520a3426] na liniji 62
+ERROR 21:34:30,240 - [Greska velicina] Nekompatibilnost parametara pri pozivu metode: add na liniji 62
+INFO  21:34:30,241 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 63
+INFO  21:34:30,241 - Pristup globalnoj promeljivoj: add[Kind : 3] na liniji 63
+INFO  21:34:30,241 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 63
+INFO  21:34:30,241 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 63
+INFO  21:34:30,241 - Poziv funkcije: add[Kind: 3] na liniji 63
+INFO  21:34:30,241 - Fp list size:0[] na liniji 63
+INFO  21:34:30,241 - Ap list size:2[rs.etf.pp1.symboltable.concepts.Struct@6536e911, rs.etf.pp1.symboltable.concepts.Struct@520a3426] na liniji 63
+ERROR 21:34:30,241 - [Greska velicina] Nekompatibilnost parametara pri pozivu metode: add na liniji 63
+INFO  21:34:30,241 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 64
+INFO  21:34:30,241 - Pristup globalnoj promeljivoj: add[Kind : 3] na liniji 64
+INFO  21:34:30,242 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 64
+INFO  21:34:30,242 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 64
+INFO  21:34:30,242 - Poziv funkcije: add[Kind: 3] na liniji 64
+INFO  21:34:30,242 - Fp list size:0[] na liniji 64
+INFO  21:34:30,242 - Ap list size:2[rs.etf.pp1.symboltable.concepts.Struct@6536e911, rs.etf.pp1.symboltable.concepts.Struct@520a3426] na liniji 64
+ERROR 21:34:30,242 - [Greska velicina] Nekompatibilnost parametara pri pozivu metode: add na liniji 64
+INFO  21:34:30,242 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 65
+INFO  21:34:30,243 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 65
+INFO  21:34:30,243 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 65
+INFO  21:34:30,243 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 66
+ERROR 21:34:30,243 - Print operacija ne int/char/bool izraza na liniji 66
+INFO  21:34:30,243 - =====================================================================
+ERROR 21:34:30,245 - Parsiranje NIJE uspesno zavrseno!

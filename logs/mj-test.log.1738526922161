@@ -1,0 +1,36 @@
+INFO  21:08:28,888 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  21:08:28,939 - #2 program
+INFO  21:08:28,939 - #41 test
+INFO  21:08:28,939 - #5 const
+INFO  21:08:28,941 - #41 int
+INFO  21:08:28,941 - #41 pi
+INFO  21:08:28,942 - #6 =
+INFO  21:08:28,942 - #42 3
+INFO  21:08:28,943 - #7 ;
+INFO  21:08:28,945 - #41 bool
+INFO  21:08:28,945 - #41 tru
+INFO  21:08:28,945 - #7 ;
+INFO  21:08:28,946 - #3 {
+INFO  21:08:28,947 - #13 void
+INFO  21:08:28,948 - #41 main
+INFO  21:08:28,948 - #11 (
+INFO  21:08:28,948 - #12 )
+INFO  21:08:28,949 - #41 int
+INFO  21:08:28,951 - #41 a
+INFO  21:08:28,951 - #8 ,
+INFO  21:08:28,951 - #41 x
+INFO  21:08:28,951 - #7 ;
+INFO  21:08:28,951 - #3 {
+INFO  21:08:28,952 - #41 x
+INFO  21:08:28,953 - #6 =
+INFO  21:08:28,953 - #41 a
+INFO  21:08:28,954 - #7 ;
+INFO  21:08:28,955 - #17 return
+INFO  21:08:28,956 - #7 ;
+INFO  21:08:28,956 - #4 }
+INFO  21:08:28,957 - #4 }
+INFO  21:08:28,963 - =====================================================================
+INFO  21:08:28,971 - Pristup lokalnoj promeljivoj: x[Kind : 1] na liniji 8
+INFO  21:08:28,972 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 8
+INFO  21:08:28,972 - =====================================================================
+INFO  21:08:28,973 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,61 @@
+INFO  18:56:40,875 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  18:56:40,940 - #2 program
+INFO  18:56:40,941 - #41 test
+INFO  18:56:40,941 - #5 const
+INFO  18:56:40,943 - #41 int
+INFO  18:56:40,943 - #41 pi
+INFO  18:56:40,944 - #6 =
+INFO  18:56:40,944 - #42 3
+INFO  18:56:40,944 - #7 ;
+INFO  18:56:40,946 - #41 int
+INFO  18:56:40,946 - #41 x
+INFO  18:56:40,946 - #8 ,
+INFO  18:56:40,947 - #41 y
+INFO  18:56:40,947 - #9 [
+INFO  18:56:40,947 - #10 ]
+INFO  18:56:40,947 - #7 ;
+INFO  18:56:40,948 - #3 {
+INFO  18:56:40,948 - #13 void
+INFO  18:56:40,949 - #41 main
+INFO  18:56:40,950 - #11 (
+INFO  18:56:40,950 - #12 )
+INFO  18:56:40,951 - #41 int
+INFO  18:56:40,952 - #41 a
+INFO  18:56:40,961 - #8 ,
+INFO  18:56:40,961 - #41 b
+INFO  18:56:40,961 - #7 ;
+INFO  18:56:40,961 - #41 char
+INFO  18:56:40,962 - #41 carr
+INFO  18:56:40,962 - #9 [
+INFO  18:56:40,962 - #10 ]
+INFO  18:56:40,962 - #7 ;
+INFO  18:56:40,962 - #3 {
+INFO  18:56:40,962 - #41 carr
+INFO  18:56:40,963 - #6 =
+INFO  18:56:40,964 - #40 new
+INFO  18:56:40,964 - #41 char
+INFO  18:56:40,965 - #9 [
+INFO  18:56:40,965 - #42 2
+INFO  18:56:40,965 - #10 ]
+INFO  18:56:40,966 - #7 ;
+INFO  18:56:40,967 - #41 a
+INFO  18:56:40,967 - #6 =
+INFO  18:56:40,967 - #30 -
+INFO  18:56:40,968 - #42 5
+INFO  18:56:40,968 - #7 ;
+INFO  18:56:40,968 - #22 print
+INFO  18:56:40,968 - #11 (
+INFO  18:56:40,968 - #41 carr
+INFO  18:56:40,968 - #9 [
+INFO  18:56:40,969 - #42 1
+INFO  18:56:40,969 - #10 ]
+INFO  18:56:40,970 - #12 )
+INFO  18:56:40,970 - #7 ;
+INFO  18:56:40,970 - #4 }
+INFO  18:56:40,970 - #4 }
+INFO  18:56:40,980 - =====================================================================
+INFO  18:56:40,991 - Pristup lokalnoj promeljivoj: carr[Kind : 1] na liniji 9
+INFO  18:56:40,991 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 10
+INFO  18:56:40,992 - Pristup elementu niza :carr[Kind: 5] na liniji 11
+INFO  18:56:40,992 - =====================================================================
+INFO  18:56:40,997 - Generisanje  uspesno zavrseno!

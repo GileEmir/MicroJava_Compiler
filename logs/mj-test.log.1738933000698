@@ -1,0 +1,84 @@
+INFO  13:52:34,471 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  13:52:34,556 - #2 program
+INFO  13:52:34,556 - #41 test301
+INFO  13:52:34,557 - #5 const
+INFO  13:52:34,558 - #41 int
+INFO  13:52:34,558 - #41 nula
+INFO  13:52:34,559 - #6 =
+INFO  13:52:34,560 - #42 0
+INFO  13:52:34,560 - #7 ;
+INFO  13:52:34,562 - #5 const
+INFO  13:52:34,562 - #41 int
+INFO  13:52:34,562 - #41 jedan
+INFO  13:52:34,562 - #6 =
+INFO  13:52:34,563 - #42 1
+INFO  13:52:34,563 - #7 ;
+INFO  13:52:34,563 - #5 const
+INFO  13:52:34,563 - #41 int
+INFO  13:52:34,564 - #41 pet
+INFO  13:52:34,564 - #6 =
+INFO  13:52:34,564 - #42 5
+INFO  13:52:34,564 - #7 ;
+INFO  13:52:34,564 - #41 int
+INFO  13:52:34,564 - #41 niz
+INFO  13:52:34,565 - #9 [
+INFO  13:52:34,565 - #10 ]
+INFO  13:52:34,565 - #7 ;
+INFO  13:52:34,565 - #41 char
+INFO  13:52:34,566 - #41 nizch
+INFO  13:52:34,567 - #9 [
+INFO  13:52:34,567 - #10 ]
+INFO  13:52:34,567 - #7 ;
+INFO  13:52:34,567 - #41 int
+INFO  13:52:34,567 - #41 a
+INFO  13:52:34,567 - #7 ;
+INFO  13:52:34,567 - #41 set
+INFO  13:52:34,568 - #41 s1
+INFO  13:52:34,568 - #8 ,
+INFO  13:52:34,568 - #41 s2
+INFO  13:52:34,568 - #8 ,
+INFO  13:52:34,568 - #41 s3
+INFO  13:52:34,568 - #7 ;
+INFO  13:52:34,568 - #3 {
+INFO  13:52:34,569 - #41 int
+INFO  13:52:34,569 - #41 f
+INFO  13:52:34,570 - #11 (
+INFO  13:52:34,570 - #12 )
+INFO  13:52:34,571 - #3 {
+INFO  13:52:34,574 - #17 return
+INFO  13:52:34,574 - #42 1
+INFO  13:52:34,574 - #7 ;
+INFO  13:52:34,576 - #4 }
+INFO  13:52:34,577 - #13 void
+INFO  13:52:34,579 - #41 main
+INFO  13:52:34,579 - #11 (
+INFO  13:52:34,579 - #12 )
+INFO  13:52:34,579 - #41 int
+INFO  13:52:34,579 - #41 a
+INFO  13:52:34,579 - #7 ;
+INFO  13:52:34,579 - #3 {
+INFO  13:52:34,580 - #41 a
+INFO  13:52:34,580 - #6 =
+INFO  13:52:34,580 - #41 f
+INFO  13:52:34,581 - #11 (
+INFO  13:52:34,582 - #12 )
+INFO  13:52:34,583 - #7 ;
+INFO  13:52:34,584 - #22 print
+INFO  13:52:34,584 - #11 (
+INFO  13:52:34,584 - #41 i
+INFO  13:52:34,584 - #12 )
+INFO  13:52:34,585 - #7 ;
+INFO  13:52:34,585 - #4 }
+INFO  13:52:34,585 - #4 }
+INFO  13:52:34,593 - =====================================================================
+INFO  13:52:34,608 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 21
+INFO  13:52:34,609 - Pristup globalnoj promeljivoj: f[Kind : 3] na liniji 21
+INFO  13:52:34,610 - Poziv funkcije:f[Kind: 1] na liniji 21
+INFO  13:52:34,620 - Fp list size:0[] na liniji 21
+INFO  13:52:34,620 - Ap list size:0[] na liniji 21
+INFO  13:52:34,626 - Fp list size:0 na liniji 21
+INFO  13:52:34,626 - Ap list size:0 na liniji 21
+ERROR 13:52:34,627 - Pristup nedefinisanoj promeljivoj:i na liniji 22
+ERROR 13:52:34,627 - Print operacija ne int/char/bool izraza na liniji 22
+INFO  13:52:34,627 - =====================================================================
+ERROR 13:52:34,628 - Parsiranje NIJE uspesno zavrseno!

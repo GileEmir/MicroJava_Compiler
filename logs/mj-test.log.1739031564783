@@ -1,0 +1,75 @@
+INFO  17:18:36,271 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  17:18:36,323 - #2 program
+INFO  17:18:36,324 - #41 test301
+INFO  17:18:36,324 - #5 const
+INFO  17:18:36,325 - #41 int
+INFO  17:18:36,325 - #41 nula
+INFO  17:18:36,326 - #6 =
+INFO  17:18:36,326 - #42 0
+INFO  17:18:36,326 - #7 ;
+INFO  17:18:36,328 - #5 const
+INFO  17:18:36,328 - #41 int
+INFO  17:18:36,328 - #41 jedan
+INFO  17:18:36,328 - #6 =
+INFO  17:18:36,328 - #42 1
+INFO  17:18:36,329 - #7 ;
+INFO  17:18:36,329 - #5 const
+INFO  17:18:36,329 - #41 int
+INFO  17:18:36,329 - #41 pet
+INFO  17:18:36,329 - #6 =
+INFO  17:18:36,329 - #42 5
+INFO  17:18:36,329 - #7 ;
+INFO  17:18:36,329 - #3 {
+INFO  17:18:36,329 - #13 void
+INFO  17:18:36,330 - #41 main
+INFO  17:18:36,330 - #11 (
+INFO  17:18:36,331 - #12 )
+INFO  17:18:36,331 - #41 int
+INFO  17:18:36,333 - #41 i
+INFO  17:18:36,333 - #7 ;
+INFO  17:18:36,334 - #3 {
+INFO  17:18:36,335 - #41 int
+INFO  17:18:36,336 - #41 i
+ERROR 17:18:36,336 - 
+Sintaksna greska na liniji 14
+INFO  17:18:36,336 - #7 ;
+INFO  17:18:36,336 - #41 i
+INFO  17:18:36,336 - #6 =
+INFO  17:18:36,337 - #42 0
+ERROR 17:18:36,343 - Oporavak od greske u iskazu dodele. Linija: 18
+INFO  17:18:36,344 - #7 ;
+INFO  17:18:36,345 - #19 do
+INFO  17:18:36,345 - #3 {
+INFO  17:18:36,346 - #22 print
+INFO  17:18:36,346 - #11 (
+INFO  17:18:36,346 - #42 1
+INFO  17:18:36,346 - #12 )
+INFO  17:18:36,347 - #7 ;
+INFO  17:18:36,347 - #41 i
+INFO  17:18:36,347 - #6 =
+INFO  17:18:36,347 - #41 i
+INFO  17:18:36,347 - #29 +
+INFO  17:18:36,347 - #42 1
+INFO  17:18:36,348 - #7 ;
+INFO  17:18:36,349 - #14 if
+INFO  17:18:36,349 - #11 (
+INFO  17:18:36,349 - #41 i
+INFO  17:18:36,349 - #36 >
+INFO  17:18:36,349 - #42 3
+INFO  17:18:36,351 - #12 )
+INFO  17:18:36,353 - #16 break
+INFO  17:18:36,353 - #7 ;
+INFO  17:18:36,353 - #4 }
+INFO  17:18:36,355 - #20 while
+INFO  17:18:36,355 - #11 (
+INFO  17:18:36,355 - #12 )
+INFO  17:18:36,355 - #7 ;
+INFO  17:18:36,356 - #4 }
+INFO  17:18:36,356 - #4 }
+INFO  17:18:36,362 - =====================================================================
+INFO  17:18:36,369 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 15
+INFO  17:18:36,369 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 23
+INFO  17:18:36,369 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 23
+INFO  17:18:36,370 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 24
+INFO  17:18:36,370 - =====================================================================
+ERROR 17:18:36,370 - Parsiranje NIJE uspesno zavrseno!

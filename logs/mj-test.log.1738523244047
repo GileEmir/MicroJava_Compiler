@@ -1,0 +1,53 @@
+INFO  20:06:47,718 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:06:47,759 - #2 program
+INFO  20:06:47,759 - #41 test
+INFO  20:06:47,759 - #5 const
+INFO  20:06:47,760 - #41 int
+INFO  20:06:47,761 - #41 pi
+INFO  20:06:47,761 - #6 =
+INFO  20:06:47,761 - #42 3
+INFO  20:06:47,761 - #7 ;
+INFO  20:06:47,763 - #41 char
+INFO  20:06:47,763 - #41 x
+INFO  20:06:47,764 - #7 ;
+INFO  20:06:47,765 - #41 bool
+INFO  20:06:47,766 - #41 tru
+INFO  20:06:47,766 - #7 ;
+INFO  20:06:47,766 - #3 {
+INFO  20:06:47,766 - #13 void
+INFO  20:06:47,767 - #41 main
+INFO  20:06:47,767 - #11 (
+INFO  20:06:47,767 - #12 )
+INFO  20:06:47,768 - #3 {
+INFO  20:06:47,769 - #14 if
+INFO  20:06:47,770 - #11 (
+INFO  20:06:47,770 - #41 x
+INFO  20:06:47,770 - #36 >
+INFO  20:06:47,772 - #42 0
+INFO  20:06:47,773 - #26 &&
+INFO  20:06:47,773 - #12 )
+ERROR 20:06:47,773 - 
+Sintaksna greska na liniji 8
+INFO  20:06:47,773 - #3 {
+INFO  20:06:47,773 - #41 x
+INFO  20:06:47,774 - #6 =
+ERROR 20:06:47,778 - Oporavak od greske u logickom izrazu unutar if konstrukcije.Linija : 8
+INFO  20:06:47,779 - #42 1
+INFO  20:06:47,779 - #7 ;
+INFO  20:06:47,779 - #4 }
+INFO  20:06:47,780 - #15 else
+INFO  20:06:47,780 - #3 {
+INFO  20:06:47,780 - #41 x
+INFO  20:06:47,780 - #6 =
+INFO  20:06:47,780 - #42 2
+INFO  20:06:47,780 - #7 ;
+INFO  20:06:47,781 - #4 }
+INFO  20:06:47,781 - #17 return
+INFO  20:06:47,781 - #7 ;
+INFO  20:06:47,781 - #4 }
+INFO  20:06:47,782 - #4 }
+INFO  20:06:47,788 - =====================================================================
+ERROR 20:06:47,792 - Neadekvatna dodela vrednosti u promenljivu: x na liniji 10
+ERROR 20:06:47,792 - Neadekvatna dodela vrednosti u promenljivu: x na liniji 12
+INFO  20:06:47,792 - =====================================================================
+ERROR 20:06:47,793 - Parsiranje NIJE uspesno zavrseno!

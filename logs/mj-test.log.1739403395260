@@ -1,0 +1,133 @@
+INFO  00:35:16,037 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  00:35:16,101 - #2 program
+INFO  00:35:16,101 - #41 test301
+INFO  00:35:16,101 - #5 const
+INFO  00:35:16,103 - #41 int
+INFO  00:35:16,103 - #41 nula
+INFO  00:35:16,104 - #6 =
+INFO  00:35:16,104 - #42 0
+INFO  00:35:16,104 - #7 ;
+INFO  00:35:16,107 - #5 const
+INFO  00:35:16,107 - #41 int
+INFO  00:35:16,108 - #41 jedan
+INFO  00:35:16,108 - #6 =
+INFO  00:35:16,108 - #42 1
+INFO  00:35:16,108 - #7 ;
+INFO  00:35:16,108 - #5 const
+INFO  00:35:16,108 - #41 int
+INFO  00:35:16,108 - #41 pet
+INFO  00:35:16,108 - #6 =
+INFO  00:35:16,109 - #42 5
+INFO  00:35:16,109 - #7 ;
+INFO  00:35:16,109 - #3 {
+INFO  00:35:16,109 - #41 int
+INFO  00:35:16,110 - #41 mejn
+INFO  00:35:16,110 - #11 (
+INFO  00:35:16,111 - #41 set
+INFO  00:35:16,111 - #41 a
+INFO  00:35:16,111 - #12 )
+INFO  00:35:16,112 - #41 int
+INFO  00:35:16,113 - #41 i
+INFO  00:35:16,113 - #7 ;
+INFO  00:35:16,114 - #3 {
+INFO  00:35:16,115 - #41 i
+INFO  00:35:16,115 - #6 =
+INFO  00:35:16,116 - #42 3
+INFO  00:35:16,116 - #7 ;
+INFO  00:35:16,118 - #17 return
+INFO  00:35:16,119 - #41 i
+INFO  00:35:16,119 - #7 ;
+INFO  00:35:16,119 - #4 }
+INFO  00:35:16,119 - #13 void
+INFO  00:35:16,120 - #41 main
+INFO  00:35:16,120 - #11 (
+INFO  00:35:16,121 - #12 )
+INFO  00:35:16,122 - #41 int
+INFO  00:35:16,123 - #41 i
+INFO  00:35:16,123 - #8 ,
+INFO  00:35:16,124 - #41 j
+INFO  00:35:16,124 - #9 [
+INFO  00:35:16,124 - #10 ]
+INFO  00:35:16,124 - #7 ;
+INFO  00:35:16,125 - #41 set
+INFO  00:35:16,125 - #41 b
+INFO  00:35:16,125 - #7 ;
+INFO  00:35:16,125 - #3 {
+INFO  00:35:16,125 - #41 i
+INFO  00:35:16,126 - #6 =
+INFO  00:35:16,126 - #42 5
+INFO  00:35:16,126 - #7 ;
+INFO  00:35:16,126 - #41 b
+INFO  00:35:16,126 - #6 =
+INFO  00:35:16,126 - #40 new
+INFO  00:35:16,127 - #41 set
+INFO  00:35:16,127 - #9 [
+INFO  00:35:16,127 - #42 3
+INFO  00:35:16,127 - #10 ]
+INFO  00:35:16,127 - #7 ;
+INFO  00:35:16,127 - #41 j
+INFO  00:35:16,128 - #6 =
+INFO  00:35:16,128 - #40 new
+INFO  00:35:16,128 - #41 int
+INFO  00:35:16,128 - #9 [
+INFO  00:35:16,128 - #42 3
+INFO  00:35:16,128 - #10 ]
+INFO  00:35:16,128 - #7 ;
+INFO  00:35:16,128 - #41 i
+INFO  00:35:16,128 - #6 =
+INFO  00:35:16,128 - #41 mejn
+INFO  00:35:16,128 - #11 (
+INFO  00:35:16,128 - #41 b
+INFO  00:35:16,129 - #12 )
+INFO  00:35:16,131 - #7 ;
+INFO  00:35:16,131 - #41 add
+INFO  00:35:16,131 - #11 (
+INFO  00:35:16,131 - #41 j
+INFO  00:35:16,131 - #12 )
+INFO  00:35:16,131 - #7 ;
+INFO  00:35:16,132 - #22 print
+INFO  00:35:16,132 - #11 (
+INFO  00:35:16,132 - #41 ord
+INFO  00:35:16,132 - #11 (
+INFO  00:35:16,132 - #44 b
+INFO  00:35:16,132 - #12 )
+INFO  00:35:16,132 - #12 )
+INFO  00:35:16,132 - #7 ;
+INFO  00:35:16,133 - #22 print
+INFO  00:35:16,133 - #11 (
+INFO  00:35:16,133 - #41 chr
+INFO  00:35:16,133 - #11 (
+INFO  00:35:16,133 - #42 98
+INFO  00:35:16,133 - #12 )
+INFO  00:35:16,133 - #12 )
+INFO  00:35:16,133 - #7 ;
+INFO  00:35:16,133 - #4 }
+INFO  00:35:16,133 - #4 }
+INFO  00:35:16,141 - =====================================================================
+INFO  00:35:16,151 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  00:35:16,151 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  00:35:16,152 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 14
+INFO  00:35:16,152 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 15
+INFO  00:35:16,152 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 16
+INFO  00:35:16,152 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 17
+INFO  00:35:16,152 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 17
+INFO  00:35:16,152 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 17
+INFO  00:35:16,153 - Poziv funkcije:mejn[Kind: 1] na liniji 17
+INFO  00:35:16,157 - Fp list size:1 na liniji 17
+INFO  00:35:16,157 - Ap list size:1 na liniji 17
+INFO  00:35:16,157 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 18
+INFO  00:35:16,157 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 18
+INFO  00:35:16,158 - Poziv funkcije: add[Kind: 3] na liniji 18
+INFO  00:35:16,162 - Fp list size:2[rs.etf.pp1.symboltable.concepts.Struct@4e1d422d, rs.etf.pp1.symboltable.concepts.Struct@66480dd7] na liniji 18
+INFO  00:35:16,163 - Ap list size:1[rs.etf.pp1.symboltable.concepts.Struct@3632be31] na liniji 18
+ERROR 00:35:16,163 - [Greska velicina] Nekompatibilnost parametara pri pozivu metode: add na liniji 18
+INFO  00:35:16,163 - Pristup lokalnoj promeljivoj: ord[Kind : 3] na liniji 19
+INFO  00:35:16,163 - Poziv funkcije:ord[Kind: 1] na liniji 19
+INFO  00:35:16,163 - Fp list size:1 na liniji 19
+INFO  00:35:16,163 - Ap list size:1 na liniji 19
+INFO  00:35:16,163 - Pristup lokalnoj promeljivoj: chr[Kind : 3] na liniji 20
+INFO  00:35:16,163 - Poziv funkcije:chr[Kind: 1] na liniji 20
+INFO  00:35:16,163 - Fp list size:1 na liniji 20
+INFO  00:35:16,164 - Ap list size:1 na liniji 20
+INFO  00:35:16,164 - =====================================================================
+ERROR 00:35:16,164 - Parsiranje NIJE uspesno zavrseno!

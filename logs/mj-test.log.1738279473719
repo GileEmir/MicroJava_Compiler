@@ -1,0 +1,29 @@
+INFO  00:24:25,064 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  00:24:25,112 - #2 program
+INFO  00:24:25,112 - #41 test
+INFO  00:24:25,112 - #5 const
+INFO  00:24:25,113 - #41 int
+INFO  00:24:25,114 - #41 pi
+INFO  00:24:25,114 - #6 =
+INFO  00:24:25,115 - #42 3
+INFO  00:24:25,115 - #8 ,
+INFO  00:24:25,116 - #41 g
+INFO  00:24:25,116 - #6 =
+INFO  00:24:25,116 - #42 2
+INFO  00:24:25,116 - #7 ;
+INFO  00:24:25,117 - #41 char
+INFO  00:24:25,118 - #41 x
+INFO  00:24:25,118 - #8 ,
+INFO  00:24:25,118 - #41 y
+INFO  00:24:25,118 - #9 [
+INFO  00:24:25,118 - #10 ]
+INFO  00:24:25,118 - #7 ;
+INFO  00:24:25,119 - #3 {
+INFO  00:24:25,120 - #13 void
+INFO  00:24:25,121 - #41 main
+INFO  00:24:25,121 - #11 (
+INFO  00:24:25,122 - #41 int
+INFO  00:24:25,122 - #12 )
+ERROR 00:24:25,122 - 
+Sintaksna greska na liniji 6
+ERROR 00:24:25,122 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

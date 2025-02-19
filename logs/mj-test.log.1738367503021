@@ -1,0 +1,70 @@
+INFO  00:50:04,041 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  00:50:04,085 - #2 program
+INFO  00:50:04,086 - #41 test
+INFO  00:50:04,086 - #5 const
+INFO  00:50:04,087 - #41 int
+INFO  00:50:04,087 - #41 pi
+INFO  00:50:04,088 - #6 =
+INFO  00:50:04,088 - #42 3
+INFO  00:50:04,088 - #7 ;
+INFO  00:50:04,089 - #41 set
+INFO  00:50:04,090 - #41 x
+INFO  00:50:04,090 - #9 [
+INFO  00:50:04,091 - #10 ]
+INFO  00:50:04,091 - #7 ;
+INFO  00:50:04,091 - #3 {
+INFO  00:50:04,092 - #13 void
+INFO  00:50:04,093 - #41 main
+INFO  00:50:04,093 - #11 (
+INFO  00:50:04,094 - #12 )
+INFO  00:50:04,094 - #41 int
+INFO  00:50:04,096 - #41 a
+INFO  00:50:04,096 - #8 ,
+INFO  00:50:04,096 - #41 b
+INFO  00:50:04,104 - #9 [
+INFO  00:50:04,104 - #10 ]
+INFO  00:50:04,104 - #7 ;
+INFO  00:50:04,105 - #3 {
+INFO  00:50:04,105 - #41 a
+INFO  00:50:04,106 - #6 =
+INFO  00:50:04,106 - #41 b
+INFO  00:50:04,107 - #7 ;
+INFO  00:50:04,108 - #41 a
+INFO  00:50:04,109 - #6 =
+INFO  00:50:04,109 - #41 b
+INFO  00:50:04,109 - #29 +
+INFO  00:50:04,109 - #42 3
+INFO  00:50:04,111 - #7 ;
+INFO  00:50:04,111 - #41 a
+INFO  00:50:04,111 - #6 =
+INFO  00:50:04,111 - #41 b
+INFO  00:50:04,111 - #31 *
+INFO  00:50:04,111 - #42 2
+INFO  00:50:04,113 - #29 +
+INFO  00:50:04,113 - #42 3
+INFO  00:50:04,114 - #7 ;
+INFO  00:50:04,114 - #41 a
+INFO  00:50:04,114 - #6 =
+INFO  00:50:04,114 - #42 3
+INFO  00:50:04,114 - #29 +
+INFO  00:50:04,114 - #41 b
+INFO  00:50:04,114 - #9 [
+INFO  00:50:04,115 - #42 2
+INFO  00:50:04,115 - #10 ]
+INFO  00:50:04,115 - #31 *
+INFO  00:50:04,116 - #42 2
+INFO  00:50:04,116 - #7 ;
+INFO  00:50:04,116 - #41 pi
+INFO  00:50:04,116 - #6 =
+INFO  00:50:04,116 - #42 3
+INFO  00:50:04,116 - #7 ;
+INFO  00:50:04,116 - #4 }
+INFO  00:50:04,117 - #4 }
+INFO  00:50:04,124 - =====================================================================
+ERROR 00:50:04,127 - Dodavanje NE int vrednosti  na liniji 10
+ERROR 00:50:04,127 - Mnozenje NE int vrednosti  na liniji 12
+ERROR 00:50:04,127 - Dodavanje NE int vrednosti  na liniji 12
+ERROR 00:50:04,128 - Neadekvatna dodela vrednosti u promenljivu: a na liniji 14
+ERROR 00:50:04,128 - Dodela u neadekvatnu promeljivu: pi na liniji 16
+INFO  00:50:04,128 - =====================================================================
+ERROR 00:50:04,129 - Parsiranje NIJE uspesno zavrseno!

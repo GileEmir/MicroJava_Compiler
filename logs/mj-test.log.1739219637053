@@ -1,0 +1,68 @@
+INFO  21:23:50,644 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  21:23:50,718 - #2 program
+INFO  21:23:50,718 - #41 test301
+INFO  21:23:50,718 - #5 const
+INFO  21:23:50,719 - #41 int
+INFO  21:23:50,719 - #41 nula
+INFO  21:23:50,720 - #6 =
+INFO  21:23:50,720 - #42 0
+INFO  21:23:50,720 - #7 ;
+INFO  21:23:50,722 - #5 const
+INFO  21:23:50,723 - #41 int
+INFO  21:23:50,723 - #41 jedan
+INFO  21:23:50,723 - #6 =
+INFO  21:23:50,723 - #42 1
+INFO  21:23:50,723 - #7 ;
+INFO  21:23:50,723 - #5 const
+INFO  21:23:50,724 - #41 int
+INFO  21:23:50,724 - #41 pet
+INFO  21:23:50,724 - #6 =
+INFO  21:23:50,724 - #42 5
+INFO  21:23:50,724 - #7 ;
+INFO  21:23:50,724 - #3 {
+INFO  21:23:50,724 - #13 void
+INFO  21:23:50,726 - #41 main
+INFO  21:23:50,726 - #11 (
+INFO  21:23:50,726 - #12 )
+INFO  21:23:50,727 - #41 int
+INFO  21:23:50,729 - #41 i
+INFO  21:23:50,729 - #8 ,
+INFO  21:23:50,729 - #41 j
+INFO  21:23:50,729 - #7 ;
+INFO  21:23:50,730 - #3 {
+INFO  21:23:50,731 - #41 i
+INFO  21:23:50,731 - #6 =
+INFO  21:23:50,732 - #42 5
+INFO  21:23:50,732 - #7 ;
+INFO  21:23:50,734 - #19 do
+INFO  21:23:50,734 - #3 {
+INFO  21:23:50,735 - #41 i
+INFO  21:23:50,735 - #23 ++
+INFO  21:23:50,735 - #7 ;
+INFO  21:23:50,735 - #22 print
+INFO  21:23:50,736 - #11 (
+INFO  21:23:50,736 - #41 i
+INFO  21:23:50,736 - #12 )
+INFO  21:23:50,736 - #7 ;
+INFO  21:23:50,736 - #14 if
+INFO  21:23:50,736 - #11 (
+INFO  21:23:50,736 - #41 i
+INFO  21:23:50,736 - #34 ==
+INFO  21:23:50,737 - #42 8
+INFO  21:23:50,738 - #12 )
+INFO  21:23:50,740 - #17 return
+INFO  21:23:50,740 - #7 ;
+INFO  21:23:50,740 - #4 }
+INFO  21:23:50,743 - #20 while
+INFO  21:23:50,743 - #11 (
+INFO  21:23:50,743 - #12 )
+INFO  21:23:50,743 - #7 ;
+INFO  21:23:50,744 - #4 }
+INFO  21:23:50,744 - #4 }
+INFO  21:23:50,753 - =====================================================================
+INFO  21:23:50,767 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 14
+INFO  21:23:50,767 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 21
+INFO  21:23:50,768 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  21:23:50,768 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 23
+INFO  21:23:50,768 - =====================================================================
+INFO  21:23:50,772 - Generisanje  uspesno zavrseno!

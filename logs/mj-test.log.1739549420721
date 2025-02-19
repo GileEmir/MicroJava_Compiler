@@ -1,0 +1,107 @@
+INFO  17:08:57,854 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  17:08:57,949 - #2 program
+INFO  17:08:57,949 - #41 test301
+INFO  17:08:57,949 - #5 const
+INFO  17:08:57,950 - #41 int
+INFO  17:08:57,950 - #41 nula
+INFO  17:08:57,951 - #6 =
+INFO  17:08:57,951 - #42 0
+INFO  17:08:57,951 - #7 ;
+INFO  17:08:57,953 - #5 const
+INFO  17:08:57,953 - #41 int
+INFO  17:08:57,953 - #41 jedan
+INFO  17:08:57,953 - #6 =
+INFO  17:08:57,953 - #42 1
+INFO  17:08:57,954 - #7 ;
+INFO  17:08:57,954 - #5 const
+INFO  17:08:57,954 - #41 int
+INFO  17:08:57,954 - #41 pet
+INFO  17:08:57,954 - #6 =
+INFO  17:08:57,954 - #42 5
+INFO  17:08:57,954 - #7 ;
+INFO  17:08:57,954 - #3 {
+INFO  17:08:57,954 - #41 int
+INFO  17:08:57,963 - #41 mejn
+INFO  17:08:57,963 - #11 (
+INFO  17:08:57,964 - #41 int
+INFO  17:08:57,964 - #41 a
+INFO  17:08:57,964 - #12 )
+INFO  17:08:57,965 - #41 int
+INFO  17:08:57,966 - #41 i
+INFO  17:08:57,966 - #7 ;
+INFO  17:08:57,967 - #3 {
+INFO  17:08:57,967 - #41 i
+INFO  17:08:57,968 - #6 =
+INFO  17:08:57,968 - #42 3
+INFO  17:08:57,969 - #7 ;
+INFO  17:08:57,970 - #17 return
+INFO  17:08:57,970 - #41 i
+INFO  17:08:57,970 - #7 ;
+INFO  17:08:57,970 - #4 }
+INFO  17:08:57,971 - #13 void
+INFO  17:08:57,973 - #41 main
+INFO  17:08:57,973 - #11 (
+INFO  17:08:57,974 - #12 )
+INFO  17:08:57,975 - #41 int
+INFO  17:08:57,975 - #41 i
+INFO  17:08:57,976 - #8 ,
+INFO  17:08:57,976 - #41 j
+INFO  17:08:57,976 - #9 [
+INFO  17:08:57,976 - #10 ]
+INFO  17:08:57,977 - #7 ;
+INFO  17:08:57,977 - #41 set
+INFO  17:08:57,977 - #41 b
+INFO  17:08:57,977 - #8 ,
+INFO  17:08:57,978 - #41 b1
+INFO  17:08:57,978 - #8 ,
+INFO  17:08:57,978 - #41 b2
+INFO  17:08:57,978 - #7 ;
+INFO  17:08:57,978 - #41 char
+INFO  17:08:57,978 - #41 c
+INFO  17:08:57,979 - #8 ,
+INFO  17:08:57,979 - #41 t
+INFO  17:08:57,979 - #9 [
+INFO  17:08:57,979 - #10 ]
+INFO  17:08:57,980 - #7 ;
+INFO  17:08:57,980 - #3 {
+INFO  17:08:57,980 - #41 j
+INFO  17:08:57,980 - #6 =
+INFO  17:08:57,980 - #40 new
+INFO  17:08:57,980 - #41 int
+INFO  17:08:57,980 - #9 [
+INFO  17:08:57,981 - #42 4
+INFO  17:08:57,981 - #10 ]
+INFO  17:08:57,981 - #7 ;
+INFO  17:08:57,981 - #41 b
+INFO  17:08:57,981 - #6 =
+INFO  17:08:57,981 - #40 new
+INFO  17:08:57,981 - #41 set
+INFO  17:08:57,981 - #9 [
+INFO  17:08:57,981 - #42 4
+INFO  17:08:57,981 - #10 ]
+INFO  17:08:57,982 - #7 ;
+INFO  17:08:57,982 - #41 i
+INFO  17:08:57,982 - #6 =
+INFO  17:08:57,982 - #42 2
+INFO  17:08:57,982 - #7 ;
+INFO  17:08:57,982 - #41 add
+INFO  17:08:57,982 - #11 (
+INFO  17:08:57,982 - #41 b
+INFO  17:08:57,983 - #8 ,
+INFO  17:08:57,984 - #41 i
+INFO  17:08:57,985 - #12 )
+INFO  17:08:57,985 - #7 ;
+INFO  17:08:57,986 - #4 }
+INFO  17:08:57,986 - #4 }
+INFO  17:08:57,993 - =====================================================================
+INFO  17:08:58,006 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  17:08:58,006 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  17:08:58,007 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 14
+INFO  17:08:58,007 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 15
+INFO  17:08:58,007 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 16
+INFO  17:08:58,007 - Pristup lokalnoj promeljivoj: add[Kind : 3] na liniji 17
+INFO  17:08:58,007 - Pristup lokalnoj promeljivoj: b[Kind : 1] na liniji 17
+INFO  17:08:58,007 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 17
+INFO  17:08:58,008 - Poziv funkcije: add[Kind: 3] na liniji 17
+INFO  17:08:58,009 - =====================================================================
+INFO  17:08:58,014 - Generisanje  uspesno zavrseno!

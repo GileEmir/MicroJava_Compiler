@@ -1,0 +1,58 @@
+INFO  21:05:45,308 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  21:05:45,354 - #2 program
+INFO  21:05:45,354 - #41 test
+INFO  21:05:45,354 - #5 const
+INFO  21:05:45,356 - #41 int
+INFO  21:05:45,356 - #41 pi
+INFO  21:05:45,356 - #6 =
+INFO  21:05:45,357 - #42 3
+INFO  21:05:45,357 - #7 ;
+INFO  21:05:45,358 - #5 const
+INFO  21:05:45,358 - #41 ifas
+INFO  21:05:45,359 - #7 ;
+ERROR 21:05:45,359 - 
+Sintaksna greska na liniji 4
+INFO  21:05:45,359 - #41 bool
+INFO  21:05:45,359 - #41 tru
+INFO  21:05:45,359 - #7 ;
+INFO  21:05:45,360 - #3 {
+ERROR 21:05:45,365 - Oporavak od greske u deklaraciji globalne promenljive.Linija :8
+INFO  21:05:45,367 - #13 void
+INFO  21:05:45,368 - #41 main
+INFO  21:05:45,376 - #11 (
+INFO  21:05:45,376 - #12 )
+INFO  21:05:45,377 - #41 int
+INFO  21:05:45,379 - #41 a
+INFO  21:05:45,379 - #7 ;
+INFO  21:05:45,379 - #3 {
+INFO  21:05:45,379 - #14 if
+INFO  21:05:45,380 - #11 (
+INFO  21:05:45,380 - #41 x
+INFO  21:05:45,380 - #36 >
+INFO  21:05:45,382 - #42 0
+INFO  21:05:45,383 - #26 &&
+INFO  21:05:45,383 - #12 )
+ERROR 21:05:45,383 - 
+Sintaksna greska na liniji 8
+INFO  21:05:45,384 - #3 {
+INFO  21:05:45,384 - #41 x
+INFO  21:05:45,384 - #6 =
+ERROR 21:05:45,384 - Oporavak od greske u logickom izrazu unutar if konstrukcije.Linija : 8
+INFO  21:05:45,384 - #42 1
+INFO  21:05:45,385 - #7 ;
+INFO  21:05:45,385 - #4 }
+INFO  21:05:45,386 - #15 else
+INFO  21:05:45,386 - #3 {
+INFO  21:05:45,386 - #41 x
+INFO  21:05:45,386 - #6 =
+INFO  21:05:45,386 - #41 a
+INFO  21:05:45,386 - #7 ;
+INFO  21:05:45,387 - #4 }
+INFO  21:05:45,387 - #17 return
+INFO  21:05:45,387 - #7 ;
+INFO  21:05:45,387 - #4 }
+INFO  21:05:45,388 - #4 }
+INFO  21:05:45,397 - =====================================================================
+ERROR 21:05:45,401 - Pristup nedefinisanoj promeljivoj:x na liniji 10
+ERROR 21:05:45,401 - Neadekvatna dodela vrednosti u promenljivu: noObj na liniji 10
+ERROR 21:05:45,401 - Pristup nedefinisanoj promeljivoj:x na liniji 12

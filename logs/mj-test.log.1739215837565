@@ -1,0 +1,60 @@
+INFO  20:16:34,862 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:16:35,012 - #2 program
+INFO  20:16:35,013 - #41 test301
+INFO  20:16:35,013 - #5 const
+INFO  20:16:35,016 - #41 int
+INFO  20:16:35,017 - #41 nula
+INFO  20:16:35,018 - #6 =
+INFO  20:16:35,019 - #42 0
+INFO  20:16:35,019 - #7 ;
+INFO  20:16:35,023 - #5 const
+INFO  20:16:35,024 - #41 int
+INFO  20:16:35,024 - #41 jedan
+INFO  20:16:35,024 - #6 =
+INFO  20:16:35,024 - #42 1
+INFO  20:16:35,024 - #7 ;
+INFO  20:16:35,025 - #5 const
+INFO  20:16:35,026 - #41 int
+INFO  20:16:35,026 - #41 pet
+INFO  20:16:35,026 - #6 =
+INFO  20:16:35,026 - #42 5
+INFO  20:16:35,026 - #7 ;
+INFO  20:16:35,026 - #3 {
+INFO  20:16:35,027 - #13 void
+INFO  20:16:35,029 - #41 main
+INFO  20:16:35,030 - #11 (
+INFO  20:16:35,030 - #12 )
+INFO  20:16:35,033 - #41 int
+INFO  20:16:35,036 - #41 i
+INFO  20:16:35,037 - #7 ;
+INFO  20:16:35,039 - #3 {
+INFO  20:16:35,039 - #41 i
+INFO  20:16:35,041 - #6 =
+INFO  20:16:35,041 - #42 0
+INFO  20:16:35,043 - #7 ;
+INFO  20:16:35,045 - #19 do
+INFO  20:16:35,046 - #3 {
+INFO  20:16:35,048 - #22 print
+INFO  20:16:35,048 - #11 (
+INFO  20:16:35,048 - #42 3
+INFO  20:16:35,048 - #12 )
+INFO  20:16:35,049 - #7 ;
+INFO  20:16:35,049 - #4 }
+INFO  20:16:35,049 - #20 while
+INFO  20:16:35,049 - #11 (
+INFO  20:16:35,050 - #41 i
+INFO  20:16:35,050 - #38 <
+INFO  20:16:35,050 - #42 3
+INFO  20:16:35,054 - #8 ,
+INFO  20:16:35,057 - #41 i
+INFO  20:16:35,058 - #23 ++
+INFO  20:16:35,058 - #12 )
+INFO  20:16:35,058 - #7 ;
+INFO  20:16:35,058 - #4 }
+INFO  20:16:35,059 - #4 }
+INFO  20:16:35,078 - =====================================================================
+INFO  20:16:35,097 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 14
+INFO  20:16:35,098 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  20:16:35,098 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  20:16:35,098 - =====================================================================
+INFO  20:16:35,112 - Generisanje  uspesno zavrseno!

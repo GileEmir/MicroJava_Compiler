@@ -1,0 +1,577 @@
+INFO  14:21:44,950 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  14:21:45,011 - #2 program
+INFO  14:21:45,011 - #41 test301
+INFO  14:21:45,012 - #5 const
+INFO  14:21:45,013 - #41 int
+INFO  14:21:45,013 - #41 nula
+INFO  14:21:45,014 - #6 =
+INFO  14:21:45,014 - #42 0
+INFO  14:21:45,014 - #7 ;
+INFO  14:21:45,016 - #5 const
+INFO  14:21:45,016 - #41 int
+INFO  14:21:45,016 - #41 jedan
+INFO  14:21:45,017 - #6 =
+INFO  14:21:45,017 - #42 1
+INFO  14:21:45,017 - #7 ;
+INFO  14:21:45,017 - #5 const
+INFO  14:21:45,017 - #41 int
+INFO  14:21:45,017 - #41 pet
+INFO  14:21:45,017 - #6 =
+INFO  14:21:45,018 - #42 5
+INFO  14:21:45,018 - #7 ;
+INFO  14:21:45,018 - #41 int
+INFO  14:21:45,018 - #41 niz
+INFO  14:21:45,018 - #9 [
+INFO  14:21:45,018 - #10 ]
+INFO  14:21:45,018 - #7 ;
+INFO  14:21:45,019 - #41 char
+INFO  14:21:45,020 - #41 nizch
+INFO  14:21:45,020 - #9 [
+INFO  14:21:45,020 - #10 ]
+INFO  14:21:45,020 - #7 ;
+INFO  14:21:45,020 - #41 int
+INFO  14:21:45,020 - #41 a
+INFO  14:21:45,020 - #7 ;
+INFO  14:21:45,020 - #41 set
+INFO  14:21:45,020 - #41 s1
+INFO  14:21:45,021 - #8 ,
+INFO  14:21:45,021 - #41 s2
+INFO  14:21:45,021 - #8 ,
+INFO  14:21:45,021 - #41 s3
+INFO  14:21:45,021 - #7 ;
+INFO  14:21:45,021 - #3 {
+INFO  14:21:45,021 - #13 void
+INFO  14:21:45,022 - #41 main
+INFO  14:21:45,022 - #11 (
+INFO  14:21:45,023 - #12 )
+INFO  14:21:45,024 - #41 int
+INFO  14:21:45,025 - #41 bodovi
+INFO  14:21:45,025 - #7 ;
+INFO  14:21:45,025 - #41 int
+INFO  14:21:45,025 - #41 temp
+INFO  14:21:45,026 - #7 ;
+INFO  14:21:45,026 - #3 {
+INFO  14:21:45,026 - #41 bodovi
+INFO  14:21:45,026 - #6 =
+INFO  14:21:45,027 - #42 0
+INFO  14:21:45,028 - #7 ;
+INFO  14:21:45,029 - #41 bodovi
+INFO  14:21:45,029 - #23 ++
+INFO  14:21:45,029 - #7 ;
+INFO  14:21:45,029 - #41 bodovi
+INFO  14:21:45,029 - #6 =
+INFO  14:21:45,030 - #41 bodovi
+INFO  14:21:45,030 - #29 +
+INFO  14:21:45,030 - #41 jedan
+INFO  14:21:45,032 - #7 ;
+INFO  14:21:45,033 - #41 bodovi
+INFO  14:21:45,033 - #6 =
+INFO  14:21:45,033 - #41 bodovi
+INFO  14:21:45,033 - #31 *
+INFO  14:21:45,033 - #41 pet
+INFO  14:21:45,036 - #7 ;
+INFO  14:21:45,036 - #41 bodovi
+INFO  14:21:45,036 - #24 --
+INFO  14:21:45,036 - #7 ;
+INFO  14:21:45,036 - #22 print
+INFO  14:21:45,036 - #11 (
+INFO  14:21:45,037 - #41 bodovi
+INFO  14:21:45,037 - #12 )
+INFO  14:21:45,037 - #7 ;
+INFO  14:21:45,037 - #22 print
+INFO  14:21:45,038 - #11 (
+INFO  14:21:45,038 - #41 eol
+INFO  14:21:45,038 - #12 )
+INFO  14:21:45,038 - #7 ;
+INFO  14:21:45,038 - #41 niz
+INFO  14:21:45,038 - #6 =
+INFO  14:21:45,038 - #40 new
+INFO  14:21:45,038 - #41 int
+INFO  14:21:45,039 - #9 [
+INFO  14:21:45,039 - #42 3
+INFO  14:21:45,039 - #10 ]
+INFO  14:21:45,039 - #7 ;
+INFO  14:21:45,039 - #41 niz
+INFO  14:21:45,039 - #9 [
+INFO  14:21:45,041 - #41 nula
+INFO  14:21:45,041 - #10 ]
+INFO  14:21:45,041 - #6 =
+INFO  14:21:45,041 - #42 2
+INFO  14:21:45,041 - #7 ;
+INFO  14:21:45,042 - #41 niz
+INFO  14:21:45,042 - #9 [
+INFO  14:21:45,042 - #41 jedan
+INFO  14:21:45,042 - #10 ]
+INFO  14:21:45,042 - #6 =
+INFO  14:21:45,042 - #42 3
+INFO  14:21:45,042 - #7 ;
+INFO  14:21:45,042 - #41 niz
+INFO  14:21:45,042 - #9 [
+INFO  14:21:45,042 - #41 niz
+INFO  14:21:45,042 - #9 [
+INFO  14:21:45,043 - #41 nula
+INFO  14:21:45,043 - #10 ]
+INFO  14:21:45,043 - #10 ]
+INFO  14:21:45,043 - #6 =
+INFO  14:21:45,043 - #41 niz
+INFO  14:21:45,043 - #9 [
+INFO  14:21:45,043 - #41 niz
+INFO  14:21:45,043 - #9 [
+INFO  14:21:45,043 - #42 1
+INFO  14:21:45,043 - #10 ]
+INFO  14:21:45,043 - #10 ]
+INFO  14:21:45,043 - #31 *
+INFO  14:21:45,044 - #42 4
+INFO  14:21:45,044 - #7 ;
+INFO  14:21:45,044 - #41 bodovi
+INFO  14:21:45,044 - #6 =
+INFO  14:21:45,044 - #41 niz
+INFO  14:21:45,044 - #9 [
+INFO  14:21:45,044 - #42 2
+INFO  14:21:45,044 - #10 ]
+INFO  14:21:45,044 - #32 /
+INFO  14:21:45,044 - #41 niz
+INFO  14:21:45,045 - #9 [
+INFO  14:21:45,045 - #42 0
+INFO  14:21:45,046 - #10 ]
+INFO  14:21:45,046 - #7 ;
+INFO  14:21:45,046 - #22 print
+INFO  14:21:45,046 - #11 (
+INFO  14:21:45,046 - #41 bodovi
+INFO  14:21:45,046 - #12 )
+INFO  14:21:45,046 - #7 ;
+INFO  14:21:45,046 - #22 print
+INFO  14:21:45,046 - #11 (
+INFO  14:21:45,046 - #41 eol
+INFO  14:21:45,046 - #12 )
+INFO  14:21:45,046 - #7 ;
+INFO  14:21:45,046 - #22 print
+INFO  14:21:45,047 - #11 (
+INFO  14:21:45,047 - #41 niz
+INFO  14:21:45,047 - #9 [
+INFO  14:21:45,047 - #42 2
+INFO  14:21:45,047 - #10 ]
+INFO  14:21:45,047 - #12 )
+INFO  14:21:45,047 - #7 ;
+INFO  14:21:45,047 - #22 print
+INFO  14:21:45,047 - #11 (
+INFO  14:21:45,047 - #41 eol
+INFO  14:21:45,047 - #12 )
+INFO  14:21:45,047 - #7 ;
+INFO  14:21:45,047 - #41 nizch
+INFO  14:21:45,048 - #6 =
+INFO  14:21:45,048 - #40 new
+INFO  14:21:45,048 - #41 char
+INFO  14:21:45,048 - #9 [
+INFO  14:21:45,048 - #42 3
+INFO  14:21:45,048 - #10 ]
+INFO  14:21:45,048 - #7 ;
+INFO  14:21:45,048 - #41 nizch
+INFO  14:21:45,048 - #9 [
+INFO  14:21:45,048 - #42 0
+INFO  14:21:45,048 - #10 ]
+INFO  14:21:45,048 - #6 =
+INFO  14:21:45,048 - #44 a
+INFO  14:21:45,048 - #7 ;
+INFO  14:21:45,049 - #41 nizch
+INFO  14:21:45,049 - #9 [
+INFO  14:21:45,049 - #41 jedan
+INFO  14:21:45,049 - #10 ]
+INFO  14:21:45,049 - #6 =
+INFO  14:21:45,049 - #44 b
+INFO  14:21:45,049 - #7 ;
+INFO  14:21:45,049 - #41 nizch
+INFO  14:21:45,049 - #9 [
+INFO  14:21:45,049 - #41 pet
+INFO  14:21:45,049 - #30 -
+INFO  14:21:45,049 - #42 3
+INFO  14:21:45,050 - #10 ]
+INFO  14:21:45,051 - #6 =
+INFO  14:21:45,051 - #44 c
+INFO  14:21:45,051 - #7 ;
+INFO  14:21:45,051 - #22 print
+INFO  14:21:45,051 - #11 (
+INFO  14:21:45,051 - #41 nizch
+INFO  14:21:45,051 - #9 [
+INFO  14:21:45,051 - #42 1
+INFO  14:21:45,051 - #10 ]
+INFO  14:21:45,051 - #12 )
+INFO  14:21:45,051 - #7 ;
+INFO  14:21:45,052 - #22 print
+INFO  14:21:45,052 - #11 (
+INFO  14:21:45,052 - #41 eol
+INFO  14:21:45,052 - #12 )
+INFO  14:21:45,052 - #7 ;
+INFO  14:21:45,052 - #22 print
+INFO  14:21:45,052 - #11 (
+INFO  14:21:45,052 - #41 nizch
+INFO  14:21:45,052 - #9 [
+INFO  14:21:45,052 - #41 jedan
+INFO  14:21:45,052 - #31 *
+INFO  14:21:45,053 - #42 2
+INFO  14:21:45,053 - #10 ]
+INFO  14:21:45,053 - #12 )
+INFO  14:21:45,053 - #7 ;
+INFO  14:21:45,053 - #22 print
+INFO  14:21:45,053 - #11 (
+INFO  14:21:45,053 - #41 eol
+INFO  14:21:45,053 - #12 )
+INFO  14:21:45,053 - #7 ;
+INFO  14:21:45,053 - #22 print
+INFO  14:21:45,053 - #11 (
+INFO  14:21:45,053 - #41 ord
+INFO  14:21:45,054 - #11 (
+INFO  14:21:45,054 - #41 nizch
+INFO  14:21:45,055 - #9 [
+INFO  14:21:45,055 - #42 0
+INFO  14:21:45,055 - #10 ]
+INFO  14:21:45,055 - #12 )
+INFO  14:21:45,058 - #12 )
+INFO  14:21:45,058 - #7 ;
+INFO  14:21:45,058 - #41 a
+INFO  14:21:45,058 - #6 =
+INFO  14:21:45,059 - #42 1
+INFO  14:21:45,059 - #7 ;
+INFO  14:21:45,059 - #21 read
+INFO  14:21:45,059 - #11 (
+INFO  14:21:45,059 - #41 bodovi
+INFO  14:21:45,059 - #12 )
+INFO  14:21:45,059 - #7 ;
+INFO  14:21:45,059 - #41 bodovi
+INFO  14:21:45,059 - #6 =
+INFO  14:21:45,060 - #30 -
+INFO  14:21:45,060 - #41 bodovi
+INFO  14:21:45,060 - #29 +
+INFO  14:21:45,060 - #11 (
+INFO  14:21:45,060 - #41 pet
+INFO  14:21:45,060 - #31 *
+INFO  14:21:45,060 - #41 a
+INFO  14:21:45,060 - #32 /
+INFO  14:21:45,060 - #42 2
+INFO  14:21:45,060 - #30 -
+INFO  14:21:45,060 - #41 nula
+INFO  14:21:45,060 - #12 )
+INFO  14:21:45,062 - #31 *
+INFO  14:21:45,062 - #41 bodovi
+INFO  14:21:45,062 - #30 -
+INFO  14:21:45,063 - #11 (
+INFO  14:21:45,063 - #42 3
+INFO  14:21:45,063 - #33 %
+INFO  14:21:45,063 - #42 2
+INFO  14:21:45,064 - #29 +
+INFO  14:21:45,064 - #42 3
+INFO  14:21:45,064 - #31 *
+INFO  14:21:45,064 - #42 2
+INFO  14:21:45,065 - #30 -
+INFO  14:21:45,065 - #42 7
+INFO  14:21:45,065 - #12 )
+INFO  14:21:45,065 - #7 ;
+INFO  14:21:45,065 - #22 print
+INFO  14:21:45,065 - #11 (
+INFO  14:21:45,065 - #41 bodovi
+INFO  14:21:45,065 - #12 )
+INFO  14:21:45,065 - #7 ;
+INFO  14:21:45,065 - #41 niz
+INFO  14:21:45,065 - #9 [
+INFO  14:21:45,065 - #42 0
+INFO  14:21:45,065 - #10 ]
+INFO  14:21:45,065 - #6 =
+INFO  14:21:45,065 - #42 1
+INFO  14:21:45,065 - #7 ;
+INFO  14:21:45,066 - #41 niz
+INFO  14:21:45,066 - #9 [
+INFO  14:21:45,066 - #42 1
+INFO  14:21:45,066 - #10 ]
+INFO  14:21:45,066 - #6 =
+INFO  14:21:45,066 - #42 2
+INFO  14:21:45,066 - #7 ;
+INFO  14:21:45,066 - #41 niz
+INFO  14:21:45,066 - #9 [
+INFO  14:21:45,066 - #42 2
+INFO  14:21:45,066 - #10 ]
+INFO  14:21:45,067 - #6 =
+INFO  14:21:45,067 - #42 3
+INFO  14:21:45,067 - #7 ;
+INFO  14:21:45,067 - #41 s1
+INFO  14:21:45,067 - #6 =
+INFO  14:21:45,067 - #40 new
+INFO  14:21:45,067 - #41 set
+INFO  14:21:45,067 - #9 [
+INFO  14:21:45,067 - #42 5
+INFO  14:21:45,067 - #10 ]
+INFO  14:21:45,067 - #7 ;
+INFO  14:21:45,067 - #41 s2
+INFO  14:21:45,067 - #6 =
+INFO  14:21:45,067 - #40 new
+INFO  14:21:45,068 - #41 set
+INFO  14:21:45,068 - #9 [
+INFO  14:21:45,068 - #42 5
+INFO  14:21:45,068 - #10 ]
+INFO  14:21:45,068 - #7 ;
+INFO  14:21:45,068 - #41 s3
+INFO  14:21:45,068 - #6 =
+INFO  14:21:45,068 - #40 new
+INFO  14:21:45,068 - #41 set
+INFO  14:21:45,068 - #9 [
+INFO  14:21:45,068 - #42 10
+INFO  14:21:45,068 - #10 ]
+INFO  14:21:45,068 - #7 ;
+INFO  14:21:45,068 - #41 addAll
+INFO  14:21:45,068 - #11 (
+INFO  14:21:45,068 - #41 s1
+INFO  14:21:45,068 - #8 ,
+INFO  14:21:45,068 - #41 niz
+INFO  14:21:45,069 - #12 )
+INFO  14:21:45,069 - #7 ;
+INFO  14:21:45,069 - #41 add
+INFO  14:21:45,069 - #11 (
+INFO  14:21:45,069 - #41 s2
+INFO  14:21:45,069 - #8 ,
+INFO  14:21:45,069 - #42 3
+INFO  14:21:45,069 - #12 )
+INFO  14:21:45,069 - #7 ;
+INFO  14:21:45,069 - #41 add
+INFO  14:21:45,069 - #11 (
+INFO  14:21:45,070 - #41 s2
+INFO  14:21:45,070 - #8 ,
+INFO  14:21:45,070 - #42 4
+INFO  14:21:45,070 - #12 )
+INFO  14:21:45,070 - #7 ;
+INFO  14:21:45,070 - #41 add
+INFO  14:21:45,070 - #11 (
+INFO  14:21:45,070 - #41 s2
+INFO  14:21:45,070 - #8 ,
+INFO  14:21:45,070 - #42 5
+INFO  14:21:45,071 - #12 )
+INFO  14:21:45,071 - #7 ;
+INFO  14:21:45,071 - #41 s3
+INFO  14:21:45,071 - #6 =
+INFO  14:21:45,071 - #41 s1
+INFO  14:21:45,071 - #28 union
+INFO  14:21:45,071 - #41 s2
+INFO  14:21:45,073 - #7 ;
+INFO  14:21:45,073 - #22 print
+INFO  14:21:45,074 - #11 (
+INFO  14:21:45,074 - #41 s3
+INFO  14:21:45,074 - #12 )
+INFO  14:21:45,074 - #7 ;
+INFO  14:21:45,074 - #22 print
+INFO  14:21:45,074 - #11 (
+INFO  14:21:45,074 - #41 eol
+INFO  14:21:45,074 - #12 )
+INFO  14:21:45,074 - #7 ;
+INFO  14:21:45,074 - #41 niz
+INFO  14:21:45,074 - #9 [
+INFO  14:21:45,074 - #42 0
+INFO  14:21:45,074 - #10 ]
+INFO  14:21:45,074 - #6 =
+INFO  14:21:45,075 - #42 5
+INFO  14:21:45,075 - #7 ;
+INFO  14:21:45,075 - #41 niz
+INFO  14:21:45,075 - #9 [
+INFO  14:21:45,075 - #42 1
+INFO  14:21:45,075 - #10 ]
+INFO  14:21:45,075 - #6 =
+INFO  14:21:45,075 - #42 5
+INFO  14:21:45,075 - #7 ;
+INFO  14:21:45,075 - #41 niz
+INFO  14:21:45,075 - #9 [
+INFO  14:21:45,075 - #42 2
+INFO  14:21:45,075 - #10 ]
+INFO  14:21:45,075 - #6 =
+INFO  14:21:45,075 - #42 10
+INFO  14:21:45,076 - #7 ;
+INFO  14:21:45,076 - #41 s1
+INFO  14:21:45,076 - #6 =
+INFO  14:21:45,076 - #40 new
+INFO  14:21:45,076 - #41 set
+INFO  14:21:45,076 - #9 [
+INFO  14:21:45,076 - #42 5
+INFO  14:21:45,076 - #10 ]
+INFO  14:21:45,076 - #7 ;
+INFO  14:21:45,076 - #41 s2
+INFO  14:21:45,076 - #6 =
+INFO  14:21:45,076 - #40 new
+INFO  14:21:45,076 - #41 set
+INFO  14:21:45,077 - #9 [
+INFO  14:21:45,077 - #42 5
+INFO  14:21:45,077 - #10 ]
+INFO  14:21:45,077 - #7 ;
+INFO  14:21:45,077 - #41 s3
+INFO  14:21:45,077 - #6 =
+INFO  14:21:45,077 - #40 new
+INFO  14:21:45,077 - #41 set
+INFO  14:21:45,077 - #9 [
+INFO  14:21:45,077 - #42 10
+INFO  14:21:45,077 - #10 ]
+INFO  14:21:45,077 - #7 ;
+INFO  14:21:45,077 - #41 addAll
+INFO  14:21:45,077 - #11 (
+INFO  14:21:45,077 - #41 s1
+INFO  14:21:45,077 - #8 ,
+INFO  14:21:45,077 - #41 niz
+INFO  14:21:45,078 - #12 )
+INFO  14:21:45,078 - #7 ;
+INFO  14:21:45,078 - #21 read
+INFO  14:21:45,078 - #11 (
+INFO  14:21:45,078 - #41 temp
+INFO  14:21:45,078 - #12 )
+INFO  14:21:45,078 - #7 ;
+INFO  14:21:45,078 - #41 add
+INFO  14:21:45,078 - #11 (
+INFO  14:21:45,078 - #41 s2
+INFO  14:21:45,078 - #8 ,
+INFO  14:21:45,078 - #41 temp
+INFO  14:21:45,078 - #12 )
+INFO  14:21:45,078 - #7 ;
+INFO  14:21:45,078 - #21 read
+INFO  14:21:45,078 - #11 (
+INFO  14:21:45,078 - #41 temp
+INFO  14:21:45,078 - #12 )
+INFO  14:21:45,078 - #7 ;
+INFO  14:21:45,078 - #41 add
+INFO  14:21:45,078 - #11 (
+INFO  14:21:45,079 - #41 s2
+INFO  14:21:45,079 - #8 ,
+INFO  14:21:45,079 - #41 temp
+INFO  14:21:45,079 - #12 )
+INFO  14:21:45,079 - #7 ;
+INFO  14:21:45,079 - #21 read
+INFO  14:21:45,079 - #11 (
+INFO  14:21:45,079 - #41 temp
+INFO  14:21:45,079 - #12 )
+INFO  14:21:45,079 - #7 ;
+INFO  14:21:45,079 - #41 add
+INFO  14:21:45,079 - #11 (
+INFO  14:21:45,079 - #41 s2
+INFO  14:21:45,079 - #8 ,
+INFO  14:21:45,079 - #41 temp
+INFO  14:21:45,079 - #12 )
+INFO  14:21:45,079 - #7 ;
+INFO  14:21:45,079 - #41 s3
+INFO  14:21:45,079 - #6 =
+INFO  14:21:45,079 - #41 s1
+INFO  14:21:45,080 - #28 union
+INFO  14:21:45,080 - #41 s2
+INFO  14:21:45,080 - #7 ;
+INFO  14:21:45,080 - #22 print
+INFO  14:21:45,080 - #11 (
+INFO  14:21:45,080 - #41 s3
+INFO  14:21:45,080 - #12 )
+INFO  14:21:45,080 - #7 ;
+INFO  14:21:45,080 - #4 }
+INFO  14:21:45,080 - #4 }
+INFO  14:21:45,087 - =====================================================================
+INFO  14:21:45,096 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 21
+INFO  14:21:45,096 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 22
+INFO  14:21:45,096 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 23
+INFO  14:21:45,096 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 23
+INFO  14:21:45,096 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 23
+INFO  14:21:45,096 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 24
+INFO  14:21:45,096 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 24
+INFO  14:21:45,097 - Pristup simbolickoj konstanti : pet[Kind : 0] na liniji 24
+INFO  14:21:45,097 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 25
+INFO  14:21:45,097 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 26
+INFO  14:21:45,097 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 27
+INFO  14:21:45,097 - Pristup globalnoj promeljivoj: niz[Kind : 1] na liniji 29
+INFO  14:21:45,097 - Pristup simbolickoj konstanti : nula[Kind : 0] na liniji 30
+INFO  14:21:45,097 - Pristup elementu niza :niz[Kind: 5] na liniji 30
+INFO  14:21:45,097 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 31
+INFO  14:21:45,097 - Pristup elementu niza :niz[Kind: 5] na liniji 31
+INFO  14:21:45,097 - Pristup simbolickoj konstanti : nula[Kind : 0] na liniji 32
+INFO  14:21:45,097 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  14:21:45,098 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  14:21:45,098 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  14:21:45,098 - Pristup elementu niza :niz[Kind: 5] na liniji 32
+INFO  14:21:45,098 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 33
+INFO  14:21:45,098 - Pristup elementu niza :niz[Kind: 5] na liniji 33
+INFO  14:21:45,098 - Pristup elementu niza :niz[Kind: 5] na liniji 33
+INFO  14:21:45,098 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 34
+INFO  14:21:45,098 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 35
+INFO  14:21:45,098 - Pristup elementu niza :niz[Kind: 5] na liniji 36
+INFO  14:21:45,098 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 37
+INFO  14:21:45,098 - Pristup globalnoj promeljivoj: nizch[Kind : 1] na liniji 39
+INFO  14:21:45,098 - Pristup elementu niza :nizch[Kind: 5] na liniji 40
+INFO  14:21:45,098 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 41
+INFO  14:21:45,098 - Pristup elementu niza :nizch[Kind: 5] na liniji 41
+INFO  14:21:45,098 - Pristup simbolickoj konstanti : pet[Kind : 0] na liniji 42
+INFO  14:21:45,098 - Pristup elementu niza :nizch[Kind: 5] na liniji 42
+INFO  14:21:45,098 - Pristup elementu niza :nizch[Kind: 5] na liniji 43
+INFO  14:21:45,098 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 44
+INFO  14:21:45,098 - Pristup simbolickoj konstanti : jedan[Kind : 0] na liniji 45
+INFO  14:21:45,098 - Pristup elementu niza :nizch[Kind: 5] na liniji 45
+INFO  14:21:45,099 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 46
+INFO  14:21:45,099 - Pristup lokalnoj promeljivoj: ord[Kind : 3] na liniji 47
+INFO  14:21:45,099 - Pristup elementu niza :nizch[Kind: 5] na liniji 47
+INFO  14:21:45,099 - Poziv funkcije:ord[Kind: 1] na liniji 47
+INFO  14:21:45,106 - Fp list size:0[] na liniji 47
+INFO  14:21:45,106 - Ap list size:1[rs.etf.pp1.symboltable.concepts.Struct@527740a2] na liniji 47
+INFO  14:21:45,109 - Fp list size:0 na liniji 47
+INFO  14:21:45,110 - Ap list size:1 na liniji 47
+ERROR 14:21:45,110 - [Err1] Nekompatibilnost parametara pri pozivu metode: ord na liniji 47
+INFO  14:21:45,110 - Pristup globalnoj promeljivoj: a[Kind : 1] na liniji 49
+INFO  14:21:45,110 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 50
+INFO  14:21:45,110 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 51
+INFO  14:21:45,110 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 51
+INFO  14:21:45,111 - Pristup simbolickoj konstanti : pet[Kind : 0] na liniji 51
+INFO  14:21:45,111 - Pristup globalnoj promeljivoj: a[Kind : 1] na liniji 51
+INFO  14:21:45,111 - Pristup simbolickoj konstanti : nula[Kind : 0] na liniji 51
+INFO  14:21:45,111 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 51
+INFO  14:21:45,111 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 52
+INFO  14:21:45,111 - Pristup elementu niza :niz[Kind: 5] na liniji 54
+INFO  14:21:45,111 - Pristup elementu niza :niz[Kind: 5] na liniji 54
+INFO  14:21:45,111 - Pristup elementu niza :niz[Kind: 5] na liniji 54
+INFO  14:21:45,111 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 55
+INFO  14:21:45,111 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 55
+INFO  14:21:45,111 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 55
+ERROR 14:21:45,111 - Pristup nedefinisanoj promeljivoj:addAll na liniji 56
+INFO  14:21:45,111 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 56
+INFO  14:21:45,111 - Pristup globalnoj promeljivoj: niz[Kind : 1] na liniji 56
+ERROR 14:21:45,112 - Poziv neadekvatne metode: noObj na liniji 56
+ERROR 14:21:45,112 - Pristup nedefinisanoj promeljivoj:add na liniji 57
+INFO  14:21:45,112 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 57
+ERROR 14:21:45,112 - Poziv neadekvatne metode: noObj na liniji 57
+ERROR 14:21:45,112 - Pristup nedefinisanoj promeljivoj:add na liniji 57
+INFO  14:21:45,112 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 57
+ERROR 14:21:45,112 - Poziv neadekvatne metode: noObj na liniji 57
+ERROR 14:21:45,112 - Pristup nedefinisanoj promeljivoj:add na liniji 57
+INFO  14:21:45,112 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 57
+ERROR 14:21:45,112 - Poziv neadekvatne metode: noObj na liniji 57
+INFO  14:21:45,112 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 58
+INFO  14:21:45,112 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 58
+INFO  14:21:45,112 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 58
+INFO  14:21:45,112 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 59
+ERROR 14:21:45,112 - Print operacija ne int/char/bool izraza na liniji 59
+INFO  14:21:45,112 - Pristup simbolickoj konstanti : eol[Kind : 0] na liniji 60
+INFO  14:21:45,112 - Pristup elementu niza :niz[Kind: 5] na liniji 62
+INFO  14:21:45,113 - Pristup elementu niza :niz[Kind: 5] na liniji 62
+INFO  14:21:45,113 - Pristup elementu niza :niz[Kind: 5] na liniji 62
+INFO  14:21:45,113 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 63
+INFO  14:21:45,113 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 63
+INFO  14:21:45,113 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 63
+ERROR 14:21:45,113 - Pristup nedefinisanoj promeljivoj:addAll na liniji 64
+INFO  14:21:45,113 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 64
+INFO  14:21:45,113 - Pristup globalnoj promeljivoj: niz[Kind : 1] na liniji 64
+ERROR 14:21:45,113 - Poziv neadekvatne metode: noObj na liniji 64
+INFO  14:21:45,113 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 65
+ERROR 14:21:45,113 - Pristup nedefinisanoj promeljivoj:add na liniji 65
+INFO  14:21:45,113 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 65
+INFO  14:21:45,113 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 65
+ERROR 14:21:45,113 - Poziv neadekvatne metode: noObj na liniji 65
+INFO  14:21:45,113 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 66
+ERROR 14:21:45,113 - Pristup nedefinisanoj promeljivoj:add na liniji 66
+INFO  14:21:45,113 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 66
+INFO  14:21:45,114 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 66
+ERROR 14:21:45,114 - Poziv neadekvatne metode: noObj na liniji 66
+INFO  14:21:45,114 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 67
+ERROR 14:21:45,114 - Pristup nedefinisanoj promeljivoj:add na liniji 67
+INFO  14:21:45,114 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 67
+INFO  14:21:45,114 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 67
+ERROR 14:21:45,114 - Poziv neadekvatne metode: noObj na liniji 67
+INFO  14:21:45,114 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 68
+INFO  14:21:45,114 - Pristup globalnoj promeljivoj: s1[Kind : 1] na liniji 68
+INFO  14:21:45,114 - Pristup globalnoj promeljivoj: s2[Kind : 1] na liniji 68
+INFO  14:21:45,114 - Pristup globalnoj promeljivoj: s3[Kind : 1] na liniji 69
+ERROR 14:21:45,114 - Print operacija ne int/char/bool izraza na liniji 69
+INFO  14:21:45,114 - =====================================================================
+ERROR 14:21:45,115 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,170 @@
+INFO  15:30:35,360 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  15:30:35,450 - #2 program
+INFO  15:30:35,450 - #41 test
+INFO  15:30:35,450 - #5 const
+INFO  15:30:35,453 - #41 int
+INFO  15:30:35,453 - #41 pi
+INFO  15:30:35,455 - #6 =
+INFO  15:30:35,455 - #42 3
+INFO  15:30:35,455 - #7 ;
+INFO  15:30:35,458 - #41 char
+INFO  15:30:35,458 - #41 x
+INFO  15:30:35,459 - #8 ,
+INFO  15:30:35,459 - #41 y
+INFO  15:30:35,459 - #9 [
+INFO  15:30:35,459 - #10 ]
+INFO  15:30:35,459 - #7 ;
+INFO  15:30:35,461 - #41 int
+INFO  15:30:35,462 - #41 c
+INFO  15:30:35,462 - #7 ;
+INFO  15:30:35,462 - #3 {
+INFO  15:30:35,462 - #13 void
+INFO  15:30:35,464 - #41 main
+INFO  15:30:35,464 - #11 (
+INFO  15:30:35,511 - #12 )
+INFO  15:30:35,514 - #41 int
+INFO  15:30:35,518 - #41 a
+INFO  15:30:35,518 - #8 ,
+INFO  15:30:35,518 - #41 x
+INFO  15:30:35,518 - #9 [
+INFO  15:30:35,518 - #10 ]
+INFO  15:30:35,518 - #7 ;
+INFO  15:30:35,519 - #3 {
+INFO  15:30:35,519 - #41 a
+INFO  15:30:35,520 - #6 =
+INFO  15:30:35,521 - #41 pi
+INFO  15:30:35,522 - #7 ;
+INFO  15:30:35,524 - #41 x
+INFO  15:30:35,524 - #9 [
+INFO  15:30:35,526 - #42 1
+INFO  15:30:35,526 - #10 ]
+INFO  15:30:35,526 - #23 ++
+INFO  15:30:35,526 - #7 ;
+INFO  15:30:35,527 - #41 y
+INFO  15:30:35,527 - #9 [
+INFO  15:30:35,527 - #42 2
+INFO  15:30:35,527 - #10 ]
+INFO  15:30:35,527 - #6 =
+INFO  15:30:35,527 - #44 c
+INFO  15:30:35,527 - #7 ;
+INFO  15:30:35,528 - #41 a
+INFO  15:30:35,528 - #6 =
+INFO  15:30:35,528 - #41 x
+INFO  15:30:35,528 - #9 [
+INFO  15:30:35,528 - #42 3
+INFO  15:30:35,528 - #10 ]
+INFO  15:30:35,528 - #29 +
+INFO  15:30:35,529 - #41 x
+INFO  15:30:35,531 - #9 [
+INFO  15:30:35,531 - #42 4
+INFO  15:30:35,531 - #10 ]
+INFO  15:30:35,531 - #32 /
+INFO  15:30:35,532 - #41 x
+INFO  15:30:35,535 - #9 [
+INFO  15:30:35,535 - #42 5
+INFO  15:30:35,536 - #10 ]
+INFO  15:30:35,536 - #7 ;
+INFO  15:30:35,537 - #17 return
+INFO  15:30:35,538 - #7 ;
+INFO  15:30:35,538 - #4 }
+INFO  15:30:35,539 - #41 int
+INFO  15:30:35,541 - #41 f1
+INFO  15:30:35,541 - #11 (
+INFO  15:30:35,542 - #41 int
+INFO  15:30:35,542 - #41 x
+INFO  15:30:35,542 - #12 )
+INFO  15:30:35,545 - #3 {
+INFO  15:30:35,545 - #17 return
+INFO  15:30:35,545 - #41 x
+INFO  15:30:35,546 - #7 ;
+INFO  15:30:35,546 - #4 }
+INFO  15:30:35,546 - #41 int
+INFO  15:30:35,547 - #41 f2
+INFO  15:30:35,547 - #11 (
+INFO  15:30:35,547 - #41 int
+INFO  15:30:35,548 - #41 x
+INFO  15:30:35,548 - #8 ,
+INFO  15:30:35,548 - #41 bool
+INFO  15:30:35,548 - #41 b
+INFO  15:30:35,549 - #8 ,
+INFO  15:30:35,549 - #41 int
+INFO  15:30:35,549 - #41 c
+INFO  15:30:35,549 - #12 )
+INFO  15:30:35,550 - #41 int
+INFO  15:30:35,550 - #41 a
+INFO  15:30:35,550 - #7 ;
+INFO  15:30:35,550 - #3 {
+INFO  15:30:35,551 - #17 return
+INFO  15:30:35,551 - #41 f1
+INFO  15:30:35,551 - #11 (
+INFO  15:30:35,551 - #41 x
+INFO  15:30:35,553 - #12 )
+INFO  15:30:35,557 - #29 +
+INFO  15:30:35,557 - #41 a
+INFO  15:30:35,558 - #29 +
+INFO  15:30:35,558 - #42 1
+INFO  15:30:35,558 - #7 ;
+INFO  15:30:35,559 - #4 }
+INFO  15:30:35,559 - #41 int
+INFO  15:30:35,559 - #41 f3
+INFO  15:30:35,559 - #11 (
+INFO  15:30:35,560 - #12 )
+INFO  15:30:35,560 - #3 {
+INFO  15:30:35,560 - #41 f2
+INFO  15:30:35,560 - #11 (
+INFO  15:30:35,561 - #41 f2
+INFO  15:30:35,561 - #11 (
+INFO  15:30:35,561 - #42 1
+INFO  15:30:35,561 - #8 ,
+INFO  15:30:35,562 - #43 1
+INFO  15:30:35,562 - #8 ,
+INFO  15:30:35,563 - #42 2
+INFO  15:30:35,563 - #12 )
+INFO  15:30:35,564 - #8 ,
+INFO  15:30:35,564 - #43 1
+INFO  15:30:35,564 - #8 ,
+INFO  15:30:35,564 - #41 f2
+INFO  15:30:35,565 - #11 (
+INFO  15:30:35,565 - #42 1
+INFO  15:30:35,565 - #8 ,
+INFO  15:30:35,566 - #43 1
+INFO  15:30:35,566 - #8 ,
+INFO  15:30:35,566 - #42 3
+INFO  15:30:35,567 - #12 )
+INFO  15:30:35,567 - #12 )
+INFO  15:30:35,567 - #7 ;
+INFO  15:30:35,568 - #17 return
+INFO  15:30:35,568 - #42 1
+INFO  15:30:35,568 - #7 ;
+INFO  15:30:35,568 - #4 }
+INFO  15:30:35,569 - #4 }
+INFO  15:30:35,583 - =====================================================================
+INFO  15:30:35,604 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 8
+INFO  15:30:35,605 - Pristup simbolickoj konstanti : pi[Kind : 0] na liniji 8
+INFO  15:30:35,606 - Pristup elementu niza :x[Kind: 5] na liniji 10
+INFO  15:30:35,606 - Pristup elementu niza :y[Kind: 5] na liniji 11
+INFO  15:30:35,606 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 12
+INFO  15:30:35,606 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:30:35,606 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:30:35,606 - Pristup elementu niza :x[Kind: 5] na liniji 12
+INFO  15:30:35,607 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 17
+INFO  15:30:35,607 - Pristup lokalnoj promeljivoj: f1[Kind : 3] na liniji 18
+INFO  15:30:35,607 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 18
+INFO  15:30:35,608 - Poziv funkcije:f1[Kind: 1] na liniji 18
+INFO  15:30:35,618 - Fp list size:1 na liniji 18
+INFO  15:30:35,618 - Ap list size:1 na liniji 18
+INFO  15:30:35,619 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 18
+INFO  15:30:35,619 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:30:35,619 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:30:35,619 - Poziv funkcije:f2[Kind: 1] na liniji 21
+INFO  15:30:35,620 - Fp list size:3 na liniji 21
+INFO  15:30:35,620 - Ap list size:3 na liniji 21
+INFO  15:30:35,620 - Pristup lokalnoj promeljivoj: f2[Kind : 3] na liniji 21
+INFO  15:30:35,620 - Poziv funkcije:f2[Kind: 1] na liniji 21
+INFO  15:30:35,620 - Fp list size:3 na liniji 21
+INFO  15:30:35,620 - Ap list size:3 na liniji 21
+INFO  15:30:35,621 - Poziv funkcije: f2[Kind: 3] na liniji 21
+INFO  15:30:35,622 - Fp list size:3 na liniji 21
+INFO  15:30:35,622 - Ap list size:3 na liniji 21
+INFO  15:30:35,623 - =====================================================================
+INFO  15:30:35,624 - Parsiranje uspesno zavrseno!

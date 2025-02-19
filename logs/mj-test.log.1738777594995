@@ -1,0 +1,62 @@
+INFO  18:46:19,947 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  18:46:20,002 - #2 program
+INFO  18:46:20,003 - #41 test
+INFO  18:46:20,003 - #5 const
+INFO  18:46:20,004 - #41 int
+INFO  18:46:20,004 - #41 pi
+INFO  18:46:20,005 - #6 =
+INFO  18:46:20,005 - #42 3
+INFO  18:46:20,005 - #7 ;
+INFO  18:46:20,007 - #41 int
+INFO  18:46:20,008 - #41 x
+INFO  18:46:20,008 - #8 ,
+INFO  18:46:20,008 - #41 y
+INFO  18:46:20,008 - #9 [
+INFO  18:46:20,009 - #10 ]
+INFO  18:46:20,009 - #7 ;
+INFO  18:46:20,010 - #3 {
+INFO  18:46:20,010 - #13 void
+INFO  18:46:20,011 - #41 main
+INFO  18:46:20,011 - #11 (
+INFO  18:46:20,012 - #12 )
+INFO  18:46:20,012 - #41 int
+INFO  18:46:20,014 - #41 a
+INFO  18:46:20,015 - #8 ,
+INFO  18:46:20,015 - #41 b
+INFO  18:46:20,015 - #7 ;
+INFO  18:46:20,015 - #41 char
+INFO  18:46:20,015 - #41 carr
+INFO  18:46:20,015 - #9 [
+INFO  18:46:20,015 - #10 ]
+INFO  18:46:20,015 - #7 ;
+INFO  18:46:20,015 - #3 {
+INFO  18:46:20,016 - #41 carr
+INFO  18:46:20,016 - #6 =
+INFO  18:46:20,017 - #40 new
+INFO  18:46:20,017 - #41 int
+INFO  18:46:20,017 - #9 [
+INFO  18:46:20,018 - #42 2
+INFO  18:46:20,018 - #10 ]
+INFO  18:46:20,019 - #7 ;
+INFO  18:46:20,019 - #41 a
+INFO  18:46:20,019 - #6 =
+INFO  18:46:20,019 - #30 -
+INFO  18:46:20,020 - #42 5
+INFO  18:46:20,020 - #7 ;
+INFO  18:46:20,020 - #22 print
+INFO  18:46:20,020 - #11 (
+INFO  18:46:20,020 - #41 carr
+INFO  18:46:20,020 - #9 [
+INFO  18:46:20,021 - #42 1
+INFO  18:46:20,021 - #10 ]
+INFO  18:46:20,021 - #12 )
+INFO  18:46:20,021 - #7 ;
+INFO  18:46:20,021 - #4 }
+INFO  18:46:20,022 - #4 }
+INFO  18:46:20,028 - =====================================================================
+INFO  18:46:20,038 - Pristup lokalnoj promeljivoj: carr[Kind : 1] na liniji 9
+ERROR 18:46:20,039 - Neadekvatna dodela vrednosti u promenljivu: carr na liniji 9
+INFO  18:46:20,039 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 10
+INFO  18:46:20,039 - Pristup elementu niza :carr[Kind: 5] na liniji 11
+INFO  18:46:20,039 - =====================================================================
+ERROR 18:46:20,040 - Parsiranje NIJE uspesno zavrseno!

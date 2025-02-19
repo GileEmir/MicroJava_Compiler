@@ -1,0 +1,81 @@
+INFO  21:21:52,506 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  21:21:52,562 - #2 program
+INFO  21:21:52,562 - #41 test
+INFO  21:21:52,562 - #5 const
+INFO  21:21:52,564 - #41 int
+INFO  21:21:52,564 - #41 pi
+INFO  21:21:52,564 - #6 =
+INFO  21:21:52,565 - #42 3
+INFO  21:21:52,565 - #7 ;
+INFO  21:21:52,566 - #41 char
+INFO  21:21:52,567 - #41 x
+INFO  21:21:52,567 - #8 ,
+INFO  21:21:52,567 - #41 y
+INFO  21:21:52,567 - #9 [
+INFO  21:21:52,567 - #10 ]
+INFO  21:21:52,567 - #7 ;
+INFO  21:21:52,568 - #41 int
+INFO  21:21:52,569 - #41 c
+INFO  21:21:52,569 - #7 ;
+INFO  21:21:52,569 - #3 {
+INFO  21:21:52,569 - #13 void
+INFO  21:21:52,570 - #41 main
+INFO  21:21:52,570 - #11 (
+INFO  21:21:52,578 - #12 )
+INFO  21:21:52,579 - #41 int
+INFO  21:21:52,580 - #41 a
+INFO  21:21:52,580 - #8 ,
+INFO  21:21:52,580 - #41 x
+INFO  21:21:52,581 - #9 [
+INFO  21:21:52,581 - #10 ]
+INFO  21:21:52,581 - #7 ;
+INFO  21:21:52,581 - #3 {
+INFO  21:21:52,581 - #41 a
+INFO  21:21:52,582 - #6 =
+INFO  21:21:52,582 - #41 pi
+INFO  21:21:52,583 - #7 ;
+INFO  21:21:52,584 - #41 x
+INFO  21:21:52,585 - #9 [
+INFO  21:21:52,585 - #42 1
+INFO  21:21:52,586 - #10 ]
+INFO  21:21:52,586 - #23 ++
+INFO  21:21:52,586 - #7 ;
+INFO  21:21:52,586 - #41 y
+INFO  21:21:52,586 - #9 [
+INFO  21:21:52,586 - #42 2
+INFO  21:21:52,587 - #10 ]
+INFO  21:21:52,587 - #6 =
+INFO  21:21:52,587 - #44 c
+INFO  21:21:52,587 - #7 ;
+INFO  21:21:52,587 - #41 a
+INFO  21:21:52,587 - #6 =
+INFO  21:21:52,587 - #41 x
+INFO  21:21:52,588 - #9 [
+INFO  21:21:52,588 - #42 3
+INFO  21:21:52,588 - #10 ]
+INFO  21:21:52,588 - #29 +
+INFO  21:21:52,588 - #41 x
+INFO  21:21:52,589 - #9 [
+INFO  21:21:52,589 - #42 4
+INFO  21:21:52,589 - #10 ]
+INFO  21:21:52,589 - #32 /
+INFO  21:21:52,590 - #41 x
+INFO  21:21:52,591 - #9 [
+INFO  21:21:52,591 - #42 5
+INFO  21:21:52,591 - #10 ]
+INFO  21:21:52,591 - #7 ;
+INFO  21:21:52,592 - #17 return
+INFO  21:21:52,592 - #7 ;
+INFO  21:21:52,592 - #4 }
+INFO  21:21:52,593 - #4 }
+INFO  21:21:52,599 - =====================================================================
+INFO  21:21:52,611 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 9
+INFO  21:21:52,611 - Pristup simbolickoj konstanti : pi[Kind : 0] na liniji 9
+INFO  21:21:52,612 - Pristup elementu niza :x[Kind: 5] na liniji 11
+INFO  21:21:52,612 - Pristup elementu niza :y[Kind: 5] na liniji 12
+INFO  21:21:52,612 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 13
+INFO  21:21:52,612 - Pristup elementu niza :x[Kind: 5] na liniji 13
+INFO  21:21:52,612 - Pristup elementu niza :x[Kind: 5] na liniji 13
+INFO  21:21:52,612 - Pristup elementu niza :x[Kind: 5] na liniji 13
+INFO  21:21:52,613 - =====================================================================
+INFO  21:21:52,613 - Parsiranje uspesno zavrseno!
