@@ -18,6 +18,7 @@ public class CodeGenerator extends VisitorAdaptor{
 
 	private int mainPC;
 	private int printSetMethodAddress;
+	private int mapMethodAddress;
 	
 	//private Map<String,Integer> labels = new HashMap<>();
 	//private Map<String,List<Integer>> patchAddrs = new HashMap<>();
@@ -51,99 +52,179 @@ public class CodeGenerator extends VisitorAdaptor{
 
         // Add the 'add' method for sets
         addMethod();
+        addAllMethod();
         
         printSetMethodAddress = Code.pc;
         printSetMethod();
+        
+        mapMethodAddress = Code.pc;
+        mapMethod();
+        
     }
 
-    private void addMethod() {
-	    Obj addMethod = Tab.find("add");
-	    addMethod.setAdr(Code.pc);
+
+   private void addMethod() {
+        Obj addMethod = Tab.find("add");
+        addMethod.setAdr(Code.pc);
+
+        // Begin method setup: 2 formal parameters (s, b) and 4 total slots (s, b, len, i)
+        Code.put(Code.enter);
+        Code.put(2);  // parameters: s, b
+        Code.put(4);  // locals: s, b, len, i
+        
+        Code.loadConst('b');
+        Code.loadConst(0);         // Width = 0
+        Code.put(Code.bprint);      // Print element        
+
+        // Compute the length of the array 's' and store it in local variable 'len'
+        Code.put(Code.load_n);   // load s (local 0)
+        Code.put(Code.arraylength);
+        Code.put(Code.store_2);  // len = s.length
+
+        // Initialize loop index for duplicate checking: i = 1
+        Code.loadConst(1);
+        Code.put(Code.store_3);  // i = 1
+
+        int dupLoopStart = Code.pc;  // Label: start of duplicate search loop
+
+        // Compare i with s[0] (current set size)
+        Code.put(Code.load_3);       // load i
+        Code.put(Code.load_n);       // load s
+        Code.loadConst(0);           // index 0
+        Code.put(Code.aload);        // get s[0]
+        Code.put(Code.jcc + Code.ge); // if (i >= s[0]) then exit duplicate loop
+        int dupLoopExit = Code.pc;
+        Code.put2(0);                // reserve space for jump offset
+
+        // Check if the element at s[i] equals b (the element to add)
+        Code.put(Code.load_n);       // load s
+        Code.put(Code.load_3);       // load i
+        Code.put(Code.aload);        // s[i]
+        Code.put(Code.load_1);       // load b
+        Code.put(Code.jcc + Code.eq); // if (s[i] == b) then element is already present
+        int dupFound = Code.pc;
+        Code.put2(0);                // reserve space for jump offset
+
+        // Increment i (i++) and jump back to the beginning of the duplicate search loop
+        Code.put(Code.load_3);
+        Code.loadConst(1);
+        Code.put(Code.add);
+        Code.put(Code.store_3);
+        Code.putJump(dupLoopStart);
+
+        // Patch jump to exit the loop when no duplicate is found
+        Code.fixup(dupLoopExit);
+
+        // Now, if we’re here, the element is not already in the set.
+        // Retrieve the current set size from s[0] and store it in i.
+        Code.put(Code.load_n);   // load s
+        Code.loadConst(0);       // index 0
+        Code.put(Code.aload);    // load s[0]
+        Code.put(Code.store_3);  // i = s[0]
+
+        // Check if the set is full: if (i >= len) then skip adding
+        Code.put(Code.load_3);   // load i (current size)
+        Code.put(Code.load_2);   // load len (array length)
+        Code.put(Code.jcc + Code.ge); // if (i >= len) then the set is full
+        int fullLabel = Code.pc;
+        Code.put2(0);            // reserve space for jump offset
+
+        // Insert element b into the set at index i: s[i] = b
+        Code.put(Code.load_n);   // load s
+        Code.put(Code.load_3);   // load i
+        Code.put(Code.load_1);   // load b
+        Code.put(Code.astore);   // s[i] = b
+
+        // Increment the set size stored in s[0]: s[0] = s[0] + 1
+        Code.put(Code.load_n);   // load s
+        Code.loadConst(0);       // index 0
+        Code.put(Code.load_3);   // load i (which is s[0])
+        Code.loadConst(1);
+        Code.put(Code.add);
+        Code.put(Code.astore);   // s[0]++
+
+        // Patch jump offsets for duplicate found and full set cases
+        Code.fixup(dupFound);
+        Code.fixup(fullLabel);
+
+        // Exit the method
+        Code.put(Code.exit);
+        Code.put(Code.return_);
+    }
+    
+   private void addAllMethod() {
+	    // Look up the addAll method and set its starting address.
+	    Obj addAllMethod = Tab.find("addAll");
+	    addAllMethod.setAdr(Code.pc);
 	
+	    // Set up the activation record:
+	    // Parameters: a (target set) is in local 0, b (array to add) is in local 1.
+	    // Locals: len (array length) will be stored in local 2, and loop index i in local 3.
 	    Code.put(Code.enter);
-	    Code.put(2);  // params: s (0), b (1)
-	    Code.put(4);  // locals: s (0), b (1), len (2), i (3)
+	    Code.put(2);  // Two parameters (a and b)
+	    Code.put(4);  // Total number of slots: 2 parameters + 2 locals
 	
-	    // Store array length in len
-	    Code.put(Code.load_n);      // Load s (local 0)
-	    Code.put(Code.arraylength);
-	    Code.put(Code.store_2);     // len = s.length
+	    // Compute len = b.length and store it in local 2.
+	    Code.put(Code.load_1);      // load parameter b (local 1)
+	    Code.put(Code.arraylength); // compute b.length
+	    Code.put(Code.store_2);     // store the length in local slot 2
 	
-	    // Check for duplicates: i starts at 1
-	    Code.loadConst(1);
-	    Code.put(Code.store_3);     // i = 1
-	
-	    int checkLoop = Code.pc;
-	
-	    // Loop: while (i < s[0])
-	    Code.put(Code.load_3);      // Load i
-	    Code.put(Code.load_n);      // Load s
+	    // Initialize the loop index: i = 0 (stored in local 3)
 	    Code.loadConst(0);
-	    Code.put(Code.aload);       // Load s[0]
-	    Code.put(Code.jcc + Code.ge); // Exit loop if i >= s[0]
-	    int exitLoop = Code.pc;
-	    Code.put2(0);
+	    Code.put(Code.store_3);     // i = 0
+	    
+	    // Print the value of i
+	    Code.put(Code.load_3);      // load i from local 3
+	    Code.loadConst(5);          // push width (assuming width 5 for printing)
+	    Code.put(Code.bprint);      // print i with width 5
 	
-	    // Check if s[i] == b
-	    Code.put(Code.load_n);      // Load s
-	    Code.put(Code.load_3);      // Load i
-	    Code.put(Code.aload);       // Load s[i]
-	    Code.put(Code.load_1);      // Load b
-	    Code.put(Code.jcc + Code.eq); // Duplicate found: exit method
-	    int dupFound = Code.pc;
-	    Code.put2(0);
 	
-	    // Increment i and loop
-	    Code.put(Code.load_3);
-	    Code.loadConst(1);
-	    Code.put(Code.add);
-	    Code.put(Code.store_3);     // i++
-	    Code.putJump(checkLoop);
+	    // Mark the beginning of the loop.
+	    int loopStart = Code.pc;
 	
-	    Code.fixup(exitLoop);
-	    Code.fixup(dupFound);
+	    // Check loop condition: if (i >= len) then exit the loop.
+	    Code.put(Code.load_3);      // load i from local 3
+	    Code.put(Code.load_2);      // load len from local 2
+	    Code.putFalseJump(Code.lt, 0); // if (i >= len) then jump to loop exit
+	    int exitJump = Code.pc - 2;
 	
-	    // --- CAPACITY CHECK ---
-	    // Load s[0] into i
-	    Code.put(Code.load_n);      // Load s
-	    Code.loadConst(0);
-	    Code.put(Code.aload);       // Load s[0]
-	    Code.put(Code.store_3);     // i = s[0]
+	    // Prepare the call to addMethod(a, b[i]):
+	    // 1. Load the target set (parameter a) from local 0.
+	    Code.put(Code.load_n);      // push a (local 0)
+	    // 2. Load the array b (parameter b) from local 1,
+	    //    then load the current index i (local 3) and retrieve b[i].
+	    Code.put(Code.load_1);      // push b (local 1)
+	    Code.put(Code.load_3);      // push i (local 3)
+	    Code.put(Code.aload);       // b[i]
 	
-	    // Check if i >= len (set is full)
-	    Code.put(Code.load_3);      // Load i
-	    Code.put(Code.load_2);      // Load len
-	    Code.put(Code.jcc + Code.ge); // Exit if full
-	    int fullLabel = Code.pc;
-	    Code.put2(0);
+	    // Call addMethod with parameters (a, b[i])
+	    int addMethodAddress = Tab.find("add").getAdr();
+	    int relativeAddress = addMethodAddress - (Code.pc); // 3 bytes for the call instruction
+	    Code.put(Code.call);
+	    Code.put2(relativeAddress);
 	
-	    // Add element: s[i] = b
-	    Code.put(Code.load_n);      // Load s
-	    Code.put(Code.load_3);      // Load i
-	    Code.put(Code.load_1);      // Load b
-	    Code.put(Code.astore);      // s[i] = b
+	    // Increment the loop index: i = i + 1.
+	    Code.put(Code.load_3);      // load current i
+	    Code.loadConst(1);          // push constant 1
+	    Code.put(Code.add);         // compute i + 1
+	    Code.put(Code.store_3);     // store updated i back into local 3
 	
-	    // Increment helper field: s[0]++
-	    Code.put(Code.load_n);      // Load s
-	    Code.loadConst(0);
-	    Code.put(Code.load_3);      // Load i
-	    Code.loadConst(1);
-	    Code.put(Code.add);         // i + 1
-	    Code.put(Code.astore);      // s[0] = i + 1
+	    // Jump back to the beginning of the loop.
+	    Code.putJump(loopStart);
+	    Code.fixup(exitJump);       // fix the jump offset for the exit condition
 	
-	    Code.fixup(fullLabel);      // Skip if full
-	
+	    // End of method: exit and return.
 	    Code.put(Code.exit);
 	    Code.put(Code.return_);
-	}
-    
-    private void printSetMethod() {
+}
+	   
+   private void printSetMethod() {
         Code.put(Code.enter);
         Code.put(1);  // param: s (local 0)
         Code.put(2);  // locals: s (0), i (1)
 
         // Initialize i = 1
-        Code.loadConst(0);
+        Code.loadConst(1);
         Code.put(Code.store_1);    // i = 1
 
         int check = Code.pc;
@@ -175,10 +256,85 @@ public class CodeGenerator extends VisitorAdaptor{
         Code.put(Code.exit);
         Code.put(Code.return_);
     }
+   
+   	
+   private void mapMethod() {
+       // Enter the method
+       Code.put(Code.enter);
+       Code.put(0); // Number of parameters
+       Code.put(1); // Number of local variables
+
+       // Example operation in the method
+       Code.loadConst('T');
+       Code.loadConst(0);
+       Code.put(Code.print);
+
+       // Exit the method
+       Code.put(Code.exit);
+       Code.put(Code.return_);
+   }
+   
     CodeGenerator() {
         this.initialisePredeclaredMethods();
     }
-	
+    
+    //MAP METHOD 
+    
+    @Override
+    public void visit(Expr_designator expr_designator) {
+        Obj designatorObj = expr_designator.getDesignator().obj;
+        
+        if (designatorObj.getType().getKind() == Struct.Array) {
+            // Load the array reference
+            Code.load(designatorObj);
+            
+            // Get the array length
+            Code.put(Code.arraylength);
+            
+            // Initialize the sum to 0
+            Code.loadConst(0);
+            
+            // Initialize the index to 0
+            Code.loadConst(0);
+            int loopStart = Code.pc;
+            
+            // Duplicate index and array length for comparison
+            Code.put(Code.dup2);
+            Code.putFalseJump(Code.lt, 0);
+            int loopEndJump = Code.pc - 2;
+            
+            // Load the array element
+            Code.put(Code.dup2); // Duplicate array reference and index
+            Code.put(Code.aload); // Load array element
+            
+            // Call the mapMethod
+            int offset = mapMethodAddress - Code.pc;
+            Code.put(Code.call);
+            Code.put2(offset);
+            
+            // Add the result to the sum
+            Code.put(Code.add);
+            
+            // Increment the index
+            Code.put(Code.const_1);
+            Code.put(Code.add);
+            
+            // Jump to the start of the loop
+            Code.putJump(loopStart);
+            
+            // Fix the jump address for loop end
+            Code.fixup(loopEndJump);
+            
+            // Clean up the stack (remove array reference and index)
+            Code.put(Code.pop);
+            Code.put(Code.pop);
+        } else {
+            // If it's not an array, just call the mapMethod once
+            int offset = mapMethodAddress - Code.pc;
+            Code.put(Code.call);
+            Code.put2(offset);
+        }
+    }
 	
 	/*METHOD DECLARATIONS*/
 	@Override 

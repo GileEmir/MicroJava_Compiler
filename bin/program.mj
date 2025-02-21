@@ -12,14 +12,26 @@ const int pet = 5;
 
     void main() int i, j[]; set b,b1,b2; char c,t[];{
 	    j = new int[4];
-	    b = new set[6];
-	    i = 2;
-	    add(b,i);
-	    i = 3;
-	    add(b,i);
-	    i = 3;
-	    add(b,i);
-		//add(b,i);
-		print(b);
+	    j[0] = 1;
+	    j[1] = 2;
+	    j[2] = 2;
+	    j[3] = 2;
+	    
+		i = mejn map j;
+		print(i);
     }
 }
+
+		//b = new set[6];
+	    //b1 = new set[4];
+	    //i = 2;
+	    //add(b,i);
+	    //i = 3;
+	    //add(b,i);
+	    //i = 3;
+	    //add(b,i);
+	    //add(b,2);
+	    //add(b,1);
+		//add(b,i);
+		//print(b);
+		//addAll(b1,j);

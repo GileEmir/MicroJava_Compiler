@@ -1,0 +1,130 @@
+INFO  17:54:11,940 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  17:54:12,001 - #2 program
+INFO  17:54:12,002 - #41 test301
+INFO  17:54:12,002 - #5 const
+INFO  17:54:12,003 - #41 int
+INFO  17:54:12,003 - #41 nula
+INFO  17:54:12,004 - #6 =
+INFO  17:54:12,005 - #42 0
+INFO  17:54:12,005 - #7 ;
+INFO  17:54:12,007 - #5 const
+INFO  17:54:12,007 - #41 int
+INFO  17:54:12,007 - #41 jedan
+INFO  17:54:12,007 - #6 =
+INFO  17:54:12,008 - #42 1
+INFO  17:54:12,008 - #7 ;
+INFO  17:54:12,008 - #5 const
+INFO  17:54:12,008 - #41 int
+INFO  17:54:12,008 - #41 pet
+INFO  17:54:12,008 - #6 =
+INFO  17:54:12,008 - #42 5
+INFO  17:54:12,008 - #7 ;
+INFO  17:54:12,008 - #3 {
+INFO  17:54:12,009 - #41 int
+INFO  17:54:12,018 - #41 mejn
+INFO  17:54:12,018 - #11 (
+INFO  17:54:12,018 - #41 int
+INFO  17:54:12,018 - #41 a
+INFO  17:54:12,018 - #12 )
+INFO  17:54:12,019 - #41 int
+INFO  17:54:12,022 - #41 i
+INFO  17:54:12,022 - #7 ;
+INFO  17:54:12,023 - #3 {
+INFO  17:54:12,024 - #41 i
+INFO  17:54:12,025 - #6 =
+INFO  17:54:12,025 - #42 3
+INFO  17:54:12,026 - #7 ;
+INFO  17:54:12,028 - #17 return
+INFO  17:54:12,029 - #41 i
+INFO  17:54:12,029 - #7 ;
+INFO  17:54:12,029 - #4 }
+INFO  17:54:12,029 - #13 void
+INFO  17:54:12,031 - #41 main
+INFO  17:54:12,031 - #11 (
+INFO  17:54:12,031 - #12 )
+INFO  17:54:12,032 - #41 int
+INFO  17:54:12,032 - #41 i
+INFO  17:54:12,032 - #8 ,
+INFO  17:54:12,032 - #41 j
+INFO  17:54:12,032 - #9 [
+INFO  17:54:12,032 - #10 ]
+INFO  17:54:12,032 - #7 ;
+INFO  17:54:12,033 - #41 set
+INFO  17:54:12,033 - #41 b
+INFO  17:54:12,033 - #8 ,
+INFO  17:54:12,033 - #41 b1
+INFO  17:54:12,033 - #8 ,
+INFO  17:54:12,033 - #41 b2
+INFO  17:54:12,033 - #7 ;
+INFO  17:54:12,033 - #41 char
+INFO  17:54:12,033 - #41 c
+INFO  17:54:12,033 - #8 ,
+INFO  17:54:12,033 - #41 t
+INFO  17:54:12,033 - #9 [
+INFO  17:54:12,034 - #10 ]
+INFO  17:54:12,034 - #7 ;
+INFO  17:54:12,034 - #3 {
+INFO  17:54:12,034 - #41 j
+INFO  17:54:12,034 - #6 =
+INFO  17:54:12,034 - #40 new
+INFO  17:54:12,034 - #41 int
+INFO  17:54:12,034 - #9 [
+INFO  17:54:12,035 - #42 4
+INFO  17:54:12,035 - #10 ]
+INFO  17:54:12,035 - #7 ;
+INFO  17:54:12,035 - #41 j
+INFO  17:54:12,035 - #9 [
+INFO  17:54:12,036 - #42 0
+INFO  17:54:12,036 - #10 ]
+INFO  17:54:12,036 - #6 =
+INFO  17:54:12,036 - #42 1
+INFO  17:54:12,037 - #7 ;
+INFO  17:54:12,037 - #41 j
+INFO  17:54:12,037 - #9 [
+INFO  17:54:12,037 - #42 1
+INFO  17:54:12,037 - #10 ]
+INFO  17:54:12,037 - #6 =
+INFO  17:54:12,037 - #42 2
+INFO  17:54:12,037 - #7 ;
+INFO  17:54:12,038 - #41 j
+INFO  17:54:12,038 - #9 [
+INFO  17:54:12,038 - #42 2
+INFO  17:54:12,038 - #10 ]
+INFO  17:54:12,038 - #6 =
+INFO  17:54:12,038 - #42 2
+INFO  17:54:12,039 - #7 ;
+INFO  17:54:12,039 - #41 j
+INFO  17:54:12,039 - #9 [
+INFO  17:54:12,039 - #42 3
+INFO  17:54:12,039 - #10 ]
+INFO  17:54:12,039 - #6 =
+INFO  17:54:12,039 - #42 2
+INFO  17:54:12,039 - #7 ;
+INFO  17:54:12,040 - #41 i
+INFO  17:54:12,040 - #6 =
+INFO  17:54:12,040 - #41 mejn
+INFO  17:54:12,040 - #27 map
+INFO  17:54:12,040 - #41 j
+INFO  17:54:12,040 - #7 ;
+INFO  17:54:12,040 - #22 print
+INFO  17:54:12,040 - #11 (
+INFO  17:54:12,040 - #41 i
+INFO  17:54:12,040 - #12 )
+INFO  17:54:12,041 - #7 ;
+INFO  17:54:12,041 - #4 }
+INFO  17:54:12,041 - #4 }
+INFO  17:54:12,047 - =====================================================================
+INFO  17:54:12,057 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  17:54:12,058 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  17:54:12,058 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 14
+INFO  17:54:12,058 - Pristup elementu niza :j[Kind: 5] na liniji 15
+INFO  17:54:12,058 - Pristup elementu niza :j[Kind: 5] na liniji 16
+INFO  17:54:12,058 - Pristup elementu niza :j[Kind: 5] na liniji 17
+INFO  17:54:12,059 - Pristup elementu niza :j[Kind: 5] na liniji 18
+INFO  17:54:12,059 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 21
+INFO  17:54:12,059 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 21
+INFO  17:54:12,059 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 21
+INFO  17:54:12,059 -  na liniji 21
+INFO  17:54:12,059 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  17:54:12,060 - =====================================================================
+INFO  17:54:12,064 - Generisanje  uspesno zavrseno!

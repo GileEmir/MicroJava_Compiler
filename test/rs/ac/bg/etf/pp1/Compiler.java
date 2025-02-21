@@ -95,6 +95,7 @@ public class Compiler {
                 addAllObj.setLocals(Tab.currentScope().getLocals());
                 Tab.closeScope();
             }
+            
 			
 			
 			
