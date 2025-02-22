@@ -1,0 +1,144 @@
+INFO  16:10:31,975 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  16:10:32,032 - #2 program
+INFO  16:10:32,032 - #41 test301
+INFO  16:10:32,032 - #5 const
+INFO  16:10:32,034 - #41 int
+INFO  16:10:32,034 - #41 nula
+INFO  16:10:32,035 - #6 =
+INFO  16:10:32,035 - #42 0
+INFO  16:10:32,035 - #7 ;
+INFO  16:10:32,037 - #5 const
+INFO  16:10:32,037 - #41 int
+INFO  16:10:32,037 - #41 jedan
+INFO  16:10:32,037 - #6 =
+INFO  16:10:32,038 - #42 1
+INFO  16:10:32,038 - #7 ;
+INFO  16:10:32,038 - #5 const
+INFO  16:10:32,038 - #41 int
+INFO  16:10:32,038 - #41 pet
+INFO  16:10:32,038 - #6 =
+INFO  16:10:32,038 - #42 5
+INFO  16:10:32,039 - #7 ;
+INFO  16:10:32,039 - #3 {
+INFO  16:10:32,039 - #41 int
+INFO  16:10:32,046 - #41 mejn
+INFO  16:10:32,047 - #11 (
+INFO  16:10:32,047 - #41 int
+INFO  16:10:32,047 - #41 a
+INFO  16:10:32,047 - #12 )
+INFO  16:10:32,048 - #41 int
+INFO  16:10:32,050 - #41 i
+INFO  16:10:32,050 - #7 ;
+INFO  16:10:32,051 - #3 {
+INFO  16:10:32,051 - #41 i
+INFO  16:10:32,052 - #6 =
+INFO  16:10:32,053 - #42 3
+INFO  16:10:32,054 - #7 ;
+INFO  16:10:32,055 - #17 return
+INFO  16:10:32,056 - #41 i
+INFO  16:10:32,056 - #7 ;
+INFO  16:10:32,056 - #4 }
+INFO  16:10:32,056 - #13 void
+INFO  16:10:32,057 - #41 main
+INFO  16:10:32,058 - #11 (
+INFO  16:10:32,058 - #12 )
+INFO  16:10:32,059 - #41 int
+INFO  16:10:32,059 - #41 i
+INFO  16:10:32,060 - #8 ,
+INFO  16:10:32,060 - #41 j
+INFO  16:10:32,060 - #9 [
+INFO  16:10:32,060 - #10 ]
+INFO  16:10:32,060 - #7 ;
+INFO  16:10:32,061 - #41 set
+INFO  16:10:32,061 - #41 b
+INFO  16:10:32,061 - #8 ,
+INFO  16:10:32,061 - #41 b1
+INFO  16:10:32,061 - #8 ,
+INFO  16:10:32,061 - #41 b2
+INFO  16:10:32,061 - #7 ;
+INFO  16:10:32,062 - #41 char
+INFO  16:10:32,062 - #41 c
+INFO  16:10:32,062 - #8 ,
+INFO  16:10:32,063 - #41 t
+INFO  16:10:32,063 - #9 [
+INFO  16:10:32,063 - #10 ]
+INFO  16:10:32,063 - #7 ;
+INFO  16:10:32,064 - #3 {
+INFO  16:10:32,064 - #41 j
+INFO  16:10:32,064 - #6 =
+INFO  16:10:32,064 - #40 new
+INFO  16:10:32,064 - #41 int
+INFO  16:10:32,064 - #9 [
+INFO  16:10:32,065 - #42 5
+INFO  16:10:32,065 - #10 ]
+INFO  16:10:32,065 - #7 ;
+INFO  16:10:32,065 - #41 j
+INFO  16:10:32,066 - #9 [
+INFO  16:10:32,067 - #42 0
+INFO  16:10:32,067 - #10 ]
+INFO  16:10:32,068 - #6 =
+INFO  16:10:32,068 - #42 1
+INFO  16:10:32,068 - #7 ;
+INFO  16:10:32,069 - #41 j
+INFO  16:10:32,069 - #9 [
+INFO  16:10:32,069 - #42 1
+INFO  16:10:32,069 - #10 ]
+INFO  16:10:32,069 - #6 =
+INFO  16:10:32,070 - #42 2
+INFO  16:10:32,070 - #7 ;
+INFO  16:10:32,070 - #41 j
+INFO  16:10:32,071 - #9 [
+INFO  16:10:32,071 - #42 2
+INFO  16:10:32,071 - #10 ]
+INFO  16:10:32,071 - #6 =
+INFO  16:10:32,071 - #42 4
+INFO  16:10:32,071 - #7 ;
+INFO  16:10:32,072 - #41 j
+INFO  16:10:32,072 - #9 [
+INFO  16:10:32,072 - #42 3
+INFO  16:10:32,072 - #10 ]
+INFO  16:10:32,072 - #6 =
+INFO  16:10:32,072 - #42 3
+INFO  16:10:32,073 - #7 ;
+INFO  16:10:32,073 - #41 j
+INFO  16:10:32,073 - #9 [
+INFO  16:10:32,073 - #42 4
+INFO  16:10:32,073 - #10 ]
+INFO  16:10:32,073 - #6 =
+INFO  16:10:32,073 - #42 2
+INFO  16:10:32,074 - #7 ;
+INFO  16:10:32,074 - #22 print
+INFO  16:10:32,074 - #11 (
+INFO  16:10:32,074 - #41 i
+INFO  16:10:32,074 - #12 )
+INFO  16:10:32,074 - #7 ;
+INFO  16:10:32,075 - #41 i
+INFO  16:10:32,075 - #6 =
+INFO  16:10:32,075 - #41 mejn
+INFO  16:10:32,075 - #27 map
+INFO  16:10:32,075 - #41 j
+INFO  16:10:32,076 - #7 ;
+INFO  16:10:32,076 - #22 print
+INFO  16:10:32,076 - #11 (
+INFO  16:10:32,076 - #41 i
+INFO  16:10:32,076 - #12 )
+INFO  16:10:32,076 - #7 ;
+INFO  16:10:32,076 - #4 }
+INFO  16:10:32,077 - #4 }
+INFO  16:10:32,083 - =====================================================================
+INFO  16:10:32,092 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  16:10:32,093 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  16:10:32,093 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 14
+INFO  16:10:32,094 - Pristup elementu niza :j[Kind: 5] na liniji 15
+INFO  16:10:32,094 - Pristup elementu niza :j[Kind: 5] na liniji 16
+INFO  16:10:32,094 - Pristup elementu niza :j[Kind: 5] na liniji 17
+INFO  16:10:32,094 - Pristup elementu niza :j[Kind: 5] na liniji 18
+INFO  16:10:32,094 - Pristup elementu niza :j[Kind: 5] na liniji 19
+INFO  16:10:32,094 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 20
+INFO  16:10:32,094 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 21
+INFO  16:10:32,094 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 21
+INFO  16:10:32,094 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 21
+INFO  16:10:32,094 -  na liniji 21
+INFO  16:10:32,094 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 22
+INFO  16:10:32,095 - =====================================================================
+INFO  16:10:32,099 - Generisanje  uspesno zavrseno!

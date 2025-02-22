@@ -6,17 +6,18 @@ const int pet = 5;
 
 {
     int mejn(int a) int i; {
-        i = 3;
+        i = a;
         return i;
     }
 
     void main() int i, j[]; set b,b1,b2; char c,t[];{
-	    j = new int[4];
+	    j = new int[5];
 	    j[0] = 1;
 	    j[1] = 2;
-	    j[2] = 2;
-	    j[3] = 2;
-	    
+	    j[2] = 3;
+	    j[3] = 4;
+	    j[4] = 5;
+	    print(i);
 		i = mejn map j;
 		print(i);
     }

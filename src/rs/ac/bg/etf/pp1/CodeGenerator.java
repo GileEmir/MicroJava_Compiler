@@ -282,60 +282,64 @@ public class CodeGenerator extends VisitorAdaptor{
     
     @Override
     public void visit(Expr_designator expr_designator) {
-        Obj designatorObj = expr_designator.getDesignator().obj;
-        
-        if (designatorObj.getType().getKind() == Struct.Array) {
-            // Load the array reference
-            Code.load(designatorObj);
-            
-            // Get the array length
-            Code.put(Code.arraylength);
-            
-            // Initialize the sum to 0
+        Obj func = expr_designator.getDesignator().obj;
+        Obj array = expr_designator.getDesignator1().obj;
+
+        if (array.getType().getKind() == Struct.Array) {
+            // Initialize sum and index
             Code.loadConst(0);
-            
-            // Initialize the index to 0
+            Code.put(Code.store_2);  // sum = 0
             Code.loadConst(0);
+            Code.put(Code.store_3);  // index = 0
+
             int loopStart = Code.pc;
-            
-            // Duplicate index and array length for comparison
-            Code.put(Code.dup2);
+
+            Code.put(Code.load_3);
+            // Load array and get length
+            Code.load(array);
+            Code.put(Code.arraylength);
+
+            // Load and compare index
             Code.putFalseJump(Code.lt, 0);
-            int loopEndJump = Code.pc - 2;
-            
-            // Load the array element
-            Code.put(Code.dup2); // Duplicate array reference and index
-            Code.put(Code.aload); // Load array element
-            
-            // Call the mapMethod
-            int offset = mapMethodAddress - Code.pc;
+            int exitAddr = Code.pc - 2;
+
+            // Load array element
+            Code.load(array);
+            Code.put(Code.load_3);
+            Code.put(Code.aload);
+
+            // Call function
+            int offset = func.getAdr() - Code.pc;
             Code.put(Code.call);
             Code.put2(offset);
-            
-            // Add the result to the sum
+
+            // Add to sum
+            Code.put(Code.load_2);
             Code.put(Code.add);
-            
-            // Increment the index
-            Code.put(Code.const_1);
+            Code.put(Code.store_2);
+
+            // Increment index
+            Code.put(Code.load_3);
+            Code.loadConst(1);
             Code.put(Code.add);
-            
-            // Jump to the start of the loop
+            Code.put(Code.store_3);
+
+            // Loop
             Code.putJump(loopStart);
             
-            // Fix the jump address for loop end
-            Code.fixup(loopEndJump);
-            
-            // Clean up the stack (remove array reference and index)
-            Code.put(Code.pop);
-            Code.put(Code.pop);
+            // End of loop
+            Code.fixup(exitAddr);
+
+            // Push final sum
+            Code.put(Code.load_2);
         } else {
-            // If it's not an array, just call the mapMethod once
-            int offset = mapMethodAddress - Code.pc;
+            // Non-array case
+            int offset = func.getAdr() - Code.pc;
             Code.put(Code.call);
             Code.put2(offset);
         }
     }
-	
+    
 	/*METHOD DECLARATIONS*/
 	@Override 
 	public void visit(MethodReturnAndName_type methodReturnAndName_type) {

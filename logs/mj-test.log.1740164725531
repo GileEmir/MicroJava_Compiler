@@ -1,0 +1,130 @@
+INFO  20:04:54,939 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:04:55,023 - #2 program
+INFO  20:04:55,024 - #41 test301
+INFO  20:04:55,025 - #5 const
+INFO  20:04:55,029 - #41 int
+INFO  20:04:55,030 - #41 nula
+INFO  20:04:55,032 - #6 =
+INFO  20:04:55,032 - #42 0
+INFO  20:04:55,033 - #7 ;
+INFO  20:04:55,036 - #5 const
+INFO  20:04:55,037 - #41 int
+INFO  20:04:55,038 - #41 jedan
+INFO  20:04:55,038 - #6 =
+INFO  20:04:55,038 - #42 1
+INFO  20:04:55,038 - #7 ;
+INFO  20:04:55,039 - #5 const
+INFO  20:04:55,039 - #41 int
+INFO  20:04:55,039 - #41 pet
+INFO  20:04:55,040 - #6 =
+INFO  20:04:55,040 - #42 5
+INFO  20:04:55,040 - #7 ;
+INFO  20:04:55,040 - #3 {
+INFO  20:04:55,040 - #41 int
+INFO  20:04:55,088 - #41 mejn
+INFO  20:04:55,089 - #11 (
+INFO  20:04:55,089 - #41 int
+INFO  20:04:55,089 - #41 a
+INFO  20:04:55,089 - #12 )
+INFO  20:04:55,091 - #41 int
+INFO  20:04:55,093 - #41 i
+INFO  20:04:55,094 - #7 ;
+INFO  20:04:55,095 - #3 {
+INFO  20:04:55,096 - #41 i
+INFO  20:04:55,098 - #6 =
+INFO  20:04:55,099 - #42 3
+INFO  20:04:55,100 - #7 ;
+INFO  20:04:55,103 - #17 return
+INFO  20:04:55,104 - #41 i
+INFO  20:04:55,104 - #7 ;
+INFO  20:04:55,104 - #4 }
+INFO  20:04:55,105 - #13 void
+INFO  20:04:55,107 - #41 main
+INFO  20:04:55,108 - #11 (
+INFO  20:04:55,108 - #12 )
+INFO  20:04:55,110 - #41 int
+INFO  20:04:55,110 - #41 i
+INFO  20:04:55,111 - #8 ,
+INFO  20:04:55,111 - #41 j
+INFO  20:04:55,111 - #9 [
+INFO  20:04:55,111 - #10 ]
+INFO  20:04:55,111 - #7 ;
+INFO  20:04:55,112 - #41 set
+INFO  20:04:55,112 - #41 b
+INFO  20:04:55,112 - #8 ,
+INFO  20:04:55,113 - #41 b1
+INFO  20:04:55,113 - #8 ,
+INFO  20:04:55,113 - #41 b2
+INFO  20:04:55,113 - #7 ;
+INFO  20:04:55,113 - #41 char
+INFO  20:04:55,113 - #41 c
+INFO  20:04:55,113 - #8 ,
+INFO  20:04:55,114 - #41 t
+INFO  20:04:55,114 - #9 [
+INFO  20:04:55,114 - #10 ]
+INFO  20:04:55,115 - #7 ;
+INFO  20:04:55,116 - #3 {
+INFO  20:04:55,116 - #41 j
+INFO  20:04:55,116 - #6 =
+INFO  20:04:55,117 - #40 new
+INFO  20:04:55,117 - #41 int
+INFO  20:04:55,117 - #9 [
+INFO  20:04:55,117 - #42 4
+INFO  20:04:55,117 - #10 ]
+INFO  20:04:55,118 - #7 ;
+INFO  20:04:55,118 - #41 j
+INFO  20:04:55,118 - #9 [
+INFO  20:04:55,120 - #42 0
+INFO  20:04:55,121 - #10 ]
+INFO  20:04:55,121 - #6 =
+INFO  20:04:55,122 - #42 1
+INFO  20:04:55,122 - #7 ;
+INFO  20:04:55,123 - #41 j
+INFO  20:04:55,123 - #9 [
+INFO  20:04:55,123 - #42 1
+INFO  20:04:55,124 - #10 ]
+INFO  20:04:55,124 - #6 =
+INFO  20:04:55,124 - #42 2
+INFO  20:04:55,124 - #7 ;
+INFO  20:04:55,125 - #41 j
+INFO  20:04:55,125 - #9 [
+INFO  20:04:55,125 - #42 2
+INFO  20:04:55,125 - #10 ]
+INFO  20:04:55,126 - #6 =
+INFO  20:04:55,126 - #42 2
+INFO  20:04:55,126 - #7 ;
+INFO  20:04:55,127 - #41 j
+INFO  20:04:55,128 - #9 [
+INFO  20:04:55,128 - #42 3
+INFO  20:04:55,129 - #10 ]
+INFO  20:04:55,129 - #6 =
+INFO  20:04:55,129 - #42 2
+INFO  20:04:55,130 - #7 ;
+INFO  20:04:55,130 - #41 i
+INFO  20:04:55,130 - #6 =
+INFO  20:04:55,130 - #41 mejn
+INFO  20:04:55,131 - #27 map
+INFO  20:04:55,131 - #41 j
+INFO  20:04:55,131 - #7 ;
+INFO  20:04:55,132 - #22 print
+INFO  20:04:55,133 - #11 (
+INFO  20:04:55,133 - #41 i
+INFO  20:04:55,133 - #12 )
+INFO  20:04:55,133 - #7 ;
+INFO  20:04:55,134 - #4 }
+INFO  20:04:55,134 - #4 }
+INFO  20:04:55,143 - =====================================================================
+INFO  20:04:55,162 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 9
+INFO  20:04:55,163 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 10
+INFO  20:04:55,163 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 14
+INFO  20:04:55,164 - Pristup elementu niza :j[Kind: 5] na liniji 15
+INFO  20:04:55,164 - Pristup elementu niza :j[Kind: 5] na liniji 16
+INFO  20:04:55,164 - Pristup elementu niza :j[Kind: 5] na liniji 17
+INFO  20:04:55,164 - Pristup elementu niza :j[Kind: 5] na liniji 18
+INFO  20:04:55,164 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 20
+INFO  20:04:55,164 - Pristup lokalnoj promeljivoj: mejn[Kind : 3] na liniji 20
+INFO  20:04:55,165 - Pristup lokalnoj promeljivoj: j[Kind : 1] na liniji 20
+INFO  20:04:55,165 -  na liniji 20
+INFO  20:04:55,165 - Pristup lokalnoj promeljivoj: i[Kind : 1] na liniji 21
+INFO  20:04:55,165 - =====================================================================
+INFO  20:04:55,198 - Generisanje  uspesno zavrseno!
