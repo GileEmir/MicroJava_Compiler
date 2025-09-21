@@ -2,12 +2,14 @@ package rs.ac.bg.etf.pp1;
 //import java.util.HashSet;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Scope;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class SemAnalyser extends VisitorAdaptor {
@@ -31,6 +33,10 @@ public class SemAnalyser extends VisitorAdaptor {
 	private boolean returnHappend;
 	private int loopCnt = 0;
 	int nVars;
+	private int forCnt = 0 ;
+	private Scope programScope;
+	
+	
 	
 	/* LOG MESSAGES */ 
 	public void report_error(String message, SyntaxNode info) {
@@ -60,8 +66,14 @@ public class SemAnalyser extends VisitorAdaptor {
 	public void visit(ProgramName programName) {
 		currentProgram = Tab.insert(Obj.Prog, programName.getI1(),Tab.noType);
 		Tab.openScope();
+		programScope = Tab.currentScope;
 	}
 	
+	 private Obj findInProgramScope(String name) {
+	        if (programScope == null) return Tab.noObj;
+	        Obj o = programScope.findSymbol(name);
+	        return o != null ? o : Tab.noObj;
+	    }
 	
 	@Override
 	public void visit(Program program) {
@@ -69,6 +81,7 @@ public class SemAnalyser extends VisitorAdaptor {
 		Tab.chainLocalSymbols(currentProgram);
 		Tab.closeScope();
 		currentProgram = null;
+		
 		
 		if (mainMethod == null || mainMethod.getLevel() > 0) {
 			report_error("Ne postoji void main funkcija sa praznim parametrima" , program);
@@ -302,6 +315,7 @@ public class SemAnalyser extends VisitorAdaptor {
 	
 	/*CONTEXT CONDITIONS*/
 	//Designator
+	@Override
 	public void visit(Designator_var designator_var) {
 		Obj varObj = Tab.find(designator_var.getI1());
 		if (varObj == Tab.noObj) {
@@ -327,25 +341,58 @@ public class SemAnalyser extends VisitorAdaptor {
 		}
 	}
 	
-	public void visit(DesignatorArrayName designatorArrayName) { 
-		Obj arrObj = Tab.find(designatorArrayName.getI1());
+    @Override
+    public void visit(Designator_var_global n) {
+        Obj found = findInProgramScope(n.getI1());
+        if (found == Tab.noObj) {
+            report_error("Nepoznata globalna promenljiva: " + n.getI1(), n);
+            n.obj = Tab.noObj;
+            return;
+        }
+        if (found.getKind() != Obj.Var) {
+            report_error("Neadekvatan globalni simbol (nije promenljiva): " + n.getI1(), n);
+            n.obj = Tab.noObj;
+            return;
+        }
+        n.obj = found;
+    }
+	
+	@Override
+	public void visit(DesignatorArrayName_local designatorArrayName_local) { 
+		Obj arrObj = Tab.find(designatorArrayName_local.getI1());
 		if (arrObj == Tab.noObj) {
-			report_error("Pristup nedefinisanoj promeljivoj niza :" + designatorArrayName.getI1(), designatorArrayName);
-			designatorArrayName.obj = Tab.noObj;
+			report_error("Pristup nedefinisanoj promeljivoj niza :" + designatorArrayName_local.getI1(), designatorArrayName_local);
+			designatorArrayName_local.obj = Tab.noObj;
 		}else if(arrObj.getKind() != Obj.Var || arrObj.getType().getKind() != Struct.Array){
-			report_error("Neadekvatna promenljiva niza :" + designatorArrayName.getI1(), designatorArrayName);
-			designatorArrayName.obj = Tab.noObj;
+			report_error("Neadekvatna promenljiva niza :" + designatorArrayName_local.getI1(), designatorArrayName_local);
+			designatorArrayName_local.obj = Tab.noObj;
 		}else{
-			designatorArrayName.obj = arrObj;
+			designatorArrayName_local.obj = arrObj;
 		}
 	}
 	
+	@Override
+	public void visit(DesignatorArrayName_global designatorArrayName_global) { 
+		Obj arrObj = findInProgramScope(designatorArrayName_global.getI1());
+		if (arrObj == Tab.noObj) {
+			report_error("Pristup nedefinisanoj promeljivoj niza :" + designatorArrayName_global.getI1(), designatorArrayName_global);
+			designatorArrayName_global.obj = Tab.noObj;
+		}else if(arrObj.getKind() != Obj.Var || arrObj.getType().getKind() != Struct.Array){
+			report_error("Neadekvatna promenljiva niza :" + designatorArrayName_global.getI1(), designatorArrayName_global);
+			designatorArrayName_global.obj = Tab.noObj;
+		}else{
+			designatorArrayName_global.obj = arrObj;
+		}
+		
+	}
+	
+	@Override
 	public void visit(Designator_elem designator_elem) {
 		Obj arrObj = designator_elem.getDesignatorArrayName().obj;
 		if (arrObj == Tab.noObj)
 			designator_elem.obj = arrObj;
 		else if(!designator_elem.getExpr().struct.equals(Tab.intType)){
-			report_error("Indeksiranje sa NE int vrednosti :" + designator_elem.getDesignatorArrayName().getI1(), designator_elem);
+			report_error("Indeksiranje sa NE int vrednosti :" + designator_elem.getDesignatorArrayName().obj.getName(), designator_elem);
 			designator_elem.obj = arrObj;
 		}
 		else {
@@ -410,8 +457,8 @@ public class SemAnalyser extends VisitorAdaptor {
 	        ActParCounter apc = new ActParCounter();
 	        factorElement_method.getActParList().traverseBottomUp(apc);
 	        List<Struct> apList = apc.finalActParList;
-	        //report_info("Fp list size:" + fpList.size(), factorElement_method);
-	        //report_info("Ap list size:" + apList.size(), factorElement_method);
+	        report_info("Fp list size:" + fpList.size() + fpList.toString(),factorElement_method);
+	        report_info("Ap list size:" + apList.size() + fpList.toString(), factorElement_method);
 	        try {
 	            if (fpList.size() != apList.size()) {
 	                throw new Exception("Greska velicina");
@@ -419,6 +466,12 @@ public class SemAnalyser extends VisitorAdaptor {
 	            for (int i = 0; i < fpList.size(); i++) {
 	                Struct fps = fpList.get(i);
 	                Struct aps = apList.get(i);
+	                
+	                if (fps.getKind() == Struct.Array && fps.getElemType() == Tab.noType &&
+	                        aps.getKind() == Struct.Array) {
+	                        continue;
+	                }
+	                
 	                if (fps == setType && aps != setType) {
 	                    report_error("Neodgovarajuci tipovi u pozivu funkcije: ocekuje se setType", factorElement_method);
 	                } else if (fps != setType && aps == setType) {
@@ -569,7 +622,7 @@ public class SemAnalyser extends VisitorAdaptor {
 	    } else {
 	        // Normal assignment check
 	        if (!destType.assignableTo(srcType)) {
-	            report_error("Neodgovarajuci tipovi u dodeli vrednosti", designatorStatement_assign);
+	            report_error("Neodgovarajuci tipovi u dodeli vrednosti" + designatorStatement_assign.getDesignator().obj.getType() + srcType.toString(), designatorStatement_assign);
 	        }
 	    }
 	}
@@ -639,6 +692,10 @@ public class SemAnalyser extends VisitorAdaptor {
 				for(int i = 0 ; i < fpList.size(); i++) {
 					Struct fps = fpList.get(i);
 					Struct aps = apList.get(i);
+					if (fps.getKind() == Struct.Array && fps.getElemType() == Tab.noType &&
+	                        aps.getKind() == Struct.Array) {
+	                        continue;
+	                    }
 					if (fps == setType && aps != setType) {
 	                    report_error("Neodgovarajuci tipovi u pozivu funkcije: ocekuje se setType", designatorStatement_meth);
 	                } else if (fps != setType && aps == setType) {
@@ -717,6 +774,16 @@ public class SemAnalyser extends VisitorAdaptor {
 	}
 	
 	@Override
+	public void visit(For f) {
+		forCnt++;
+	}
+	
+	@Override
+	public void visit(Statement_for st) {
+		forCnt--;
+	}
+	
+	@Override
 	public void visit(Statement_do_empty statement_do_empty) {
 		loopCnt--;
 	}
@@ -733,14 +800,14 @@ public class SemAnalyser extends VisitorAdaptor {
 	
 	@Override
 	public void visit(Statement_continue statement_continue) {
-		if( loopCnt == 0 ) {
+		if( loopCnt == 0  && forCnt == 0) {
 			report_error("Break naredba se ne nalazi unutar tela petlje ", statement_continue);
 		}
 	}
 	
 	@Override
 	public void visit(Statement_break statement_break) {
-		if( loopCnt == 0 ) {
+		if( loopCnt == 0  && forCnt == 0) {
 			report_error("Break naredba se ne nalazi unutar tela petlje ", statement_break);
 		}
 	}

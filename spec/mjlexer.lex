@@ -53,6 +53,7 @@ import java_cup.runtime.Symbol;
 "continue"	{ return new_symbol(sym.CONTINUE, yytext()); }
 "map"		{ return new_symbol(sym.MAP, yytext()); }
 "union"		{ return new_symbol(sym.UNION, yytext()); }
+"for"		{ return new_symbol(sym.FOR, yytext()); }
 
 "+" 		{ return new_symbol(sym.PLUS, yytext()); }
 "++"		{ return new_symbol(sym.INC, yytext()); }
@@ -71,6 +72,8 @@ import java_cup.runtime.Symbol;
 "}"			{ return new_symbol(sym.RBRACE, yytext()); }
 "["			{ return new_symbol(sym.LBRACKET, yytext()); }
 "]"			{ return new_symbol(sym.RBRACKET, yytext()); }
+
+"::"		{ return new_symbol(sym.DCOLON, yytext()); }
 
 "=="		{ return new_symbol(sym.EQUAL, yytext()); }
 "!="		{ return new_symbol(sym.NOTEQUAL, yytext()); }

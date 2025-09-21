@@ -1,0 +1,258 @@
+INFO  20:30:53,812 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:30:53,909 - #2 program
+INFO  20:30:53,909 - #41 test301
+INFO  20:30:53,909 - #41 int
+INFO  20:30:53,912 - #41 a
+INFO  20:30:53,913 - #7 ;
+INFO  20:30:53,915 - #41 int
+INFO  20:30:53,916 - #41 b
+INFO  20:30:53,916 - #9 [
+INFO  20:30:53,916 - #10 ]
+INFO  20:30:53,916 - #7 ;
+INFO  20:30:53,917 - #3 {
+INFO  20:30:53,917 - #13 void
+INFO  20:30:53,918 - #41 main
+INFO  20:30:53,918 - #11 (
+INFO  20:30:53,918 - #12 )
+INFO  20:30:53,919 - #41 int
+INFO  20:30:53,921 - #41 a
+INFO  20:30:53,921 - #7 ;
+INFO  20:30:53,921 - #41 int
+INFO  20:30:53,922 - #41 b
+INFO  20:30:53,922 - #9 [
+INFO  20:30:53,922 - #10 ]
+INFO  20:30:53,930 - #7 ;
+INFO  20:30:53,930 - #3 {
+INFO  20:30:53,930 - #41 a
+INFO  20:30:53,932 - #6 =
+INFO  20:30:53,932 - #42 5
+INFO  20:30:53,933 - #7 ;
+INFO  20:30:53,935 - #46 ::
+INFO  20:30:53,936 - #41 a
+INFO  20:30:53,936 - #6 =
+INFO  20:30:53,936 - #42 4
+INFO  20:30:53,936 - #7 ;
+INFO  20:30:53,937 - #22 print
+INFO  20:30:53,937 - #11 (
+INFO  20:30:53,937 - #41 a
+INFO  20:30:53,937 - #12 )
+INFO  20:30:53,937 - #7 ;
+INFO  20:30:53,938 - #22 print
+INFO  20:30:53,938 - #11 (
+INFO  20:30:53,938 - #46 ::
+INFO  20:30:53,938 - #41 a
+INFO  20:30:53,938 - #12 )
+INFO  20:30:53,938 - #7 ;
+INFO  20:30:53,939 - #41 b
+INFO  20:30:53,939 - #9 [
+INFO  20:30:53,939 - #42 0
+INFO  20:30:53,939 - #10 ]
+INFO  20:30:53,939 - #6 =
+INFO  20:30:53,940 - #42 1
+INFO  20:30:53,940 - #7 ;
+INFO  20:30:53,940 - #4 }
+INFO  20:30:53,940 - #4 }
+INFO  20:30:53,950 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_var(
+      ConstVarDeclList_empty(
+      ) [ConstVarDeclList_empty]
+      VarDeclList_normal(
+        Type(
+         int
+        ) [Type]
+        VarDecl_var(
+         a
+        ) [VarDecl_var]
+        VarDeclMore_empty(
+        ) [VarDeclMore_empty]
+      ) [VarDeclList_normal]
+    ) [ConstVarDeclList_var]
+    VarDeclList_normal(
+      Type(
+       int
+      ) [Type]
+      VarDecl_array(
+       b
+      ) [VarDecl_array]
+      VarDeclMore_empty(
+      ) [VarDeclMore_empty]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_recursive(
+        VarDeclListRec_recursive(
+          VarDeclListRec_e(
+          ) [VarDeclListRec_e]
+          VarDeclList_normal(
+            Type(
+             int
+            ) [Type]
+            VarDecl_var(
+             a
+            ) [VarDecl_var]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [VarDeclListRec_recursive]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_array(
+           b
+          ) [VarDecl_array]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [VarDeclListRec_recursive]
+      StatementList_recursive(
+        StatementList_recursive(
+          StatementList_recursive(
+            StatementList_recursive(
+              StatementList_recursive(
+                StatementList_empty(
+                ) [StatementList_empty]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_var(
+                     a
+                    ) [Designator_var]
+                    Assignop(
+                    ) [Assignop]
+                    Expr_addop(
+                      AddopTermList_term(
+                        Term(
+                          MulopFactorList_factor(
+                            Factor_plus(
+                              FactorElement_number(
+                               5
+                              ) [FactorElement_number]
+                            ) [Factor_plus]
+                          ) [MulopFactorList_factor]
+                        ) [Term]
+                      ) [AddopTermList_term]
+                    ) [Expr_addop]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_recursive]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_var_global(
+                   a
+                  ) [Designator_var_global]
+                  Assignop(
+                  ) [Assignop]
+                  Expr_addop(
+                    AddopTermList_term(
+                      Term(
+                        MulopFactorList_factor(
+                          Factor_plus(
+                            FactorElement_number(
+                             4
+                            ) [FactorElement_number]
+                          ) [Factor_plus]
+                        ) [MulopFactorList_factor]
+                      ) [Term]
+                    ) [AddopTermList_term]
+                  ) [Expr_addop]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_recursive]
+            Statement_print(
+              Expr_addop(
+                AddopTermList_term(
+                  Term(
+                    MulopFactorList_factor(
+                      Factor_plus(
+                        FactorElement_var(
+                          Designator_var(
+                           a
+                          ) [Designator_var]
+                        ) [FactorElement_var]
+                      ) [Factor_plus]
+                    ) [MulopFactorList_factor]
+                  ) [Term]
+                ) [AddopTermList_term]
+              ) [Expr_addop]
+            ) [Statement_print]
+          ) [StatementList_recursive]
+          Statement_print(
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_var(
+                        Designator_var_global(
+                         a
+                        ) [Designator_var_global]
+                      ) [FactorElement_var]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [Statement_print]
+        ) [StatementList_recursive]
+        Statement_designator(
+          DesignatorStatement_assign(
+            Designator_elem(
+              DesignatorArrayName_local(
+               b
+              ) [DesignatorArrayName_local]
+              Expr_addop(
+                AddopTermList_term(
+                  Term(
+                    MulopFactorList_factor(
+                      Factor_plus(
+                        FactorElement_number(
+                         0
+                        ) [FactorElement_number]
+                      ) [Factor_plus]
+                    ) [MulopFactorList_factor]
+                  ) [Term]
+                ) [AddopTermList_term]
+              ) [Expr_addop]
+            ) [Designator_elem]
+            Assignop(
+            ) [Assignop]
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_number(
+                       1
+                      ) [FactorElement_number]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [DesignatorStatement_assign]
+        ) [Statement_designator]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  20:30:53,951 - =====================================================================
+INFO  20:30:53,956 - =====================================================================
+INFO  20:30:53,966 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 13
+INFO  20:30:53,966 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 15
+INFO  20:30:53,966 - Pristup elementu niza :b[Kind: 5] na liniji 17
+INFO  20:30:53,967 - =====================================================================
+INFO  20:30:53,972 - Generisanje  uspesno zavrseno!

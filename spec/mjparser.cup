@@ -51,11 +51,14 @@ terminal PLUS, MINUS , MUL, DIV, REM, EQUAL, NOTEQUAL, GREATER, GREATEREQUAL, LE
 terminal String IDENT;
 terminal Integer NUMBER, BOOL;
 terminal Character CHARACTER;
+terminal FOR;
+terminal DCOLON;
 
 nonterminal Program, ConstVarDeclList, MethodDeclList, ConstDeclList, ConstDeclMore, ConstDecl, Constant, ProgramName, VarDeclList, VarDecl, VarDeclMore;
 nonterminal VarDeclListRec, MethodDecl, FormParList, FormParMore, FormPar, StatementList, Statement, MethodSignature, Label;
 nonterminal DesignatorStatement, ElseStatement, Assignop, ActParList, ActParMore, ActPar;
 nonterminal Addop, Relop, Mulop, Setop, DoNonTerm, ActParListBegin, Else, WhileNonTerm;
+nonterminal Rparen, SemiFor, JumpToForStatement, ForJump, For;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorElement, MulopFactorList, Term, AddopTermList, Expr;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
@@ -105,6 +108,12 @@ VarDecl ::= 			(VarDecl_var) IDENT /* Example: x */
                         |
                         (VarDecl_array) IDENT LBRACKET RBRACKET /* Example: y[] */;
 
+
+/*
+RecDecl ::= 			(RecDecl) RECORD RecDeclName LBRACE VarDeclListRec RBRACE;
+
+RecDeclName ::= 		(RecDeclName) IDENT
+*/
 
 VarDeclMore ::= 		(VarDeclMore_comma) COMMA VarDecl VarDeclMore /* Example: , y */
                         |
@@ -187,8 +196,22 @@ Statement ::= 			(Statement_designator) DesignatorStatement SEMI /* Example: x =
                         |
                         (Statement_do_condition_designator) DoNonTerm Statement WhileNonTerm LPAREN Condition COMMA DesignatorStatement RPAREN SEMI /* Example: do statement while(condition, designatorStatement); */
                         |
-                        (Statement_block) LBRACE StatementList RBRACE /* Example: { statementList } */;
+                        (Statement_block) LBRACE StatementList RBRACE /* Example: { statementList } */
+                        |
+                        (Statement_for) For LPAREN DesignatorStatement SEMI ForJump Condition SemiFor DesignatorStatement Rparen Statement JumpToForStatement;
                         /*statement goto GOTO IDENT SEMI*/
+					
+Rparen ::= 			(Rparen) RPAREN;
+					
+SemiFor ::=			(SemiFor) SEMI;
+
+JumpToForStatement ::= (JumpToForStatement);
+
+ForJump ::= 		(ForJump);
+
+For ::=				(For) FOR;
+                        
+
 
 WhileNonTerm ::=		(WhileNonTerm) WHILE;
 
@@ -283,10 +306,14 @@ FactorElement ::= 		(FactorElement_var) Designator /* Example: x */
 		              	
 Designator ::=			(Designator_var) IDENT /* Example: x */
 						|
+						(Designator_var_global) DCOLON IDENT
+						|
 						(Designator_elem) DesignatorArrayName LBRACKET Expr RBRACKET /* Example: array[5] */; 
 					
 						
-DesignatorArrayName ::=	(DesignatorArrayName) IDENT;
+DesignatorArrayName ::=	(DesignatorArrayName_local) IDENT
+						|
+						(DesignatorArrayName_global) DCOLON IDENT; 
 
 
 Label ::=	IDENT;

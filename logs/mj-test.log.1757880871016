@@ -1,0 +1,182 @@
+INFO  22:12:47,639 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  22:12:47,742 - #2 program
+INFO  22:12:47,742 - #41 test302
+INFO  22:12:47,742 - #41 int
+INFO  22:12:47,745 - #41 i
+INFO  22:12:47,746 - #7 ;
+INFO  22:12:47,747 - #41 bool
+INFO  22:12:47,748 - #41 ibool
+INFO  22:12:47,748 - #7 ;
+INFO  22:12:47,748 - #41 int
+INFO  22:12:47,748 - #41 niz2
+INFO  22:12:47,748 - #7 ;
+INFO  22:12:47,748 - #41 int
+INFO  22:12:47,748 - #41 niz
+INFO  22:12:47,749 - #9 [
+INFO  22:12:47,749 - #10 ]
+INFO  22:12:47,749 - #7 ;
+INFO  22:12:47,749 - #41 int
+INFO  22:12:47,749 - #41 a
+INFO  22:12:47,749 - #7 ;
+INFO  22:12:47,749 - #3 {
+INFO  22:12:47,749 - #41 int
+INFO  22:12:47,750 - #41 f1
+INFO  22:12:47,759 - #11 (
+INFO  22:12:47,760 - #41 int
+INFO  22:12:47,760 - #41 arg
+INFO  22:12:47,760 - #8 ,
+INFO  22:12:47,760 - #41 sdasda
+INFO  22:12:47,760 - #12 )
+ERROR 22:12:47,761 - 
+Sintaksna greska na liniji 15
+INFO  22:12:47,761 - #3 {
+INFO  22:12:47,761 - #17 return
+INFO  22:12:47,761 - #41 arg
+ERROR 22:12:47,766 - Oporavak od greske u deklaraciji formalnog parametra funkcije. Linija: 15
+INFO  22:12:47,771 - #7 ;
+INFO  22:12:47,791 - #4 }
+INFO  22:12:47,792 - #13 void
+INFO  22:12:47,794 - #41 main
+INFO  22:12:47,794 - #11 (
+INFO  22:12:47,794 - #12 )
+INFO  22:12:47,796 - #3 {
+INFO  22:12:47,797 - #4 }
+INFO  22:12:47,797 - #4 }
+INFO  22:12:47,804 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_var(
+      ConstVarDeclList_var(
+        ConstVarDeclList_var(
+          ConstVarDeclList_var(
+            ConstVarDeclList_empty(
+            ) [ConstVarDeclList_empty]
+            VarDeclList_normal(
+              Type(
+               int
+              ) [Type]
+              VarDecl_var(
+               i
+              ) [VarDecl_var]
+              VarDeclMore_empty(
+              ) [VarDeclMore_empty]
+            ) [VarDeclList_normal]
+          ) [ConstVarDeclList_var]
+          VarDeclList_normal(
+            Type(
+             bool
+            ) [Type]
+            VarDecl_var(
+             ibool
+            ) [VarDecl_var]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [ConstVarDeclList_var]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           niz2
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [ConstVarDeclList_var]
+      VarDeclList_normal(
+        Type(
+         int
+        ) [Type]
+        VarDecl_array(
+         niz
+        ) [VarDecl_array]
+        VarDeclMore_empty(
+        ) [VarDeclMore_empty]
+      ) [VarDeclList_normal]
+    ) [ConstVarDeclList_var]
+    VarDeclList_normal(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_empty(
+      ) [VarDeclMore_empty]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_recursive(
+      MethodDeclList_e(
+      ) [MethodDeclList_e]
+      MethodDecl(
+        MethodSignature(
+          MethodReturnAndName_type(
+            Type(
+             int
+            ) [Type]
+           f1
+          ) [MethodReturnAndName_type]
+          FormParList_recursive(
+            FormPar_var(
+              Type(
+               int
+              ) [Type]
+             arg
+            ) [FormPar_var]
+            FormParMore_recursive(
+              FormPar_error(
+              ) [FormPar_error]
+              FormParMore_empty(
+              ) [FormParMore_empty]
+            ) [FormParMore_recursive]
+          ) [FormParList_recursive]
+        ) [MethodSignature]
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        StatementList_recursive(
+          StatementList_empty(
+          ) [StatementList_empty]
+          Statement_return_expr(
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_var(
+                        Designator_var(
+                         arg
+                        ) [Designator_var]
+                      ) [FactorElement_var]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [Statement_return_expr]
+        ) [StatementList_recursive]
+      ) [MethodDecl]
+    ) [MethodDeclList_recursive]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_empty(
+      ) [StatementList_empty]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  22:12:47,804 - =====================================================================
+INFO  22:12:47,812 - =====================================================================
+INFO  22:12:47,823 - Koriscenje formalnog parametra: arg[Kind : 1] na liniji 16
+INFO  22:12:47,823 - =====================================================================
+ERROR 22:12:47,824 - Parsiranje NIJE uspesno zavrseno!

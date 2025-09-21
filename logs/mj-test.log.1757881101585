@@ -1,0 +1,239 @@
+INFO  22:15:09,470 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  22:15:09,554 - #2 program
+INFO  22:15:09,554 - #41 test302
+INFO  22:15:09,554 - #41 int
+INFO  22:15:09,556 - #41 i
+INFO  22:15:09,558 - #7 ;
+INFO  22:15:09,560 - #41 bool
+INFO  22:15:09,560 - #41 ibool
+INFO  22:15:09,561 - #7 ;
+INFO  22:15:09,561 - #41 int
+INFO  22:15:09,561 - #41 niz2
+INFO  22:15:09,561 - #7 ;
+INFO  22:15:09,561 - #41 int
+INFO  22:15:09,561 - #41 niz
+INFO  22:15:09,561 - #9 [
+INFO  22:15:09,562 - #10 ]
+INFO  22:15:09,562 - #7 ;
+INFO  22:15:09,562 - #41 int
+INFO  22:15:09,562 - #41 a
+INFO  22:15:09,562 - #7 ;
+INFO  22:15:09,562 - #3 {
+INFO  22:15:09,562 - #41 int
+INFO  22:15:09,564 - #41 f1
+INFO  22:15:09,564 - #11 (
+INFO  22:15:09,564 - #41 int
+INFO  22:15:09,565 - #41 arg
+INFO  22:15:09,565 - #12 )
+INFO  22:15:09,566 - #3 {
+INFO  22:15:09,568 - #17 return
+INFO  22:15:09,570 - #41 arg
+INFO  22:15:09,570 - #7 ;
+INFO  22:15:09,572 - #4 }
+INFO  22:15:09,572 - #13 void
+INFO  22:15:09,573 - #41 main
+INFO  22:15:09,573 - #11 (
+INFO  22:15:09,573 - #12 )
+INFO  22:15:09,574 - #3 {
+INFO  22:15:09,575 - #14 if
+INFO  22:15:09,575 - #11 (
+INFO  22:15:09,575 - #41 sdad
+INFO  22:15:09,575 - #12 )
+INFO  22:15:09,577 - #3 {
+INFO  22:15:09,577 - #22 print
+INFO  22:15:09,577 - #11 (
+INFO  22:15:09,577 - #44 e
+INFO  22:15:09,578 - #12 )
+INFO  22:15:09,578 - #7 ;
+INFO  22:15:09,578 - #4 }
+INFO  22:15:09,578 - #4 }
+INFO  22:15:09,579 - #4 }
+INFO  22:15:09,586 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_var(
+      ConstVarDeclList_var(
+        ConstVarDeclList_var(
+          ConstVarDeclList_var(
+            ConstVarDeclList_empty(
+            ) [ConstVarDeclList_empty]
+            VarDeclList_normal(
+              Type(
+               int
+              ) [Type]
+              VarDecl_var(
+               i
+              ) [VarDecl_var]
+              VarDeclMore_empty(
+              ) [VarDeclMore_empty]
+            ) [VarDeclList_normal]
+          ) [ConstVarDeclList_var]
+          VarDeclList_normal(
+            Type(
+             bool
+            ) [Type]
+            VarDecl_var(
+             ibool
+            ) [VarDecl_var]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [ConstVarDeclList_var]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           niz2
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [ConstVarDeclList_var]
+      VarDeclList_normal(
+        Type(
+         int
+        ) [Type]
+        VarDecl_array(
+         niz
+        ) [VarDecl_array]
+        VarDeclMore_empty(
+        ) [VarDeclMore_empty]
+      ) [VarDeclList_normal]
+    ) [ConstVarDeclList_var]
+    VarDeclList_normal(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_empty(
+      ) [VarDeclMore_empty]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_recursive(
+      MethodDeclList_e(
+      ) [MethodDeclList_e]
+      MethodDecl(
+        MethodSignature(
+          MethodReturnAndName_type(
+            Type(
+             int
+            ) [Type]
+           f1
+          ) [MethodReturnAndName_type]
+          FormParList_recursive(
+            FormPar_var(
+              Type(
+               int
+              ) [Type]
+             arg
+            ) [FormPar_var]
+            FormParMore_empty(
+            ) [FormParMore_empty]
+          ) [FormParList_recursive]
+        ) [MethodSignature]
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        StatementList_recursive(
+          StatementList_empty(
+          ) [StatementList_empty]
+          Statement_return_expr(
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_var(
+                        Designator_var(
+                         arg
+                        ) [Designator_var]
+                      ) [FactorElement_var]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [Statement_return_expr]
+        ) [StatementList_recursive]
+      ) [MethodDecl]
+    ) [MethodDeclList_recursive]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_recursive(
+        StatementList_empty(
+        ) [StatementList_empty]
+        Statement_if(
+          Condition(
+            CondTermList_ct(
+              CondTerm(
+                CondFactList_cf(
+                  CondFact_expr(
+                    Expr_addop(
+                      AddopTermList_term(
+                        Term(
+                          MulopFactorList_factor(
+                            Factor_plus(
+                              FactorElement_var(
+                                Designator_var(
+                                 sdad
+                                ) [Designator_var]
+                              ) [FactorElement_var]
+                            ) [Factor_plus]
+                          ) [MulopFactorList_factor]
+                        ) [Term]
+                      ) [AddopTermList_term]
+                    ) [Expr_addop]
+                  ) [CondFact_expr]
+                ) [CondFactList_cf]
+              ) [CondTerm]
+            ) [CondTermList_ct]
+          ) [Condition]
+          Statement_block(
+            StatementList_recursive(
+              StatementList_empty(
+              ) [StatementList_empty]
+              Statement_print(
+                Expr_addop(
+                  AddopTermList_term(
+                    Term(
+                      MulopFactorList_factor(
+                        Factor_plus(
+                          FactorElement_character(
+                           e
+                          ) [FactorElement_character]
+                        ) [Factor_plus]
+                      ) [MulopFactorList_factor]
+                    ) [Term]
+                  ) [AddopTermList_term]
+                ) [Expr_addop]
+              ) [Statement_print]
+            ) [StatementList_recursive]
+          ) [Statement_block]
+          ElseStatement_empty(
+          ) [ElseStatement_empty]
+        ) [Statement_if]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  22:15:09,587 - =====================================================================
+INFO  22:15:09,593 - =====================================================================
+INFO  22:15:09,603 - Koriscenje formalnog parametra: arg[Kind : 1] na liniji 16
+ERROR 22:15:09,604 - Pristup nedefinisanoj promeljivoj:sdad na liniji 22
+ERROR 22:15:09,604 - Logicki operand nije tipa bool. na liniji 22
+ERROR 22:15:09,604 - Uslov nije tipa bool. na liniji 22
+INFO  22:15:09,604 - =====================================================================
+ERROR 22:15:09,605 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,112 @@
+INFO  01:20:50,307 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  01:20:50,815 - #2 program
+INFO  01:20:50,816 - #41 test302
+INFO  01:20:50,816 - #3 {
+INFO  01:20:50,832 - #13 void
+INFO  01:20:50,836 - #41 main
+INFO  01:20:50,838 - #11 (
+INFO  01:20:50,839 - #12 )
+INFO  01:20:50,847 - #3 {
+INFO  01:20:50,859 - #4 }
+INFO  01:20:50,865 - #41 int
+INFO  01:20:50,873 - #41 f1
+INFO  01:20:50,878 - #11 (
+INFO  01:20:50,879 - #41 int
+INFO  01:20:50,880 - #41 x
+INFO  01:20:50,880 - #8 ,
+INFO  01:20:50,882 - #8 ,
+ERROR 01:20:50,883 - 
+Sintaksna greska na liniji 15
+INFO  01:20:50,883 - #41 int
+INFO  01:20:50,884 - #41 i
+INFO  01:20:50,885 - #8 ,
+ERROR 01:20:50,923 - Oporavak od greske u deklaraciji formalnog parametra funkcije. Linija: 15
+INFO  01:20:50,933 - #8 ,
+ERROR 01:20:50,933 - 
+Sintaksna greska na liniji 15
+INFO  01:20:50,934 - #41 int
+INFO  01:20:50,935 - #41 z
+INFO  01:20:50,937 - #12 )
+ERROR 01:20:50,939 - Oporavak od greske u deklaraciji formalnog parametra funkcije. Linija: 15
+INFO  01:20:50,954 - #3 {
+INFO  01:20:50,955 - #4 }
+INFO  01:20:50,955 - #4 }
+INFO  01:20:51,001 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  ConstVarDeclList_empty(
+  ) [ConstVarDeclList_empty]
+  MethodDeclList_recursive(
+    MethodDeclList_recursive(
+      MethodDeclList_e(
+      ) [MethodDeclList_e]
+      MethodDecl(
+        MethodSignature(
+          MethodReturnAndName_void(
+           main
+          ) [MethodReturnAndName_void]
+          FormParList_empty(
+          ) [FormParList_empty]
+        ) [MethodSignature]
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        StatementList_empty(
+        ) [StatementList_empty]
+      ) [MethodDecl]
+    ) [MethodDeclList_recursive]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_type(
+          Type(
+           int
+          ) [Type]
+         f1
+        ) [MethodReturnAndName_type]
+        FormParList_recursive(
+          FormPar_var(
+            Type(
+             int
+            ) [Type]
+           x
+          ) [FormPar_var]
+          FormParMore_recursive(
+            FormPar_error(
+            ) [FormPar_error]
+            FormParMore_recursive(
+              FormPar_var(
+                Type(
+                 int
+                ) [Type]
+               i
+              ) [FormPar_var]
+              FormParMore_recursive(
+                FormPar_error(
+                ) [FormPar_error]
+                FormParMore_recursive(
+                  FormPar_var(
+                    Type(
+                     int
+                    ) [Type]
+                   z
+                  ) [FormPar_var]
+                  FormParMore_empty(
+                  ) [FormParMore_empty]
+                ) [FormParMore_recursive]
+              ) [FormParMore_recursive]
+            ) [FormParMore_recursive]
+          ) [FormParMore_recursive]
+        ) [FormParList_recursive]
+      ) [MethodSignature]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_empty(
+      ) [StatementList_empty]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  01:20:51,002 - =====================================================================
+INFO  01:20:51,040 - =====================================================================
+ERROR 01:20:51,059 - Ne postoji iskaz return unutar metode:f1 na liniji 15
+INFO  01:20:51,060 - =====================================================================
+ERROR 01:20:51,063 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,285 @@
+INFO  23:59:15,757 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  23:59:16,093 - #2 program
+INFO  23:59:16,093 - #41 test302
+INFO  23:59:16,094 - #3 {
+INFO  23:59:16,099 - #13 void
+INFO  23:59:16,102 - #41 main
+INFO  23:59:16,102 - #11 (
+INFO  23:59:16,103 - #12 )
+INFO  23:59:16,106 - #3 {
+INFO  23:59:16,112 - #41 int
+INFO  23:59:16,114 - #41 s
+ERROR 23:59:16,114 - 
+Sintaksna greska na liniji 11
+INFO  23:59:16,115 - #7 ;
+INFO  23:59:16,115 - #41 int
+INFO  23:59:16,115 - #41 pom
+INFO  23:59:16,117 - #6 =
+INFO  23:59:16,118 - #40 new
+INFO  23:59:16,118 - #41 int
+INFO  23:59:16,119 - #9 [
+INFO  23:59:16,119 - #42 2
+INFO  23:59:16,119 - #10 ]
+INFO  23:59:16,120 - #7 ;
+INFO  23:59:16,120 - #41 pom
+INFO  23:59:16,121 - #9 [
+INFO  23:59:16,121 - #42 0
+ERROR 23:59:16,132 - Oporavak od greske u iskazu dodele. Linija: 1
+INFO  23:59:16,136 - #10 ]
+INFO  23:59:16,139 - #6 =
+INFO  23:59:16,140 - #42 1
+INFO  23:59:16,142 - #7 ;
+INFO  23:59:16,143 - #41 pom
+INFO  23:59:16,144 - #9 [
+INFO  23:59:16,144 - #42 1
+INFO  23:59:16,144 - #10 ]
+INFO  23:59:16,144 - #6 =
+INFO  23:59:16,144 - #42 1
+INFO  23:59:16,145 - #7 ;
+INFO  23:59:16,145 - #41 s
+INFO  23:59:16,145 - #6 =
+INFO  23:59:16,146 - #41 f1
+INFO  23:59:16,147 - #27 map
+INFO  23:59:16,147 - #41 pom
+INFO  23:59:16,147 - #7 ;
+INFO  23:59:16,147 - #22 print
+INFO  23:59:16,148 - #11 (
+INFO  23:59:16,148 - #41 s
+INFO  23:59:16,148 - #12 )
+INFO  23:59:16,148 - #7 ;
+INFO  23:59:16,149 - #4 }
+INFO  23:59:16,149 - #41 int
+INFO  23:59:16,151 - #41 f1
+INFO  23:59:16,162 - #11 (
+INFO  23:59:16,163 - #41 int
+INFO  23:59:16,163 - #41 x
+INFO  23:59:16,163 - #12 )
+INFO  23:59:16,165 - #3 {
+INFO  23:59:16,165 - #17 return
+INFO  23:59:16,165 - #41 x
+INFO  23:59:16,166 - #29 +
+INFO  23:59:16,166 - #42 1
+INFO  23:59:16,170 - #7 ;
+INFO  23:59:16,170 - #4 }
+INFO  23:59:16,171 - #4 }
+INFO  23:59:16,187 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  ConstVarDeclList_empty(
+  ) [ConstVarDeclList_empty]
+  MethodDeclList_recursive(
+    MethodDeclList_recursive(
+      MethodDeclList_e(
+      ) [MethodDeclList_e]
+      MethodDecl(
+        MethodSignature(
+          MethodReturnAndName_void(
+           main
+          ) [MethodReturnAndName_void]
+          FormParList_empty(
+          ) [FormParList_empty]
+        ) [MethodSignature]
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        StatementList_recursive(
+          StatementList_recursive(
+            StatementList_recursive(
+              StatementList_recursive(
+                StatementList_recursive(
+                  StatementList_empty(
+                  ) [StatementList_empty]
+                  Statement_designator(
+                    DesignatorStatement_error(
+                    ) [DesignatorStatement_error]
+                  ) [Statement_designator]
+                ) [StatementList_recursive]
+                Statement_designator(
+                  DesignatorStatement_assign(
+                    Designator_elem(
+                      DesignatorArrayName(
+                       pom
+                      ) [DesignatorArrayName]
+                      Expr_addop(
+                        AddopTermList_term(
+                          Term(
+                            MulopFactorList_factor(
+                              Factor_plus(
+                                FactorElement_number(
+                                 0
+                                ) [FactorElement_number]
+                              ) [Factor_plus]
+                            ) [MulopFactorList_factor]
+                          ) [Term]
+                        ) [AddopTermList_term]
+                      ) [Expr_addop]
+                    ) [Designator_elem]
+                    Assignop(
+                    ) [Assignop]
+                    Expr_addop(
+                      AddopTermList_term(
+                        Term(
+                          MulopFactorList_factor(
+                            Factor_plus(
+                              FactorElement_number(
+                               1
+                              ) [FactorElement_number]
+                            ) [Factor_plus]
+                          ) [MulopFactorList_factor]
+                        ) [Term]
+                      ) [AddopTermList_term]
+                    ) [Expr_addop]
+                  ) [DesignatorStatement_assign]
+                ) [Statement_designator]
+              ) [StatementList_recursive]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_elem(
+                    DesignatorArrayName(
+                     pom
+                    ) [DesignatorArrayName]
+                    Expr_addop(
+                      AddopTermList_term(
+                        Term(
+                          MulopFactorList_factor(
+                            Factor_plus(
+                              FactorElement_number(
+                               1
+                              ) [FactorElement_number]
+                            ) [Factor_plus]
+                          ) [MulopFactorList_factor]
+                        ) [Term]
+                      ) [AddopTermList_term]
+                    ) [Expr_addop]
+                  ) [Designator_elem]
+                  Assignop(
+                  ) [Assignop]
+                  Expr_addop(
+                    AddopTermList_term(
+                      Term(
+                        MulopFactorList_factor(
+                          Factor_plus(
+                            FactorElement_number(
+                             1
+                            ) [FactorElement_number]
+                          ) [Factor_plus]
+                        ) [MulopFactorList_factor]
+                      ) [Term]
+                    ) [AddopTermList_term]
+                  ) [Expr_addop]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_recursive]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_var(
+                 s
+                ) [Designator_var]
+                Assignop(
+                ) [Assignop]
+                Expr_designator(
+                  Designator_var(
+                   f1
+                  ) [Designator_var]
+                  Designator_var(
+                   pom
+                  ) [Designator_var]
+                ) [Expr_designator]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [StatementList_recursive]
+          Statement_print(
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_var(
+                        Designator_var(
+                         s
+                        ) [Designator_var]
+                      ) [FactorElement_var]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [Statement_print]
+        ) [StatementList_recursive]
+      ) [MethodDecl]
+    ) [MethodDeclList_recursive]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_type(
+          Type(
+           int
+          ) [Type]
+         f1
+        ) [MethodReturnAndName_type]
+        FormParList_recursive(
+          FormPar_var(
+            Type(
+             int
+            ) [Type]
+           x
+          ) [FormPar_var]
+          FormParMore_empty(
+          ) [FormParMore_empty]
+        ) [FormParList_recursive]
+      ) [MethodSignature]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_recursive(
+        StatementList_empty(
+        ) [StatementList_empty]
+        Statement_return_expr(
+          Expr_addop(
+            AddopTermList_add(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_var(
+                        Designator_var(
+                         x
+                        ) [Designator_var]
+                      ) [FactorElement_var]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+              Addop_plus(
+              ) [Addop_plus]
+              Term(
+                MulopFactorList_factor(
+                  Factor_plus(
+                    FactorElement_number(
+                     1
+                    ) [FactorElement_number]
+                  ) [Factor_plus]
+                ) [MulopFactorList_factor]
+              ) [Term]
+            ) [AddopTermList_add]
+          ) [Expr_addop]
+        ) [Statement_return_expr]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  23:59:16,358 - =====================================================================
+INFO  23:59:16,373 - =====================================================================
+ERROR 23:59:16,385 - Pristup nedefinisanoj promeljivoj niza :pom na liniji 13
+ERROR 23:59:16,386 - Neodgovarajuci tipovi u dodeli vrednosti na liniji 13
+ERROR 23:59:16,386 - Pristup nedefinisanoj promeljivoj niza :pom na liniji 14
+ERROR 23:59:16,386 - Neodgovarajuci tipovi u dodeli vrednosti na liniji 14
+ERROR 23:59:16,387 - Pristup nedefinisanoj promeljivoj:s na liniji 16
+ERROR 23:59:16,387 - Pristup nedefinisanoj promeljivoj:f1 na liniji 16
+ERROR 23:59:16,387 - Pristup nedefinisanoj promeljivoj:pom na liniji 16
+ERROR 23:59:16,387 - Designator sa leve strane mora biti metoda na liniji 16
+ERROR 23:59:16,388 - Designator sa desne strane MAP operatora mora biti tipa Array[] na liniji 16
+ERROR 23:59:16,388 - Neodgovarajuci tipovi u dodeli vrednosti na liniji 16
+ERROR 23:59:16,388 - Pristup nedefinisanoj promeljivoj:s na liniji 17
+ERROR 23:59:16,388 - Print operacija ne int/char/bool izraza na liniji 17
+INFO  23:59:16,440 - Koriscenje formalnog parametra: x[Kind : 1] na liniji 22
+INFO  23:59:16,441 - =====================================================================
+ERROR 23:59:16,443 - Parsiranje NIJE uspesno zavrseno!

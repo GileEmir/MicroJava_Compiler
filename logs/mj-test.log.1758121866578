@@ -1,0 +1,327 @@
+INFO  16:24:28,453 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  16:24:29,321 - #2 program
+INFO  16:24:29,322 - #41 test301
+INFO  16:24:29,322 - #5 const
+INFO  16:24:29,349 - #41 int
+INFO  16:24:29,349 - #41 nula
+INFO  16:24:29,373 - #6 =
+INFO  16:24:29,374 - #42 0
+INFO  16:24:29,374 - #7 ;
+INFO  16:24:29,381 - #5 const
+INFO  16:24:29,381 - #41 int
+INFO  16:24:29,382 - #41 jedan
+INFO  16:24:29,382 - #6 =
+INFO  16:24:29,382 - #42 1
+INFO  16:24:29,382 - #7 ;
+INFO  16:24:29,382 - #5 const
+INFO  16:24:29,382 - #41 int
+INFO  16:24:29,383 - #41 pet
+INFO  16:24:29,383 - #6 =
+INFO  16:24:29,383 - #42 5
+INFO  16:24:29,384 - #7 ;
+INFO  16:24:29,384 - #41 int
+INFO  16:24:29,384 - #41 niz
+INFO  16:24:29,385 - #9 [
+INFO  16:24:29,385 - #10 ]
+INFO  16:24:29,385 - #7 ;
+INFO  16:24:29,407 - #41 char
+INFO  16:24:29,407 - #41 nizch
+INFO  16:24:29,407 - #9 [
+INFO  16:24:29,407 - #10 ]
+INFO  16:24:29,407 - #7 ;
+INFO  16:24:29,409 - #41 int
+INFO  16:24:29,409 - #41 a
+INFO  16:24:29,409 - #7 ;
+INFO  16:24:29,409 - #41 set
+INFO  16:24:29,409 - #41 s1
+INFO  16:24:29,409 - #8 ,
+INFO  16:24:29,409 - #41 s2
+INFO  16:24:29,409 - #8 ,
+INFO  16:24:29,409 - #41 s3
+INFO  16:24:29,409 - #7 ;
+INFO  16:24:29,409 - #3 {
+INFO  16:24:29,410 - #41 int
+INFO  16:24:29,413 - #41 f1
+INFO  16:24:29,414 - #11 (
+INFO  16:24:29,414 - #41 int
+INFO  16:24:29,415 - #41 a
+INFO  16:24:29,415 - #12 )
+INFO  16:24:29,441 - #3 {
+INFO  16:24:29,472 - #17 return
+INFO  16:24:29,477 - #42 1
+INFO  16:24:29,477 - #7 ;
+INFO  16:24:29,483 - #4 }
+INFO  16:24:29,483 - #13 void
+INFO  16:24:29,488 - #41 main
+INFO  16:24:29,488 - #11 (
+INFO  16:24:29,489 - #12 )
+INFO  16:24:29,513 - #41 int
+INFO  16:24:29,514 - #41 bodovi
+INFO  16:24:29,514 - #7 ;
+INFO  16:24:29,514 - #41 int
+INFO  16:24:29,515 - #41 temp
+INFO  16:24:29,515 - #7 ;
+INFO  16:24:29,515 - #3 {
+INFO  16:24:29,516 - #41 f1
+INFO  16:24:29,516 - #11 (
+INFO  16:24:29,517 - #41 bodovi
+INFO  16:24:29,521 - #8 ,
+INFO  16:24:29,526 - #41 temp
+INFO  16:24:29,526 - #12 )
+INFO  16:24:29,531 - #7 ;
+INFO  16:24:29,531 - #4 }
+INFO  16:24:29,531 - #4 }
+INFO  16:24:29,548 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_var(
+      ConstVarDeclList_var(
+        ConstVarDeclList_var(
+          ConstVarDeclList_const(
+            ConstVarDeclList_const(
+              ConstVarDeclList_const(
+                ConstVarDeclList_empty(
+                ) [ConstVarDeclList_empty]
+                ConstDeclList_normal(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstDecl(
+                   nula
+                    Constant_number(
+                     0
+                    ) [Constant_number]
+                  ) [ConstDecl]
+                  ConstDeclMore_empty(
+                  ) [ConstDeclMore_empty]
+                ) [ConstDeclList_normal]
+              ) [ConstVarDeclList_const]
+              ConstDeclList_normal(
+                Type(
+                 int
+                ) [Type]
+                ConstDecl(
+                 jedan
+                  Constant_number(
+                   1
+                  ) [Constant_number]
+                ) [ConstDecl]
+                ConstDeclMore_empty(
+                ) [ConstDeclMore_empty]
+              ) [ConstDeclList_normal]
+            ) [ConstVarDeclList_const]
+            ConstDeclList_normal(
+              Type(
+               int
+              ) [Type]
+              ConstDecl(
+               pet
+                Constant_number(
+                 5
+                ) [Constant_number]
+              ) [ConstDecl]
+              ConstDeclMore_empty(
+              ) [ConstDeclMore_empty]
+            ) [ConstDeclList_normal]
+          ) [ConstVarDeclList_const]
+          VarDeclList_normal(
+            Type(
+             int
+            ) [Type]
+            VarDecl_array(
+             niz
+            ) [VarDecl_array]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [ConstVarDeclList_var]
+        VarDeclList_normal(
+          Type(
+           char
+          ) [Type]
+          VarDecl_array(
+           nizch
+          ) [VarDecl_array]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [ConstVarDeclList_var]
+      VarDeclList_normal(
+        Type(
+         int
+        ) [Type]
+        VarDecl_var(
+         a
+        ) [VarDecl_var]
+        VarDeclMore_empty(
+        ) [VarDeclMore_empty]
+      ) [VarDeclList_normal]
+    ) [ConstVarDeclList_var]
+    VarDeclList_normal(
+      Type(
+       set
+      ) [Type]
+      VarDecl_var(
+       s1
+      ) [VarDecl_var]
+      VarDeclMore_comma(
+        VarDecl_var(
+         s2
+        ) [VarDecl_var]
+        VarDeclMore_comma(
+          VarDecl_var(
+           s3
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclMore_comma]
+      ) [VarDeclMore_comma]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_recursive(
+      MethodDeclList_e(
+      ) [MethodDeclList_e]
+      MethodDecl(
+        MethodSignature(
+          MethodReturnAndName_type(
+            Type(
+             int
+            ) [Type]
+           f1
+          ) [MethodReturnAndName_type]
+          FormParList_recursive(
+            FormPar_var(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormPar_var]
+            FormParMore_empty(
+            ) [FormParMore_empty]
+          ) [FormParList_recursive]
+        ) [MethodSignature]
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        StatementList_recursive(
+          StatementList_empty(
+          ) [StatementList_empty]
+          Statement_return_expr(
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_number(
+                       1
+                      ) [FactorElement_number]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [Statement_return_expr]
+        ) [StatementList_recursive]
+      ) [MethodDecl]
+    ) [MethodDeclList_recursive]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_recursive(
+        VarDeclListRec_recursive(
+          VarDeclListRec_e(
+          ) [VarDeclListRec_e]
+          VarDeclList_normal(
+            Type(
+             int
+            ) [Type]
+            VarDecl_var(
+             bodovi
+            ) [VarDecl_var]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [VarDeclListRec_recursive]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           temp
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [VarDeclListRec_recursive]
+      StatementList_recursive(
+        StatementList_empty(
+        ) [StatementList_empty]
+        Statement_designator(
+          DesignatorStatement_meth(
+            Designator_var(
+             f1
+            ) [Designator_var]
+            ActParList_recursive(
+              ActParListBegin(
+              ) [ActParListBegin]
+              ActPar(
+                Expr_addop(
+                  AddopTermList_term(
+                    Term(
+                      MulopFactorList_factor(
+                        Factor_plus(
+                          FactorElement_var(
+                            Designator_var(
+                             bodovi
+                            ) [Designator_var]
+                          ) [FactorElement_var]
+                        ) [Factor_plus]
+                      ) [MulopFactorList_factor]
+                    ) [Term]
+                  ) [AddopTermList_term]
+                ) [Expr_addop]
+              ) [ActPar]
+              ActParMore_recursive(
+                ActPar(
+                  Expr_addop(
+                    AddopTermList_term(
+                      Term(
+                        MulopFactorList_factor(
+                          Factor_plus(
+                            FactorElement_var(
+                              Designator_var(
+                               temp
+                              ) [Designator_var]
+                            ) [FactorElement_var]
+                          ) [Factor_plus]
+                        ) [MulopFactorList_factor]
+                      ) [Term]
+                    ) [AddopTermList_term]
+                  ) [Expr_addop]
+                ) [ActPar]
+                ActParMore_empty(
+                ) [ActParMore_empty]
+              ) [ActParMore_recursive]
+            ) [ActParList_recursive]
+          ) [DesignatorStatement_meth]
+        ) [Statement_designator]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  16:24:29,549 - =====================================================================
+INFO  16:24:29,562 - =====================================================================
+INFO  16:24:29,674 - Pristup lokalnoj promeljivoj: f1[Kind : 3] na liniji 27
+INFO  16:24:29,675 - Pristup lokalnoj promeljivoj: bodovi[Kind : 1] na liniji 27
+INFO  16:24:29,676 - Pristup lokalnoj promeljivoj: temp[Kind : 1] na liniji 27
+INFO  16:24:29,678 - Poziv funkcije: f1[Kind: 3] na liniji 27
+ERROR 16:24:29,704 - [Greska velicina] Nekompatibilnost parametara pri pozivu metode: f1 na liniji 27
+INFO  16:24:29,704 - =====================================================================
+ERROR 16:24:29,705 - Parsiranje NIJE uspesno zavrseno!

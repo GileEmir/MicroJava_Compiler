@@ -1,0 +1,456 @@
+
+  pos: instruction operands
+     | expressionstack
+-----------------------------
+  251: enter       0 2 
+     | 
+  254: const_5     
+     | 5 
+  255: const_1     
+     | 5 1 
+  256: add         
+     | 6 
+  257: newarray    1 
+     | 2 
+  259: dup         
+     | 2 2 
+  260: const_0     
+     | 2 2 0 
+  261: const_1     
+     | 2 2 0 1 
+  262: astore      
+Arraylength = 6
+Address = 2
+Index = 0
+Value = 1
+
+     | 2 
+  263: store_1     
+     | 
+  264: load_1      
+     | 2 
+  265: const       12 
+     | 2 12 
+  270: call        -257 
+     | 2 12 
+   13: enter       2 4 
+     | 
+   16: load_0      
+     | 2 
+   17: arraylength 
+     | 6 
+   18: store_2     
+     | 
+   19: const_1     
+     | 1 
+   20: store_3     
+     | 
+   21: load_3      
+     | 1 
+   22: load_0      
+     | 1 2 
+   23: const_0     
+     | 1 2 0 
+   24: aload       
+     | 1 1 
+   25: jge         17 
+     | 
+   42: load_0      
+     | 2 
+   43: const_0     
+     | 2 0 
+   44: aload       
+     | 1 
+   45: store_3     
+     | 
+   46: load_3      
+     | 1 
+   47: load_2      
+     | 1 6 
+   48: jge         13 
+     | 
+   51: load_0      
+     | 2 
+   52: load_3      
+     | 2 1 
+   53: load_1      
+     | 2 1 12 
+   54: astore      
+Arraylength = 6
+Address = 2
+Index = 1
+Value = 12
+
+     | 
+   55: load_0      
+     | 2 
+   56: const_0     
+     | 2 0 
+   57: load_3      
+     | 2 0 1 
+   58: const_1     
+     | 2 0 1 1 
+   59: add         
+     | 2 0 2 
+   60: astore      
+Arraylength = 6
+Address = 2
+Index = 0
+Value = 2
+
+     | 
+   61: exit        
+     | 
+   62: return      
+     | 
+  273: load_1      
+     | 2 
+  274: const_2     
+     | 2 2 
+  275: call        -262 
+     | 2 2 
+   13: enter       2 4 
+     | 
+   16: load_0      
+     | 2 
+   17: arraylength 
+     | 6 
+   18: store_2     
+     | 
+   19: const_1     
+     | 1 
+   20: store_3     
+     | 
+   21: load_3      
+     | 1 
+   22: load_0      
+     | 1 2 
+   23: const_0     
+     | 1 2 0 
+   24: aload       
+     | 1 2 
+   25: jge         17 
+     | 
+   28: load_0      
+     | 2 
+   29: load_3      
+     | 2 1 
+   30: aload       
+     | 12 
+   31: load_1      
+     | 12 2 
+   32: jeq         29 
+     | 
+   35: load_3      
+     | 1 
+   36: const_1     
+     | 1 1 
+   37: add         
+     | 2 
+   38: store_3     
+     | 
+   39: jmp         -18 
+     | 
+   21: load_3      
+     | 2 
+   22: load_0      
+     | 2 2 
+   23: const_0     
+     | 2 2 0 
+   24: aload       
+     | 2 2 
+   25: jge         17 
+     | 
+   42: load_0      
+     | 2 
+   43: const_0     
+     | 2 0 
+   44: aload       
+     | 2 
+   45: store_3     
+     | 
+   46: load_3      
+     | 2 
+   47: load_2      
+     | 2 6 
+   48: jge         13 
+     | 
+   51: load_0      
+     | 2 
+   52: load_3      
+     | 2 2 
+   53: load_1      
+     | 2 2 2 
+   54: astore      
+Arraylength = 6
+Address = 2
+Index = 2
+Value = 2
+
+     | 
+   55: load_0      
+     | 2 
+   56: const_0     
+     | 2 0 
+   57: load_3      
+     | 2 0 2 
+   58: const_1     
+     | 2 0 2 1 
+   59: add         
+     | 2 0 3 
+   60: astore      
+Arraylength = 6
+Address = 2
+Index = 0
+Value = 3
+
+     | 
+   61: exit        
+     | 
+   62: return      
+     | 
+  278: load_1      
+     | 2 
+  279: const       10 
+     | 2 10 
+  284: call        -271 
+     | 2 10 
+   13: enter       2 4 
+     | 
+   16: load_0      
+     | 2 
+   17: arraylength 
+     | 6 
+   18: store_2     
+     | 
+   19: const_1     
+     | 1 
+   20: store_3     
+     | 
+   21: load_3      
+     | 1 
+   22: load_0      
+     | 1 2 
+   23: const_0     
+     | 1 2 0 
+   24: aload       
+     | 1 3 
+   25: jge         17 
+     | 
+   28: load_0      
+     | 2 
+   29: load_3      
+     | 2 1 
+   30: aload       
+     | 12 
+   31: load_1      
+     | 12 10 
+   32: jeq         29 
+     | 
+   35: load_3      
+     | 1 
+   36: const_1     
+     | 1 1 
+   37: add         
+     | 2 
+   38: store_3     
+     | 
+   39: jmp         -18 
+     | 
+   21: load_3      
+     | 2 
+   22: load_0      
+     | 2 2 
+   23: const_0     
+     | 2 2 0 
+   24: aload       
+     | 2 3 
+   25: jge         17 
+     | 
+   28: load_0      
+     | 2 
+   29: load_3      
+     | 2 2 
+   30: aload       
+     | 2 
+   31: load_1      
+     | 2 10 
+   32: jeq         29 
+     | 
+   35: load_3      
+     | 2 
+   36: const_1     
+     | 2 1 
+   37: add         
+     | 3 
+   38: store_3     
+     | 
+   39: jmp         -18 
+     | 
+   21: load_3      
+     | 3 
+   22: load_0      
+     | 3 2 
+   23: const_0     
+     | 3 2 0 
+   24: aload       
+     | 3 3 
+   25: jge         17 
+     | 
+   42: load_0      
+     | 2 
+   43: const_0     
+     | 2 0 
+   44: aload       
+     | 3 
+   45: store_3     
+     | 
+   46: load_3      
+     | 3 
+   47: load_2      
+     | 3 6 
+   48: jge         13 
+     | 
+   51: load_0      
+     | 2 
+   52: load_3      
+     | 2 3 
+   53: load_1      
+     | 2 3 10 
+   54: astore      
+Arraylength = 6
+Address = 2
+Index = 3
+Value = 10
+
+     | 
+   55: load_0      
+     | 2 
+   56: const_0     
+     | 2 0 
+   57: load_3      
+     | 2 0 3 
+   58: const_1     
+     | 2 0 3 1 
+   59: add         
+     | 2 0 4 
+   60: astore      
+Arraylength = 6
+Address = 2
+Index = 0
+Value = 4
+
+     | 
+   61: exit        
+     | 
+   62: return      
+     | 
+  287: load_1      
+     | 2 
+  288: call        -74 
+     | 2 
+  214: enter       1 3 
+     | 
+  217: const_2     
+     | 2 
+  218: store_1     
+     | 
+  219: load_0      
+     | 2 
+  220: const_1     
+     | 2 1 
+  221: aload       
+     | 12 
+  222: store_2     
+     | 
+  223: load_1      
+     | 2 
+  224: load_0      
+     | 2 2 
+  225: const_0     
+     | 2 2 0 
+  226: aload       
+     | 2 4 
+  227: jge         21 
+     | 
+  230: load_0      
+     | 2 
+  231: load_1      
+     | 2 2 
+  232: aload       
+     | 2 
+  233: load_2      
+     | 2 12 
+  234: jle         7 
+     | 
+  241: load_1      
+     | 2 
+  242: const_1     
+     | 2 1 
+  243: add         
+     | 3 
+  244: store_1     
+     | 
+  245: jmp         -22 
+     | 
+  223: load_1      
+     | 3 
+  224: load_0      
+     | 3 2 
+  225: const_0     
+     | 3 2 0 
+  226: aload       
+     | 3 4 
+  227: jge         21 
+     | 
+  230: load_0      
+     | 2 
+  231: load_1      
+     | 2 3 
+  232: aload       
+     | 10 
+  233: load_2      
+     | 10 12 
+  234: jle         7 
+     | 
+  241: load_1      
+     | 3 
+  242: const_1     
+     | 3 1 
+  243: add         
+     | 4 
+  244: store_1     
+     | 
+  245: jmp         -22 
+     | 
+  223: load_1      
+     | 4 
+  224: load_0      
+     | 4 2 
+  225: const_0     
+     | 4 2 0 
+  226: aload       
+     | 4 4 
+  227: jge         21 
+     | 
+  248: load_2      
+     | 12 
+  249: exit        
+     | 12 
+  250: return      
+     | 12 
+  291: const_0     
+     | 12 0 
+  292: print       12
+     | 
+  293: const       10 
+     | 10 
+  298: const_0     
+     | 10 0 
+  299: bprint      
+
+     | 
+  300: exit        
+     | 
+  301: return      
+Completion took 112 ms

@@ -1,0 +1,288 @@
+INFO  15:41:05,720 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  15:41:05,893 - #2 program
+INFO  15:41:05,894 - #41 test301
+INFO  15:41:05,895 - #5 const
+INFO  15:41:05,900 - #41 int
+INFO  15:41:05,901 - #41 nula
+INFO  15:41:05,904 - #6 =
+INFO  15:41:05,904 - #42 0
+INFO  15:41:05,905 - #7 ;
+INFO  15:41:05,912 - #5 const
+INFO  15:41:05,913 - #41 int
+INFO  15:41:05,913 - #41 jedan
+INFO  15:41:05,913 - #6 =
+INFO  15:41:05,914 - #42 1
+INFO  15:41:05,914 - #7 ;
+INFO  15:41:05,915 - #5 const
+INFO  15:41:05,916 - #41 int
+INFO  15:41:05,916 - #41 pet
+INFO  15:41:05,916 - #6 =
+INFO  15:41:05,917 - #42 5
+INFO  15:41:05,917 - #7 ;
+INFO  15:41:05,917 - #41 int
+INFO  15:41:05,918 - #41 niz
+INFO  15:41:05,964 - #9 [
+INFO  15:41:05,966 - #10 ]
+INFO  15:41:05,967 - #7 ;
+INFO  15:41:05,971 - #41 char
+INFO  15:41:05,975 - #41 nizch
+INFO  15:41:05,976 - #9 [
+INFO  15:41:05,977 - #10 ]
+INFO  15:41:05,978 - #7 ;
+INFO  15:41:05,979 - #41 int
+INFO  15:41:05,980 - #41 a
+INFO  15:41:05,981 - #7 ;
+INFO  15:41:05,982 - #41 set
+INFO  15:41:05,982 - #41 s1
+INFO  15:41:05,983 - #8 ,
+INFO  15:41:05,983 - #41 s2
+INFO  15:41:05,983 - #8 ,
+INFO  15:41:05,984 - #41 s3
+INFO  15:41:05,984 - #7 ;
+INFO  15:41:05,986 - #3 {
+INFO  15:41:05,988 - #41 int
+INFO  15:41:06,000 - #41 f1
+INFO  15:41:06,002 - #11 (
+INFO  15:41:06,003 - #12 )
+INFO  15:41:06,009 - #3 {
+INFO  15:41:06,017 - #17 return
+INFO  15:41:06,024 - #42 1
+INFO  15:41:06,028 - #7 ;
+INFO  15:41:06,033 - #4 }
+INFO  15:41:06,034 - #13 void
+INFO  15:41:06,038 - #41 main
+INFO  15:41:06,038 - #11 (
+INFO  15:41:06,038 - #12 )
+INFO  15:41:06,039 - #41 int
+INFO  15:41:06,039 - #41 bodovi
+INFO  15:41:06,039 - #7 ;
+INFO  15:41:06,039 - #41 int
+INFO  15:41:06,040 - #41 temp
+INFO  15:41:06,040 - #7 ;
+INFO  15:41:06,040 - #3 {
+INFO  15:41:06,040 - #22 print
+INFO  15:41:06,041 - #11 (
+INFO  15:41:06,042 - #41 f1
+INFO  15:41:06,043 - #11 (
+INFO  15:41:06,043 - #12 )
+INFO  15:41:06,050 - #12 )
+INFO  15:41:06,050 - #7 ;
+INFO  15:41:06,051 - #4 }
+INFO  15:41:06,051 - #4 }
+INFO  15:41:06,065 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_var(
+      ConstVarDeclList_var(
+        ConstVarDeclList_var(
+          ConstVarDeclList_const(
+            ConstVarDeclList_const(
+              ConstVarDeclList_const(
+                ConstVarDeclList_empty(
+                ) [ConstVarDeclList_empty]
+                ConstDeclList_normal(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstDecl(
+                   nula
+                    Constant_number(
+                     0
+                    ) [Constant_number]
+                  ) [ConstDecl]
+                  ConstDeclMore_empty(
+                  ) [ConstDeclMore_empty]
+                ) [ConstDeclList_normal]
+              ) [ConstVarDeclList_const]
+              ConstDeclList_normal(
+                Type(
+                 int
+                ) [Type]
+                ConstDecl(
+                 jedan
+                  Constant_number(
+                   1
+                  ) [Constant_number]
+                ) [ConstDecl]
+                ConstDeclMore_empty(
+                ) [ConstDeclMore_empty]
+              ) [ConstDeclList_normal]
+            ) [ConstVarDeclList_const]
+            ConstDeclList_normal(
+              Type(
+               int
+              ) [Type]
+              ConstDecl(
+               pet
+                Constant_number(
+                 5
+                ) [Constant_number]
+              ) [ConstDecl]
+              ConstDeclMore_empty(
+              ) [ConstDeclMore_empty]
+            ) [ConstDeclList_normal]
+          ) [ConstVarDeclList_const]
+          VarDeclList_normal(
+            Type(
+             int
+            ) [Type]
+            VarDecl_array(
+             niz
+            ) [VarDecl_array]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [ConstVarDeclList_var]
+        VarDeclList_normal(
+          Type(
+           char
+          ) [Type]
+          VarDecl_array(
+           nizch
+          ) [VarDecl_array]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [ConstVarDeclList_var]
+      VarDeclList_normal(
+        Type(
+         int
+        ) [Type]
+        VarDecl_var(
+         a
+        ) [VarDecl_var]
+        VarDeclMore_empty(
+        ) [VarDeclMore_empty]
+      ) [VarDeclList_normal]
+    ) [ConstVarDeclList_var]
+    VarDeclList_normal(
+      Type(
+       set
+      ) [Type]
+      VarDecl_var(
+       s1
+      ) [VarDecl_var]
+      VarDeclMore_comma(
+        VarDecl_var(
+         s2
+        ) [VarDecl_var]
+        VarDeclMore_comma(
+          VarDecl_var(
+           s3
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclMore_comma]
+      ) [VarDeclMore_comma]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_recursive(
+      MethodDeclList_e(
+      ) [MethodDeclList_e]
+      MethodDecl(
+        MethodSignature(
+          MethodReturnAndName_type(
+            Type(
+             int
+            ) [Type]
+           f1
+          ) [MethodReturnAndName_type]
+          FormParList_empty(
+          ) [FormParList_empty]
+        ) [MethodSignature]
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        StatementList_recursive(
+          StatementList_empty(
+          ) [StatementList_empty]
+          Statement_return_expr(
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_number(
+                       1
+                      ) [FactorElement_number]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [Statement_return_expr]
+        ) [StatementList_recursive]
+      ) [MethodDecl]
+    ) [MethodDeclList_recursive]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_recursive(
+        VarDeclListRec_recursive(
+          VarDeclListRec_e(
+          ) [VarDeclListRec_e]
+          VarDeclList_normal(
+            Type(
+             int
+            ) [Type]
+            VarDecl_var(
+             bodovi
+            ) [VarDecl_var]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [VarDeclListRec_recursive]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           temp
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [VarDeclListRec_recursive]
+      StatementList_recursive(
+        StatementList_empty(
+        ) [StatementList_empty]
+        Statement_print(
+          Expr_addop(
+            AddopTermList_term(
+              Term(
+                MulopFactorList_factor(
+                  Factor_plus(
+                    FactorElement_method(
+                      Designator_var(
+                       f1
+                      ) [Designator_var]
+                      ActParList_e(
+                        ActParListBegin(
+                        ) [ActParListBegin]
+                      ) [ActParList_e]
+                    ) [FactorElement_method]
+                  ) [Factor_plus]
+                ) [MulopFactorList_factor]
+              ) [Term]
+            ) [AddopTermList_term]
+          ) [Expr_addop]
+        ) [Statement_print]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  15:41:06,067 - =====================================================================
+INFO  15:41:06,085 - =====================================================================
+INFO  15:41:06,118 - Pristup globalnoj promeljivoj: f1[Kind : 3] na liniji 27
+INFO  15:41:06,121 - Poziv funkcije:f1[Kind: 1] na liniji 27
+INFO  15:41:06,138 - Fp list size:0[] na liniji 27
+INFO  15:41:06,139 - Ap list size:0[] na liniji 27
+INFO  15:41:06,139 - =====================================================================
+INFO  15:41:06,152 - Generisanje  uspesno zavrseno!

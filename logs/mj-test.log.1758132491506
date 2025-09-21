@@ -1,0 +1,175 @@
+INFO  20:07:34,342 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:07:34,600 - #2 program
+INFO  20:07:34,601 - #41 test301
+INFO  20:07:34,601 - #41 int
+INFO  20:07:34,605 - #41 a
+INFO  20:07:34,606 - #7 ;
+INFO  20:07:34,608 - #3 {
+INFO  20:07:34,609 - #13 void
+INFO  20:07:34,611 - #41 main
+INFO  20:07:34,611 - #11 (
+INFO  20:07:34,612 - #12 )
+INFO  20:07:34,614 - #41 int
+INFO  20:07:34,617 - #41 a
+INFO  20:07:34,618 - #7 ;
+INFO  20:07:34,618 - #3 {
+INFO  20:07:34,619 - #41 a
+INFO  20:07:34,621 - #6 =
+INFO  20:07:34,622 - #42 5
+INFO  20:07:34,625 - #7 ;
+INFO  20:07:34,628 - #46 ::
+INFO  20:07:34,629 - #41 a
+INFO  20:07:34,630 - #6 =
+INFO  20:07:34,630 - #42 4
+INFO  20:07:34,631 - #7 ;
+INFO  20:07:34,632 - #22 print
+INFO  20:07:34,632 - #11 (
+INFO  20:07:34,632 - #41 a
+INFO  20:07:34,632 - #12 )
+INFO  20:07:34,633 - #7 ;
+INFO  20:07:34,633 - #22 print
+INFO  20:07:34,634 - #11 (
+INFO  20:07:34,634 - #46 ::
+INFO  20:07:34,634 - #41 a
+INFO  20:07:34,634 - #12 )
+INFO  20:07:34,635 - #7 ;
+INFO  20:07:34,635 - #4 }
+INFO  20:07:34,636 - #4 }
+INFO  20:07:34,649 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_empty(
+    ) [ConstVarDeclList_empty]
+    VarDeclList_normal(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_empty(
+      ) [VarDeclMore_empty]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_recursive(
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           a
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [VarDeclListRec_recursive]
+      StatementList_recursive(
+        StatementList_recursive(
+          StatementList_recursive(
+            StatementList_recursive(
+              StatementList_empty(
+              ) [StatementList_empty]
+              Statement_designator(
+                DesignatorStatement_assign(
+                  Designator_var(
+                   a
+                  ) [Designator_var]
+                  Assignop(
+                  ) [Assignop]
+                  Expr_addop(
+                    AddopTermList_term(
+                      Term(
+                        MulopFactorList_factor(
+                          Factor_plus(
+                            FactorElement_number(
+                             5
+                            ) [FactorElement_number]
+                          ) [Factor_plus]
+                        ) [MulopFactorList_factor]
+                      ) [Term]
+                    ) [AddopTermList_term]
+                  ) [Expr_addop]
+                ) [DesignatorStatement_assign]
+              ) [Statement_designator]
+            ) [StatementList_recursive]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_var_global(
+                 a
+                ) [Designator_var_global]
+                Assignop(
+                ) [Assignop]
+                Expr_addop(
+                  AddopTermList_term(
+                    Term(
+                      MulopFactorList_factor(
+                        Factor_plus(
+                          FactorElement_number(
+                           4
+                          ) [FactorElement_number]
+                        ) [Factor_plus]
+                      ) [MulopFactorList_factor]
+                    ) [Term]
+                  ) [AddopTermList_term]
+                ) [Expr_addop]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [StatementList_recursive]
+          Statement_print(
+            Expr_addop(
+              AddopTermList_term(
+                Term(
+                  MulopFactorList_factor(
+                    Factor_plus(
+                      FactorElement_var(
+                        Designator_var(
+                         a
+                        ) [Designator_var]
+                      ) [FactorElement_var]
+                    ) [Factor_plus]
+                  ) [MulopFactorList_factor]
+                ) [Term]
+              ) [AddopTermList_term]
+            ) [Expr_addop]
+          ) [Statement_print]
+        ) [StatementList_recursive]
+        Statement_print(
+          Expr_addop(
+            AddopTermList_term(
+              Term(
+                MulopFactorList_factor(
+                  Factor_plus(
+                    FactorElement_var(
+                      Designator_var_global(
+                       a
+                      ) [Designator_var_global]
+                    ) [FactorElement_var]
+                  ) [Factor_plus]
+                ) [MulopFactorList_factor]
+              ) [Term]
+            ) [AddopTermList_term]
+          ) [Expr_addop]
+        ) [Statement_print]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  20:07:34,650 - =====================================================================
+INFO  20:07:34,665 - =====================================================================
+INFO  20:07:34,727 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 11
+ERROR 20:07:34,727 - Neadekvatna promenljiva:a na liniji 12

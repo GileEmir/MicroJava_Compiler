@@ -45,10 +45,10 @@ int a;
 		i = 0;
 		do{
 			if(i == 2) ibool = true;
-		} while( i < 5, i++);
+		} while( i < 4, i++);
 		
 		if(ibool)
-			if(i == 5) print(1); //1
+			if(i == 4) print(1); //1
 			else print(-1); 
 			
 		a = 2;	
@@ -87,18 +87,19 @@ int a;
 		i = 0;
 		do {
 			niz[i] = niz[i] * 2 * a;
-		} while(i < 3, i++);
+		} while(i < 2, i++);
 		
 		i = 0;
 		do
 			print(niz[i]);
-		while (i < 3, i++);
+		while (i < 2, i++);
 		print(eol);
 		
 		niz2 = 0;
+		i = 0;
 		do
 			niz2 = niz2 + niz[i] * niz[i];
-		while ( i < 3, i++);
+		while ( i < 2, i++);
 		print(niz2);
 		print(eol);
 		

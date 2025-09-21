@@ -1,0 +1,154 @@
+INFO  20:19:46,309 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:19:46,412 - #2 program
+INFO  20:19:46,413 - #41 test301
+INFO  20:19:46,413 - #41 int
+INFO  20:19:46,415 - #41 a
+INFO  20:19:46,417 - #7 ;
+INFO  20:19:46,418 - #3 {
+INFO  20:19:46,419 - #13 void
+INFO  20:19:46,420 - #41 main
+INFO  20:19:46,420 - #11 (
+INFO  20:19:46,420 - #12 )
+INFO  20:19:46,422 - #41 int
+INFO  20:19:46,424 - #41 a
+INFO  20:19:46,425 - #7 ;
+INFO  20:19:46,425 - #3 {
+INFO  20:19:46,425 - #41 a
+INFO  20:19:46,426 - #6 =
+INFO  20:19:46,427 - #42 5
+INFO  20:19:46,428 - #7 ;
+INFO  20:19:46,430 - #46 ::
+INFO  20:19:46,430 - #41 a
+INFO  20:19:46,431 - #6 =
+INFO  20:19:46,431 - #42 4
+INFO  20:19:46,431 - #7 ;
+INFO  20:19:46,432 - #22 print
+INFO  20:19:46,432 - #11 (
+INFO  20:19:46,432 - #41 a
+INFO  20:19:46,432 - #12 )
+INFO  20:19:46,432 - #7 ;
+INFO  20:19:46,432 - #4 }
+INFO  20:19:46,433 - #4 }
+INFO  20:19:46,441 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_empty(
+    ) [ConstVarDeclList_empty]
+    VarDeclList_normal(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_empty(
+      ) [VarDeclMore_empty]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_recursive(
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           a
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [VarDeclListRec_recursive]
+      StatementList_recursive(
+        StatementList_recursive(
+          StatementList_recursive(
+            StatementList_empty(
+            ) [StatementList_empty]
+            Statement_designator(
+              DesignatorStatement_assign(
+                Designator_var(
+                 a
+                ) [Designator_var]
+                Assignop(
+                ) [Assignop]
+                Expr_addop(
+                  AddopTermList_term(
+                    Term(
+                      MulopFactorList_factor(
+                        Factor_plus(
+                          FactorElement_number(
+                           5
+                          ) [FactorElement_number]
+                        ) [Factor_plus]
+                      ) [MulopFactorList_factor]
+                    ) [Term]
+                  ) [AddopTermList_term]
+                ) [Expr_addop]
+              ) [DesignatorStatement_assign]
+            ) [Statement_designator]
+          ) [StatementList_recursive]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_var_global(
+               a
+              ) [Designator_var_global]
+              Assignop(
+              ) [Assignop]
+              Expr_addop(
+                AddopTermList_term(
+                  Term(
+                    MulopFactorList_factor(
+                      Factor_plus(
+                        FactorElement_number(
+                         4
+                        ) [FactorElement_number]
+                      ) [Factor_plus]
+                    ) [MulopFactorList_factor]
+                  ) [Term]
+                ) [AddopTermList_term]
+              ) [Expr_addop]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [StatementList_recursive]
+        Statement_print(
+          Expr_addop(
+            AddopTermList_term(
+              Term(
+                MulopFactorList_factor(
+                  Factor_plus(
+                    FactorElement_var(
+                      Designator_var(
+                       a
+                      ) [Designator_var]
+                    ) [FactorElement_var]
+                  ) [Factor_plus]
+                ) [MulopFactorList_factor]
+              ) [Term]
+            ) [AddopTermList_term]
+          ) [Expr_addop]
+        ) [Statement_print]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  20:19:46,442 - =====================================================================
+INFO  20:19:46,450 - =====================================================================
+INFO  20:19:46,498 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 11
+ERROR 20:19:46,498 - Neadekvatna promenljiva:a na liniji 12
+ERROR 20:19:46,499 - Neodgovarajuci tipovi u dodeli vrednostirs.etf.pp1.symboltable.concepts.Struct@4b952a2drs.etf.pp1.symboltable.concepts.Struct@3159c4b8 na liniji 12
+INFO  20:19:46,499 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 13
+INFO  20:19:46,499 - =====================================================================
+ERROR 20:19:46,500 - Parsiranje NIJE uspesno zavrseno!

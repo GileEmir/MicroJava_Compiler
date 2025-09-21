@@ -51,6 +51,8 @@ terminal PLUS, MINUS , MUL, DIV, REM, EQUAL, NOTEQUAL, GREATER, GREATEREQUAL, LE
 terminal String IDENT;
 terminal Integer NUMBER, BOOL;
 terminal Character CHARACTER;
+terminal FOR;
+terminal DCOLON;
 
 nonterminal Program Program;
 nonterminal ConstVarDeclList ConstVarDeclList;
@@ -86,6 +88,11 @@ nonterminal DoNonTerm DoNonTerm;
 nonterminal ActParListBegin ActParListBegin;
 nonterminal Else Else;
 nonterminal WhileNonTerm WhileNonTerm;
+nonterminal Rparen Rparen;
+nonterminal SemiFor SemiFor;
+nonterminal JumpToForStatement JumpToForStatement;
+nonterminal ForJump ForJump;
+nonterminal For For;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorElement, MulopFactorList, Term, AddopTermList, Expr;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
@@ -135,6 +142,12 @@ VarDecl ::= 			(VarDecl_var) IDENT:I1 {: RESULT=new VarDecl_var(I1); RESULT.setL
                         |
                         (VarDecl_array) IDENT:I1 LBRACKET RBRACKET {: RESULT=new VarDecl_array(I1); RESULT.setLine(I1left); :} /* Example: y[] */;
 
+
+/*
+RecDecl ::= 			(RecDecl) RECORD RecDeclName LBRACE VarDeclListRec RBRACE;
+
+RecDeclName ::= 		(RecDeclName) IDENT
+*/
 
 VarDeclMore ::= 		(VarDeclMore_comma) COMMA VarDecl:V1 VarDeclMore:V2 {: RESULT=new VarDeclMore_comma(V1, V2); RESULT.setLine(V1left); :} /* Example: , y */
                         |
@@ -217,8 +230,22 @@ Statement ::= 			(Statement_designator) DesignatorStatement:D1 SEMI {: RESULT=ne
                         |
                         (Statement_do_condition_designator) DoNonTerm:D1 Statement:S2 WhileNonTerm:W3 LPAREN Condition:C4 COMMA DesignatorStatement:D5 RPAREN SEMI {: RESULT=new Statement_do_condition_designator(D1, S2, W3, C4, D5); RESULT.setLine(D1left); :} /* Example: do statement while(condition, designatorStatement); */
                         |
-                        (Statement_block) LBRACE StatementList:S1 RBRACE {: RESULT=new Statement_block(S1); RESULT.setLine(S1left); :} /* Example: { statementList } */;
+                        (Statement_block) LBRACE StatementList:S1 RBRACE {: RESULT=new Statement_block(S1); RESULT.setLine(S1left); :} /* Example: { statementList } */
+                        |
+                        (Statement_for) For:F1 LPAREN DesignatorStatement:D2 SEMI ForJump:F3 Condition:C4 SemiFor:S5 DesignatorStatement:D6 Rparen:R7 Statement:S8 JumpToForStatement:J9 {: RESULT=new Statement_for(F1, D2, F3, C4, S5, D6, R7, S8, J9); RESULT.setLine(F1left); :};
                         /*statement goto GOTO IDENT SEMI*/
+					
+Rparen ::= 			(Rparen) RPAREN {: RESULT=new Rparen(); :};
+					
+SemiFor ::=			(SemiFor) SEMI {: RESULT=new SemiFor(); :};
+
+JumpToForStatement ::= (JumpToForStatement) {: RESULT=new JumpToForStatement(); :};
+
+ForJump ::= 		(ForJump) {: RESULT=new ForJump(); :};
+
+For ::=				(For) FOR {: RESULT=new For(); :};
+                        
+
 
 WhileNonTerm ::=		(WhileNonTerm) WHILE {: RESULT=new WhileNonTerm(); :};
 
@@ -313,10 +340,14 @@ FactorElement ::= 		(FactorElement_var) Designator:D1 {: RESULT=new FactorElemen
 		              	
 Designator ::=			(Designator_var) IDENT:I1 {: RESULT=new Designator_var(I1); RESULT.setLine(I1left); :} /* Example: x */
 						|
+						(Designator_var_global) DCOLON IDENT:I1 {: RESULT=new Designator_var_global(I1); RESULT.setLine(I1left); :}
+						|
 						(Designator_elem) DesignatorArrayName:D1 LBRACKET Expr:E2 RBRACKET {: RESULT=new Designator_elem(D1, E2); RESULT.setLine(D1left); :} /* Example: array[5] */; 
 					
 						
-DesignatorArrayName ::=	(DesignatorArrayName) IDENT:I1 {: RESULT=new DesignatorArrayName(I1); RESULT.setLine(I1left); :};
+DesignatorArrayName ::=	(DesignatorArrayName_local) IDENT:I1 {: RESULT=new DesignatorArrayName_local(I1); RESULT.setLine(I1left); :}
+						|
+						(DesignatorArrayName_global) DCOLON IDENT:I1 {: RESULT=new DesignatorArrayName_global(I1); RESULT.setLine(I1left); :}; 
 
 
 Label ::=	IDENT:I1 {: RESULT=new LabelDerived1(I1); RESULT.setLine(I1left); :};

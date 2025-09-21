@@ -1,0 +1,123 @@
+INFO  20:08:11,526 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  20:08:11,629 - #2 program
+INFO  20:08:11,629 - #41 test301
+INFO  20:08:11,630 - #41 int
+INFO  20:08:11,632 - #41 a
+INFO  20:08:11,633 - #7 ;
+INFO  20:08:11,635 - #3 {
+INFO  20:08:11,635 - #13 void
+INFO  20:08:11,637 - #41 main
+INFO  20:08:11,637 - #11 (
+INFO  20:08:11,637 - #12 )
+INFO  20:08:11,638 - #41 int
+INFO  20:08:11,640 - #41 a
+INFO  20:08:11,640 - #7 ;
+INFO  20:08:11,640 - #3 {
+INFO  20:08:11,641 - #41 a
+INFO  20:08:11,642 - #6 =
+INFO  20:08:11,642 - #42 5
+INFO  20:08:11,644 - #7 ;
+INFO  20:08:11,646 - #22 print
+INFO  20:08:11,646 - #11 (
+INFO  20:08:11,647 - #41 a
+INFO  20:08:11,647 - #12 )
+INFO  20:08:11,648 - #7 ;
+INFO  20:08:11,648 - #4 }
+INFO  20:08:11,648 - #4 }
+INFO  20:08:11,656 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_empty(
+    ) [ConstVarDeclList_empty]
+    VarDeclList_normal(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_empty(
+      ) [VarDeclMore_empty]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_recursive(
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           a
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [VarDeclListRec_recursive]
+      StatementList_recursive(
+        StatementList_recursive(
+          StatementList_empty(
+          ) [StatementList_empty]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_var(
+               a
+              ) [Designator_var]
+              Assignop(
+              ) [Assignop]
+              Expr_addop(
+                AddopTermList_term(
+                  Term(
+                    MulopFactorList_factor(
+                      Factor_plus(
+                        FactorElement_number(
+                         5
+                        ) [FactorElement_number]
+                      ) [Factor_plus]
+                    ) [MulopFactorList_factor]
+                  ) [Term]
+                ) [AddopTermList_term]
+              ) [Expr_addop]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [StatementList_recursive]
+        Statement_print(
+          Expr_addop(
+            AddopTermList_term(
+              Term(
+                MulopFactorList_factor(
+                  Factor_plus(
+                    FactorElement_var(
+                      Designator_var(
+                       a
+                      ) [Designator_var]
+                    ) [FactorElement_var]
+                  ) [Factor_plus]
+                ) [MulopFactorList_factor]
+              ) [Term]
+            ) [AddopTermList_term]
+          ) [Expr_addop]
+        ) [Statement_print]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  20:08:11,656 - =====================================================================
+INFO  20:08:11,663 - =====================================================================
+INFO  20:08:11,674 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 11
+INFO  20:08:11,674 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 13
+INFO  20:08:11,674 - =====================================================================
+INFO  20:08:11,713 - Generisanje  uspesno zavrseno!

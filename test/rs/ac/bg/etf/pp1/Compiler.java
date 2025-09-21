@@ -49,7 +49,7 @@ public class Compiler {
 	        
 	        Program prog = (Program)(s.value); 
 	        
-			/* Ispis AST /*
+			
 			log.info(prog.toString(""));
 			log.info("=====================================================================");
 			
@@ -93,6 +93,18 @@ public class Compiler {
                 bObj.setFpPos(1);
                 bObj.setLevel(1);
                 addAllObj.setLocals(Tab.currentScope().getLocals());
+                Tab.closeScope();
+            }
+            
+            Obj maxElem = Tab.insert(Obj.Meth, "maxElem", Tab.intType);
+            maxElem.setAdr(0);
+            maxElem.setLevel(1); // Set the level to 1 for one parameter
+            {
+                Tab.openScope();
+                Obj a = Tab.insert(Obj.Var, "a", setType);
+                a.setFpPos(1);
+                a.setLevel(1);
+                maxElem.setLocals(Tab.currentScope().getLocals());
                 Tab.closeScope();
             }
             

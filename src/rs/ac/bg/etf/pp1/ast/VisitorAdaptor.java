@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/1/2025 19:24:15
+// 17/8/2025 19:54:8
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -35,6 +35,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Statement Statement) { }
     public void visit(VarDecl VarDecl) { }
     public void visit(VarDeclMore VarDeclMore) { }
+    public void visit(DesignatorArrayName DesignatorArrayName) { }
     public void visit(CondFact CondFact) { }
     public void visit(FormPar FormPar) { }
     public void visit(MethodDeclList MethodDeclList) { }
@@ -53,8 +54,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Addop_plus Addop_plus) { visit(); }
     public void visit(Assignop Assignop) { visit(); }
     public void visit(LabelDerived1 LabelDerived1) { visit(); }
-    public void visit(DesignatorArrayName DesignatorArrayName) { visit(); }
+    public void visit(DesignatorArrayName_global DesignatorArrayName_global) { visit(); }
+    public void visit(DesignatorArrayName_local DesignatorArrayName_local) { visit(); }
     public void visit(Designator_elem Designator_elem) { visit(); }
+    public void visit(Designator_var_global Designator_var_global) { visit(); }
     public void visit(Designator_var Designator_var) { visit(); }
     public void visit(FactorElement_expr FactorElement_expr) { visit(); }
     public void visit(FactorElement_new_record FactorElement_new_record) { visit(); }
@@ -98,6 +101,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ElseStatement_else ElseStatement_else) { visit(); }
     public void visit(DoNonTerm DoNonTerm) { visit(); }
     public void visit(WhileNonTerm WhileNonTerm) { visit(); }
+    public void visit(For For) { visit(); }
+    public void visit(ForJump ForJump) { visit(); }
+    public void visit(JumpToForStatement JumpToForStatement) { visit(); }
+    public void visit(SemiFor SemiFor) { visit(); }
+    public void visit(Rparen Rparen) { visit(); }
+    public void visit(Statement_for Statement_for) { visit(); }
     public void visit(Statement_block Statement_block) { visit(); }
     public void visit(Statement_do_condition_designator Statement_do_condition_designator) { visit(); }
     public void visit(Statement_do_condition Statement_do_condition) { visit(); }

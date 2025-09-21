@@ -1,0 +1,263 @@
+INFO  13:58:28,941 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  13:58:29,084 - #2 program
+INFO  13:58:29,085 - #41 test301
+INFO  13:58:29,085 - #5 const
+INFO  13:58:29,088 - #41 int
+INFO  13:58:29,088 - #41 nula
+INFO  13:58:29,090 - #6 =
+INFO  13:58:29,090 - #42 0
+INFO  13:58:29,090 - #7 ;
+INFO  13:58:29,094 - #5 const
+INFO  13:58:29,094 - #41 int
+INFO  13:58:29,094 - #41 jedan
+INFO  13:58:29,095 - #6 =
+INFO  13:58:29,095 - #42 1
+INFO  13:58:29,095 - #7 ;
+INFO  13:58:29,095 - #5 const
+INFO  13:58:29,096 - #41 int
+INFO  13:58:29,096 - #41 pet
+INFO  13:58:29,096 - #6 =
+INFO  13:58:29,096 - #42 5
+INFO  13:58:29,097 - #7 ;
+INFO  13:58:29,097 - #41 int
+INFO  13:58:29,097 - #41 niz
+INFO  13:58:29,098 - #9 [
+INFO  13:58:29,098 - #10 ]
+INFO  13:58:29,098 - #7 ;
+INFO  13:58:29,099 - #41 char
+INFO  13:58:29,100 - #41 nizch
+INFO  13:58:29,100 - #9 [
+INFO  13:58:29,100 - #10 ]
+INFO  13:58:29,100 - #7 ;
+INFO  13:58:29,100 - #41 int
+INFO  13:58:29,101 - #41 a
+INFO  13:58:29,101 - #7 ;
+INFO  13:58:29,101 - #41 set
+INFO  13:58:29,101 - #41 s1
+INFO  13:58:29,101 - #8 ,
+INFO  13:58:29,101 - #41 s2
+INFO  13:58:29,101 - #8 ,
+INFO  13:58:29,102 - #41 s3
+INFO  13:58:29,102 - #7 ;
+INFO  13:58:29,102 - #3 {
+INFO  13:58:29,102 - #13 void
+INFO  13:58:29,104 - #41 main
+INFO  13:58:29,104 - #11 (
+INFO  13:58:29,104 - #12 )
+INFO  13:58:29,107 - #41 int
+INFO  13:58:29,111 - #41 a
+INFO  13:58:29,112 - #7 ;
+INFO  13:58:29,112 - #3 {
+INFO  13:58:29,113 - #41 int
+INFO  13:58:29,115 - #41 c
+ERROR 13:58:29,116 - 
+Sintaksna greska na liniji 20
+INFO  13:58:29,116 - #6 =
+INFO  13:58:29,116 - #42 3
+INFO  13:58:29,116 - #7 ;
+INFO  13:58:29,118 - #41 a
+INFO  13:58:29,118 - #6 =
+INFO  13:58:29,119 - #42 3
+ERROR 13:58:29,131 - Oporavak od greske u iskazu dodele. Linija: 1
+INFO  13:58:29,161 - #7 ;
+INFO  13:58:29,164 - #22 print
+INFO  13:58:29,164 - #11 (
+INFO  13:58:29,164 - #41 a
+INFO  13:58:29,164 - #12 )
+INFO  13:58:29,165 - #7 ;
+INFO  13:58:29,165 - #4 }
+INFO  13:58:29,165 - #4 }
+INFO  13:58:29,180 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_var(
+      ConstVarDeclList_var(
+        ConstVarDeclList_var(
+          ConstVarDeclList_const(
+            ConstVarDeclList_const(
+              ConstVarDeclList_const(
+                ConstVarDeclList_empty(
+                ) [ConstVarDeclList_empty]
+                ConstDeclList_normal(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstDecl(
+                   nula
+                    Constant_number(
+                     0
+                    ) [Constant_number]
+                  ) [ConstDecl]
+                  ConstDeclMore_empty(
+                  ) [ConstDeclMore_empty]
+                ) [ConstDeclList_normal]
+              ) [ConstVarDeclList_const]
+              ConstDeclList_normal(
+                Type(
+                 int
+                ) [Type]
+                ConstDecl(
+                 jedan
+                  Constant_number(
+                   1
+                  ) [Constant_number]
+                ) [ConstDecl]
+                ConstDeclMore_empty(
+                ) [ConstDeclMore_empty]
+              ) [ConstDeclList_normal]
+            ) [ConstVarDeclList_const]
+            ConstDeclList_normal(
+              Type(
+               int
+              ) [Type]
+              ConstDecl(
+               pet
+                Constant_number(
+                 5
+                ) [Constant_number]
+              ) [ConstDecl]
+              ConstDeclMore_empty(
+              ) [ConstDeclMore_empty]
+            ) [ConstDeclList_normal]
+          ) [ConstVarDeclList_const]
+          VarDeclList_normal(
+            Type(
+             int
+            ) [Type]
+            VarDecl_array(
+             niz
+            ) [VarDecl_array]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [ConstVarDeclList_var]
+        VarDeclList_normal(
+          Type(
+           char
+          ) [Type]
+          VarDecl_array(
+           nizch
+          ) [VarDecl_array]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [ConstVarDeclList_var]
+      VarDeclList_normal(
+        Type(
+         int
+        ) [Type]
+        VarDecl_var(
+         a
+        ) [VarDecl_var]
+        VarDeclMore_empty(
+        ) [VarDeclMore_empty]
+      ) [VarDeclList_normal]
+    ) [ConstVarDeclList_var]
+    VarDeclList_normal(
+      Type(
+       set
+      ) [Type]
+      VarDecl_var(
+       s1
+      ) [VarDecl_var]
+      VarDeclMore_comma(
+        VarDecl_var(
+         s2
+        ) [VarDecl_var]
+        VarDeclMore_comma(
+          VarDecl_var(
+           s3
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclMore_comma]
+      ) [VarDeclMore_comma]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_recursive(
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           a
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [VarDeclListRec_recursive]
+      StatementList_recursive(
+        StatementList_recursive(
+          StatementList_recursive(
+            StatementList_empty(
+            ) [StatementList_empty]
+            Statement_designator(
+              DesignatorStatement_error(
+              ) [DesignatorStatement_error]
+            ) [Statement_designator]
+          ) [StatementList_recursive]
+          Statement_designator(
+            DesignatorStatement_assign(
+              Designator_var(
+               a
+              ) [Designator_var]
+              Assignop(
+              ) [Assignop]
+              Expr_addop(
+                AddopTermList_term(
+                  Term(
+                    MulopFactorList_factor(
+                      Factor_plus(
+                        FactorElement_number(
+                         3
+                        ) [FactorElement_number]
+                      ) [Factor_plus]
+                    ) [MulopFactorList_factor]
+                  ) [Term]
+                ) [AddopTermList_term]
+              ) [Expr_addop]
+            ) [DesignatorStatement_assign]
+          ) [Statement_designator]
+        ) [StatementList_recursive]
+        Statement_print(
+          Expr_addop(
+            AddopTermList_term(
+              Term(
+                MulopFactorList_factor(
+                  Factor_plus(
+                    FactorElement_var(
+                      Designator_var(
+                       a
+                      ) [Designator_var]
+                    ) [FactorElement_var]
+                  ) [Factor_plus]
+                ) [MulopFactorList_factor]
+              ) [Term]
+            ) [AddopTermList_term]
+          ) [Expr_addop]
+        ) [Statement_print]
+      ) [StatementList_recursive]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  13:58:29,181 - =====================================================================
+INFO  13:58:29,192 - =====================================================================
+INFO  13:58:29,205 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 21
+INFO  13:58:29,205 - Pristup lokalnoj promeljivoj: a[Kind : 1] na liniji 22
+INFO  13:58:29,206 - =====================================================================
+ERROR 13:58:29,207 - Parsiranje NIJE uspesno zavrseno!

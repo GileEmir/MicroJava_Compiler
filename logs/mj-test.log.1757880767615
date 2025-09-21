@@ -1,0 +1,160 @@
+INFO  22:12:01,130 - Compiling source file: C:\Users\Gile\eclipse-workspace\MJCompiler\test\program.mj
+INFO  22:12:03,252 - #2 program
+INFO  22:12:03,252 - #41 test302
+INFO  22:12:03,252 - #41 int
+INFO  22:12:03,294 - #41 i
+INFO  22:12:03,314 - #7 ;
+INFO  22:12:03,339 - #41 bool
+INFO  22:12:03,339 - #41 ibool
+INFO  22:12:03,340 - #7 ;
+INFO  22:12:03,340 - #41 int
+INFO  22:12:03,340 - #41 niz2
+INFO  22:12:03,340 - #7 ;
+INFO  22:12:03,341 - #41 int
+INFO  22:12:03,341 - #41 niz
+INFO  22:12:03,341 - #9 [
+INFO  22:12:03,342 - #10 ]
+INFO  22:12:03,342 - #7 ;
+INFO  22:12:03,342 - #41 int
+INFO  22:12:03,343 - #41 a
+INFO  22:12:03,343 - #7 ;
+INFO  22:12:03,344 - #3 {
+INFO  22:12:03,344 - #41 int
+INFO  22:12:03,368 - #41 f1
+INFO  22:12:03,369 - #11 (
+INFO  22:12:03,369 - #41 int
+INFO  22:12:03,369 - #41 arg
+INFO  22:12:03,370 - #8 ,
+INFO  22:12:03,370 - #41 sdasda
+INFO  22:12:03,370 - #12 )
+ERROR 22:12:03,370 - 
+Sintaksna greska na liniji 15
+INFO  22:12:03,371 - #3 {
+INFO  22:12:03,371 - #4 }
+INFO  22:12:03,371 - #13 void
+ERROR 22:12:03,379 - Oporavak od greske u deklaraciji formalnog parametra funkcije. Linija: 15
+INFO  22:12:03,506 - #41 main
+INFO  22:12:03,506 - #11 (
+INFO  22:12:03,506 - #12 )
+INFO  22:12:03,523 - #3 {
+INFO  22:12:03,523 - #4 }
+INFO  22:12:03,523 - #4 }
+INFO  22:12:03,548 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  ConstVarDeclList_var(
+    ConstVarDeclList_var(
+      ConstVarDeclList_var(
+        ConstVarDeclList_var(
+          ConstVarDeclList_var(
+            ConstVarDeclList_empty(
+            ) [ConstVarDeclList_empty]
+            VarDeclList_normal(
+              Type(
+               int
+              ) [Type]
+              VarDecl_var(
+               i
+              ) [VarDecl_var]
+              VarDeclMore_empty(
+              ) [VarDeclMore_empty]
+            ) [VarDeclList_normal]
+          ) [ConstVarDeclList_var]
+          VarDeclList_normal(
+            Type(
+             bool
+            ) [Type]
+            VarDecl_var(
+             ibool
+            ) [VarDecl_var]
+            VarDeclMore_empty(
+            ) [VarDeclMore_empty]
+          ) [VarDeclList_normal]
+        ) [ConstVarDeclList_var]
+        VarDeclList_normal(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           niz2
+          ) [VarDecl_var]
+          VarDeclMore_empty(
+          ) [VarDeclMore_empty]
+        ) [VarDeclList_normal]
+      ) [ConstVarDeclList_var]
+      VarDeclList_normal(
+        Type(
+         int
+        ) [Type]
+        VarDecl_array(
+         niz
+        ) [VarDecl_array]
+        VarDeclMore_empty(
+        ) [VarDeclMore_empty]
+      ) [VarDeclList_normal]
+    ) [ConstVarDeclList_var]
+    VarDeclList_normal(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_empty(
+      ) [VarDeclMore_empty]
+    ) [VarDeclList_normal]
+  ) [ConstVarDeclList_var]
+  MethodDeclList_recursive(
+    MethodDeclList_recursive(
+      MethodDeclList_e(
+      ) [MethodDeclList_e]
+      MethodDecl(
+        MethodSignature(
+          MethodReturnAndName_type(
+            Type(
+             int
+            ) [Type]
+           f1
+          ) [MethodReturnAndName_type]
+          FormParList_recursive(
+            FormPar_var(
+              Type(
+               int
+              ) [Type]
+             arg
+            ) [FormPar_var]
+            FormParMore_recursive(
+              FormPar_error(
+              ) [FormPar_error]
+              FormParMore_empty(
+              ) [FormParMore_empty]
+            ) [FormParMore_recursive]
+          ) [FormParList_recursive]
+        ) [MethodSignature]
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        StatementList_empty(
+        ) [StatementList_empty]
+      ) [MethodDecl]
+    ) [MethodDeclList_recursive]
+    MethodDecl(
+      MethodSignature(
+        MethodReturnAndName_void(
+         main
+        ) [MethodReturnAndName_void]
+        FormParList_empty(
+        ) [FormParList_empty]
+      ) [MethodSignature]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_empty(
+      ) [StatementList_empty]
+    ) [MethodDecl]
+  ) [MethodDeclList_recursive]
+) [Program]
+INFO  22:12:03,549 - =====================================================================
+INFO  22:12:03,555 - =====================================================================
+ERROR 22:12:03,603 - Ne postoji iskaz return unutar metode:f1 na liniji 15
+INFO  22:12:03,604 - =====================================================================
+ERROR 22:12:03,605 - Parsiranje NIJE uspesno zavrseno!
